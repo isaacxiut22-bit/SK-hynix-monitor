@@ -1,35 +1,51 @@
-# SK hynix Litigation Watch — deployment package
+# SK hynix Litigation Watch — zero-fee public-source monitoring
 
-This contains a static dashboard with a scheduled data-collection script. **This is not a published or fully connected website until deployed and configured.** Its initial records are a saved baseline, not the result of a live API call from this package.
+Public dashboard: https://isaacxiut22-bit.github.io/SK-hynix-monitor/
 
-## Publish with GitHub Pages + scheduled updates
+The dashboard is an **early-warning lead feed**, NOT comprehensive state or federal litigation surveillance. It preserves the original baseline, displays source health, and never promotes scraped/news findings to confirmed filings. Public metadata is published to GitHub Pages; never commit private legal information or secrets to this repository.
 
-1. Create a **public** GitHub repository and upload the **contents** of this directory into the repository's `main` branch. The `index.html` and `tracker-data.json` files must be in the repository root.
-2. In **Settings → Pages**, select **Build and deployment → Source: GitHub Actions**.
-3. Create a CourtListener account and API token from https://www.courtlistener.com/help/api/ . Add it to GitHub under **Settings → Secrets and variables → Actions → New repository secret**, named `COURTLISTENER_TOKEN`. Do not place the token in a public file or HTML.
-4. In the **Actions** tab, run **Update litigation watch and deploy** using `workflow_dispatch`. The same workflow is scheduled at 8 a.m. and 5 p.m. Pacific, including daylight saving changes.
-5. Verify both feeds' last-success and last-attempt indicators in the published dashboard and check that the Actions job completed. GitHub Pages will provide a public URL, usually `https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/`.
+## Automated monitoring (currently configured)
 
-## Actual integration and important limitations
+The GitHub Actions workflow (`.github/workflows/monitor-and-deploy.yml`) runs at 8 a.m. and 5 p.m. America/Los_Angeles, on `main` pushes, and when manually dispatched. GitHub cron execution is best-effort and can be delayed. It refreshes `tracker-data.json`, persists the file, and publishes Pages.
 
-- **Federal cases:** CourtListener v4 `search/?type=d` for `party:(hynix)`, using an API token. Results are docket-search matches labeled **“Docket match — review”** until independently verified; the search does not establish liability or even that the named party is a defendant. RECAP does **not** provide complete instant PACER coverage. Party aliases, acquisitions, and subsidiaries can be missed. A paid docket aggregator with a broader party-identity search is needed for more complete coverage.
-- **Solicitations:** Google News RSS queries for announcements, securities investigations, and litigation, labeled **“Unverified solicitation lead”**. This is a discovery feed and can be incomplete, delayed, syndicated, or contain false positives. Some direct firm pages are never indexed, and some results are merely news reports. The baseline records are preserved.
-- **State courts:** No comprehensive nationwide state-court filing feed is included. This requires separate provider access; do **not** describe the deployment as exhaustive for state courts.
-- **Scheduling:** GitHub Actions schedules are best-effort, not exact-minute or instant updates, and can be delayed or disabled for inactivity. Source caches and publication delays add further latency.
-- **Notifications:** This publishes a browsable tracker but does not send push/email notifications. Email or Teams alerts are additional integrations.
-- **Review:** Do not represent automated, unverified matches as established court filings or firm solicitations without reviewing linked sources. Original baseline records remain as saved and may need manual source review.
+| Data source | Purpose | Requirements / caveats |
+| --- | --- | --- |
+| CourtListener v4 Search `type=d`, 3 party-name searches, up to 2 pages/query | Federal docket match candidates | **Needs `COURTLISTENER_TOKEN`**, otherwise inactive. Docket match does not establish defendant role. Coverage incomplete. |
+| Google News RSS — filing-report queries | Possible newly reported federal/state complaints or lawsuits | **Not a docket search**; results can be old, inaccurate, duplicated, or unrelated to a new filing. |
+| Google News RSS — plaintiff solicitation queries | Investor notices, investigations, potential class actions | Newswire syndications and false positives possible; verify with firm. |
+| Direct public plaintiff-firm pages | Kessler Topaz, Rosen Law, and Hagens Berman case/investigation listings | Only public visible HTML links, once per run, where robots.txt allows; JavaScript lists or disallowed fetches may yield no results. |
 
-## Run locally
+`runs.cases`, `runs.case_news`, `runs.solicitations`, and `runs.law_firms` track independent source outcomes (success, partial, failed). Prior successful timestamps are retained if a later run fails. Empty results on a source **do not** prove no new cases/solicitations.
 
-`python scripts/monitor.py`
+## Free state-court portals (manual only)
 
-This is expected to report the federal cases source as not configured unless you set `COURTLISTENER_TOKEN` in your environment. The script will retrieve public RSS if outbound internet access is available. Run `python -m http.server 8000`, then open `http://localhost:8000/` (opening HTML via `file://` may block `fetch`).
+These portals can be accessed by site visitors using the links on the dashboard:
 
-To test the dashboard without live connectivity, the supplied `tracker-data.json` includes the initial saved baseline.
+- New York NYSCEF — https://www.nycourts.gov/efile/ (guest public search; covered courts/case types vary)
+- Delaware CourtConnect — https://www.courts.delaware.gov/docket.aspx (Superior, Common Pleas and JP civil dockets)
+- San Francisco Superior Court — https://sf.courts.ca.gov/online-services/case-information
+- Santa Clara Superior Court — https://portal.scscourt.org/search
 
-Source references:
-- https://wiki.free.law/c/courtlistener/help/api/rest/v4/search
-- https://www.courtlistener.com/help/search-operators/
-- https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax
+**No code automatically queries, scrapes, signs in to, or bypasses limitations on these portals.** Free online availability does not imply a stable, legal, machine-accessible data API. Los Angeles civil party-name searches incur fees. There is no free comprehensive nationwide state-court new-case feed integrated here.
 
-This is an independent public-source monitoring tool and does not constitute legal advice or a comprehensive docket search.
+## Activate CourtListener (optional, free within applicable usage limits)
+
+1. Create a CourtListener account and get your token at https://www.courtlistener.com/profile/api-token/ .
+2. In this repository go to Settings → Secrets and variables → Actions → New repository secret.
+3. Name it **`COURTLISTENER_TOKEN`** and paste the secret value. Never paste or commit the token to the dashboard or GitHub code.
+4. In Actions, run **Update litigation watch and deploy** manually, then inspect the workflow log and dashboard federal docket status. CourtListener search results still require human docket verification.
+
+More thorough federal searches require PACER or professional docket aggregation; this project does not connect to paid sources.
+
+## Development and verification
+
+Run `python -m unittest discover -s tests -v`, then `python scripts/monitor.py`. The monitor uses only the Python standard library. The script will report CourtListener as unavailable without its token. The dashboard is served as static HTML/JSON (use `python -m http.server 8000` locally).
+
+**No guarantees:** Public-source availability changes. The script is intentionally conservative: source failures and limitations are visible; leads are not filed cases unless verified against the court docket. Listings may refer to subsidiaries, former names, or unrelated parties with similar names. Do not use this as the sole source for consequential litigation decisions.
+
+Official references:
+- CourtListener Search API: https://wiki.free.law/c/courtlistener/help/api/rest/v4/search
+- NYSCEF guest search: https://www.nycourts.gov/efile/
+- Delaware CourtConnect: https://www.courts.delaware.gov/docket.aspx
+- SF Superior Court: https://sf.courts.ca.gov/online-services/case-information
+- Santa Clara: https://portal.scscourt.org/search

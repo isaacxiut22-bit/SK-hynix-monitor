@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
-"""Refresh SK hynix public-source litigation leads, without upgrading leads to confirmed claims.
+"""Zero-fee, best-effort SK hynix litigation discovery.
 
-CourtListener API token is supplied only through the environment; it never goes in the website.
-Google News RSS is a discovery feed, not a docket database or definitive solicitation list.
+Sources: CourtListener federal docket API (requires private token), Google News RSS
+for litigation/filing reports and plaintiff solicitations, and public plaintiff-firm
+case listings. State-court portal access is provided as manual search links in
+index.html; this script does NOT scrape state courts or claim state-docket coverage.
+No item from a discovery feed is promoted to a verified lawsuit/solicitation.
 """
 from __future__ import annotations
 
 import datetime as dt
 import email.utils
 import hashlib
+from html.parser import HTMLParser
 import html
 import json
 import os
@@ -18,214 +22,372 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+import urllib.robotparser
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = ROOT / 'tracker-data.json'
 NOW = dt.datetime.now(dt.timezone.utc)
-STAMP = NOW.isoformat(timespec='seconds').replace('+00:00','Z')
+STAMP = NOW.isoformat(timespec='seconds').replace('+00:00', 'Z')
 DATE = NOW.date().isoformat()
-AGENT = 'SKHynixLitigationWatch/1.0 (+public-source monitoring; contact site maintainer)'
-USER_QUERY = 'party:(hynix)'
-RSS_QUERIES = [
-    '"SK hynix" lawsuit law firm investigation',
-    '"SK hynix" securities fraud shareholder class action',
-    '"SK hynix" plaintiff firms investors encouraged contact',
-    '"SK Hynix" antitrust price fixing litigation firm',
+AGENT = 'SKHynixLitigationWatch/2.0 (noncommercial public monitoring; GitHub repository)'
+
+# Multiple modest queries outperform a single large OR expression, per CL guidance.
+COURT_QUERIES = ['party:(hynix)', 'party:("Hynix Semiconductor")', 'party:(solidigm)']
+MAX_COURTLISTENER_PAGES = 2  # per query; metadata only; existing IDs are deduplicated
+
+# Google News is a discovery feed, not a court's official case docket.
+RSS_QUERIES = {
+    'case_news': [
+        '"SK hynix" "filed" "lawsuit"',
+        '"SK hynix" "sued" "court"',
+        '"SK hynix America" "complaint"',
+        '"SK hynix" "state court" lawsuit',
+        '"Hynix" "new lawsuit"',
+    ],
+    'solicitations': [
+        '"SK hynix" securities class action investigation law firm',
+        '"SK hynix" plaintiff firm investors contact',
+        '"SK hynix" antitrust price fixing lawsuit law firm',
+        '"SK Hynix" shareholder rights investigation',
+        '"SKHY" investigation shareholder law firm',
+        '"SK hynix" mass arbitration plaintiffs counsel',
+        'site:ktmc.com "SK hynix"',
+        'site:rosenlegal.com "SK hynix"',
+        'site:hbsslaw.com "SK hynix"',
+    ],
+}
+
+# Public pages only. Each is fetched once, no recursive crawling or login, and
+# only where the site's robots.txt permits this user agent. HTML/JS limitations
+# are reported; direct listings are NOT a complete inventory of a firm's work.
+FIRM_PAGES = [
+    ('Kessler Topaz (investigations)', 'https://www.ktmc.com/investigations/'),
+    ('Kessler Topaz (new cases)', 'https://www.ktmc.com/newcases/'),
+    ('Rosen Law Firm (active cases)', 'https://rosenlegal.com/cases/'),
+    ('Hagens Berman (cases)', 'https://www.hbsslaw.com/cases'),
 ]
-ALIASES = re.compile(r'\b(?:sk\s*[- ]?\s*hynix|hynix semiconductor|solidigm)\b',re.I)
-LEGAL = re.compile(r'\b(?:lawsuit|litigat\w*|legal action|investigat\w*|securit\w* fraud|class[ -]?action|plaintiff|antitrust|price[ -]?fix\w*|shareholder|law firm|investors? (?:encouraged|urged)|lead plaintiff|investor alert)\b',re.I)
-SOLICIT = re.compile(r'\b(?:investigat\w*|securit\w* fraud|class[ -]?action|law firm|investors? (?:encouraged|urged)|lead plaintiff|seeking investors|investor alert|shareholder rights)\b',re.I)
+
+ALIASES = re.compile(r'\b(?:sk\s*[- ]?\s*hynix|hynix\s+semiconductor|solidigm|\bSKHY\b)\b', re.I)
+LEGAL = re.compile(r'\b(?:lawsuit|litigat\w*|legal action|investigat\w*|securit\w* fraud|class[ -]?action|plaintiff|antitrust|price[ -]?fix\w*|shareholder|law firm|lead plaintiff|investor alert|investors? (?:encouraged|urged))\b', re.I)
+SOLICIT = re.compile(r'\b(?:investigat\w*|securit\w* fraud|class[ -]?action|law firm|investors? (?:encouraged|urged)|lead plaintiff|seeking investors|investor alert|shareholder rights|join (?:the |a )?(?:class action|lawsuit))\b', re.I)
+FILED_CASE = re.compile(r'\b(?:filed (?:a|an|the|new|proposed|class action)?\s*(?:lawsuit|complaint|case|action|suit)|lawsuit (?:was |has been )?filed|new(?:ly)? filed (?:lawsuit|complaint)|files (?:a|an|new|class action)?\s*(?:lawsuit|complaint|suit)|(?:has been |was )?sued|suing|new lawsuit|class[ -]?action lawsuit (?:against|targets)|complaint (?:was |has been )?filed)\b', re.I)
 
 
-def get(url: str, *, token: str = '', timeout: int = 30) -> bytes:
-    headers = {'User-Agent': AGENT, 'Accept': 'application/json, application/rss+xml, application/xml'}
+def get(url: str, *, token: str = '', timeout: int = 20) -> bytes:
+    headers = {'User-Agent': AGENT, 'Accept': 'application/json, application/rss+xml, application/xml, text/html'}
     if token:
         headers['Authorization'] = 'Token ' + token
     req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req,timeout=timeout) as r:
-        if r.status != 200:
-            raise ValueError('HTTP '+str(r.status))
-        return r.read(4_000_000)
+    with urllib.request.urlopen(req, timeout=timeout) as response:
+        if response.status != 200:
+            raise ValueError(f'HTTP {response.status}')
+        return response.read(4_000_000)
 
 
 def as_text(s):
-    return re.sub(r'\s+',' ',html.unescape(re.sub(r'<[^>]+>',' ',str(s or '')))).strip()
+    return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', str(s or '')))).strip()
 
 
 def short(s, limit=500):
-    s=as_text(s)
-    return s[:limit].rstrip() + ('…' if len(s)>limit else '')
+    s = as_text(s)
+    return s[:limit].rstrip() + ('…' if len(s) > limit else '')
 
 
 def case_category(s):
-    s=(s or '').lower()
-    if any(w in s for w in ('antitrust','price fix','monopol','competition')):
+    s = (s or '').lower()
+    if any(w in s for w in ('antitrust', 'price fix', 'monopol', 'competition', 'collusion')):
         return 'Antitrust'
-    if any(w in s for w in ('securit','shareholder','exchange act')):
+    if any(w in s for w in ('securit', 'shareholder', 'exchange act', 'investors')):
         return 'Securities'
-    if any(w in s for w in ('patent','copyright','trademark','intellectual property')):
+    if any(w in s for w in ('patent', 'copyright', 'trademark', 'intellectual property')):
         return 'IP'
-    if any(w in s for w in ('employment','labor','discrimination','wage')):
+    if any(w in s for w in ('employment', 'labor', 'discrimination', 'wage')):
         return 'Employment'
     return 'Other Litigation'
 
 
 def parse_date(raw):
-    if not raw:
-        return None
-    candidate=str(raw)[:10]
     try:
-        dt.date.fromisoformat(candidate)
-        return candidate
-    except ValueError:
+        date = str(raw)[:10]
+        dt.date.fromisoformat(date)
+        return date
+    except (TypeError, ValueError):
         return None
+
+
+def stable_id(prefix, *pieces):
+    return prefix + hashlib.sha256('|'.join(str(p).strip().lower() for p in pieces).encode()).hexdigest()[:16]
 
 
 def courtlistener(token):
     if not token:
-        raise RuntimeError('COURTLISTENER_TOKEN not configured')
-    # Party-name field limits accidental hits from pleadings simply mentioning SK hynix.
-    params=urllib.parse.urlencode({'q': USER_QUERY, 'type':'d', 'order_by':'dateFiled desc'})
-    url='https://www.courtlistener.com/api/rest/v4/search/?'+params
-    payload=json.loads(get(url,token=token))
-    if not isinstance(payload.get('results'),list):
-        raise ValueError('CourtListener response missing results')
-    out=[]
-    for r in payload['results']:
-        docket_id=r.get('docket_id') or r.get('docketId') or r.get('id')
-        if not docket_id:
-            continue
-        caption=as_text(r.get('caseName') or r.get('case_name') or r.get('caseNameFull') or '')
-        docket_no=as_text(r.get('docketNumber') or r.get('docket_number') or '')
-        court=as_text(r.get('court') or r.get('court_id') or 'Federal court')
-        case_url=r.get('absolute_url') or r.get('absoluteUrl') or ''
-        case_url=urllib.parse.urljoin('https://www.courtlistener.com/',case_url) if case_url.startswith('/') else case_url
-        if not (case_url.startswith('https://www.courtlistener.com/') or case_url.startswith('https://courtlistener.com/')):
-            case_url=f'https://www.courtlistener.com/?type=d&q={urllib.parse.quote("docket_id:"+str(docket_id))}'
-        # CourtListener docket metadata represents a matching indexed result; source is linked.
-        out.append({
-            'id':'cl-'+str(docket_id),'tracker':'cases',
-            'title':caption or f'Federal docket {docket_no or docket_id}',
-            'entity':'SK hynix / subsidiary (party-name search match; confirm on docket)',
-            'date':parse_date(r.get('dateFiled') or r.get('date_filed')),
-            'firstSeen':DATE,'category':case_category(caption+' '+str(r.get('suitNature',''))),
-            'status':'Docket match — review',
-            'forum':court+((' · '+docket_no) if docket_no else ''),
-            'firm':'Not established',
-            'summary':'Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.',
-            'scope':'U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.',
-            'sources':[{'label':'CourtListener federal docket','url':case_url}],
-            'baseline':False,
-        })
-    return out
+        raise RuntimeError('COURTLISTENER_TOKEN not configured (federal docket search inactive)')
+    out = {}
+    successes, errors = 0, []
+    for query in COURT_QUERIES:
+        url = 'https://www.courtlistener.com/api/rest/v4/search/?' + urllib.parse.urlencode(
+            {'q': query, 'type': 'd', 'order_by': 'dateFiled desc'})
+        for page in range(MAX_COURTLISTENER_PAGES):
+            try:
+                payload = json.loads(get(url, token=token))
+                rows = payload.get('results')
+                if not isinstance(rows, list):
+                    raise ValueError('CourtListener response missing results')
+                successes += 1
+                for r in rows:
+                    docket_id = r.get('docket_id') or r.get('docketId') or r.get('id')
+                    if not docket_id:
+                        continue
+                    caption = as_text(r.get('caseName') or r.get('case_name') or r.get('caseNameFull') or '')
+                    docket_no = as_text(r.get('docketNumber') or r.get('docket_number') or '')
+                    court = as_text(r.get('court') or r.get('court_id') or 'Federal court')
+                    case_url = r.get('absolute_url') or r.get('absoluteUrl') or ''
+                    case_url = urllib.parse.urljoin('https://www.courtlistener.com/', case_url)
+                    if urllib.parse.urlsplit(case_url).hostname not in ('www.courtlistener.com', 'courtlistener.com'):
+                        case_url = 'https://www.courtlistener.com/?type=d&q=' + urllib.parse.quote('docket_id:' + str(docket_id))
+                    out['cl-' + str(docket_id)] = {
+                        'id': 'cl-' + str(docket_id), 'tracker': 'cases',
+                        'title': caption or f'Federal docket {docket_no or docket_id}',
+                        'entity': 'SK hynix or subsidiary (party-query result; verify exact party and role)',
+                        'date': parse_date(r.get('dateFiled') or r.get('date_filed')),
+                        'firstSeen': DATE, 'category': case_category(caption + ' ' + str(r.get('suitNature', ''))),
+                        'status': 'Docket match — review',
+                        'forum': court + ((' · ' + docket_no) if docket_no else ''),
+                        'firm': 'Not established',
+                        'summary': 'Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.',
+                        'scope': 'U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.',
+                        'sources': [{'label': 'CourtListener federal docket', 'url': case_url}], 'baseline': False,
+                    }
+                next_url = payload.get('next')
+                if not next_url:
+                    break
+                parsed = urllib.parse.urlsplit(next_url)
+                if parsed.scheme != 'https' or parsed.hostname not in ('www.courtlistener.com', 'courtlistener.com'):
+                    raise ValueError('CourtListener pagination refused off-domain link')
+                url = next_url
+            except (ValueError, RuntimeError, urllib.error.URLError, TimeoutError) as exc:
+                errors.append(short(f'{query} page {page + 1}: {exc}', 150))
+                break
+    if not successes:
+        raise RuntimeError('All CourtListener searches failed: ' + '; '.join(errors))
+    return list(out.values()), errors
 
 
 def rss_articles(xml_bytes):
-    root=ET.fromstring(xml_bytes)
+    root = ET.fromstring(xml_bytes)
     for item in root.findall('.//item'):
         def tag(name):
-            t=item.find(name)
+            t = item.find(name)
             return (t.text or '') if t is not None else ''
-        yield dict(title=as_text(tag('title')),desc=as_text(tag('description')),
-                   link=tag('link').strip(),published=tag('pubDate'),
+        yield dict(title=as_text(tag('title')), desc=as_text(tag('description')),
+                   link=tag('link').strip(), published=tag('pubDate'),
                    publisher=as_text(tag('source')))
 
 
+def publication_date(article):
+    try:
+        return email.utils.parsedate_to_datetime(article.get('published', '')).date().isoformat()
+    except (TypeError, ValueError):
+        return None
+
+
 def solicitation_record(article):
-    title=article['title']; desc=article['desc']; link=article['link']
-    combined=title+' '+desc
+    title, desc, link = article['title'], article['desc'], article['link']
+    combined = title + ' ' + desc
     if not (ALIASES.search(combined) and LEGAL.search(combined) and SOLICIT.search(combined)):
         return None
     if not link.startswith('https://'):
         return None
-    # RSS can contain reporting rather than direct plaintiff-firm outreach.
-    # Keep the status explicitly unverified.
-    try:
-        when=email.utils.parsedate_to_datetime(article['published']).date().isoformat()
-    except (TypeError,ValueError):
-        when=None
-    title=re.sub(r'\s+-\s+[^-]{2,80}$','',title) or title
-    publisher=article['publisher'] or 'Public news/press-release feed'
-    identity=(title.lower()+'|'+str(when)).encode('utf-8')
-    key=hashlib.sha256(identity).hexdigest()[:16]
-    category=case_category(combined)
-    if category=='Other Litigation' and re.search(r'investor|shareholder|securities',combined,re.I):
-        category='Securities'
-    return {'id':'news-'+key,'tracker':'solicitations','title':short(title,200),
-            'entity':'SK hynix (reporting/announcement match)', 'date':when,
-            'firstSeen':DATE, 'category':category,
-            'status':'Unverified solicitation lead',
-            'forum':'Public announcement or media report',
-            'firm':publisher,
-            'summary':short(desc or title,500)+' Review original publication to determine if a plaintiff firm is actually soliciting clients. A news report does not imply that a lawsuit was filed.',
-            'scope':'Automated RSS discovery; not verified against court records or direct firm website.',
-            'sources':[{'label':'News/press-release source via Google News','url':link}],
-            'baseline':False}
+    when = publication_date(article)
+    clean_title = re.sub(r'\s+-\s+[^-]{2,80}$', '', title) or title
+    publisher = article.get('publisher') or 'Public news/press-release feed'
+    category = case_category(combined)
+    return {'id': stable_id('news-', clean_title, when), 'tracker': 'solicitations',
+            'title': short(clean_title, 200), 'entity': 'SK hynix or subsidiary (unverified reference)',
+            'date': when, 'firstSeen': DATE, 'category': category,
+            'status': 'Unverified solicitation lead', 'forum': 'Public announcement or media report',
+            'firm': publisher,
+            'summary': short(desc or title, 450) + ' Check the original publication for a direct client solicitation; a news article does not prove a filing.',
+            'scope': 'Google News RSS discovery; not a court docket or verified firm outreach.',
+            'sources': [{'label': 'News/press-release source via Google News', 'url': link}], 'baseline': False}
 
 
-def news_feed():
-    results={}
-    successful=0
-    errors=[]
-    for q in RSS_QUERIES:
-        url='https://news.google.com/rss/search?'+urllib.parse.urlencode({'q':q,'hl':'en-US','gl':'US','ceid':'US:en'})
+def case_news_record(article):
+    title, desc, link = article['title'], article['desc'], article['link']
+    combined = title + ' ' + desc
+    if not (ALIASES.search(combined) and FILED_CASE.search(combined) and link.startswith('https://')):
+        return None
+    when = publication_date(article)
+    # A news report is deliberately NOT a confirmed filing, even if the headline says "filed".
+    low = combined.lower()
+    forum = 'Reported state-court proceeding — unverified' if 'state court' in low or 'superior court' in low else 'Court and filing jurisdiction unverified'
+    return {'id': stable_id('filingnews-', title, when), 'tracker': 'cases',
+            'title': short(title, 200), 'entity': 'SK hynix or subsidiary (media reference; verify role)',
+            'date': when, 'firstSeen': DATE, 'category': case_category(combined),
+            'status': 'Unverified filing report', 'forum': forum,
+            'firm': article.get('publisher') or 'Public news source',
+            'summary': short(desc or title, 450) + ' This is a media-source lead; verify court, docket number, party role and original filing.',
+            'scope': 'May concern federal or state court; NOT identified from a court docket.',
+            'sources': [{'label': 'Media filing report via Google News', 'url': link}], 'baseline': False}
+
+
+def rss_feed(kind):
+    results, errors, successes = {}, [], 0
+    for query in RSS_QUERIES[kind]:
+        url = 'https://news.google.com/rss/search?' + urllib.parse.urlencode({'q': query, 'hl': 'en-US', 'gl': 'US', 'ceid': 'US:en'})
         try:
             for article in rss_articles(get(url)):
-                found=solicitation_record(article)
+                found = case_news_record(article) if kind == 'case_news' else solicitation_record(article)
                 if found:
-                    results[found['id']]=found
-            successful+=1
-        except (urllib.error.URLError,ValueError,ET.ParseError,TimeoutError) as exc:
-            errors.append(f'{q}: {str(exc)[:150]}')
-    if not successful:
-        raise RuntimeError('No Google News RSS sources could be retrieved: '+'; '.join(errors))
-    return list(results.values()),errors
+                    results[found['id']] = found
+            successes += 1
+        except (urllib.error.URLError, ValueError, ET.ParseError, TimeoutError) as exc:
+            errors.append(short(f'{query}: {exc}', 180))
+    if not successes:
+        raise RuntimeError('All ' + kind + ' RSS queries failed: ' + '; '.join(errors))
+    return list(results.values()), errors
+
+
+class ListingParser(HTMLParser):
+    """Extract text-bearing anchors and HTML table rows, without crawling links."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.anchors, self.rows = [], []
+        self._link = None
+        self._row = None
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == 'tr':
+            self._row = {'parts': [], 'urls': []}
+        if tag == 'a':
+            self._link = {'url': attrs.get('href', ''), 'parts': []}
+            if self._row is not None:
+                self._row['urls'].append(attrs.get('href', ''))
+
+    def handle_data(self, data):
+        if self._link is not None:
+            self._link['parts'].append(data)
+        if self._row is not None:
+            self._row['parts'].append(data)
+
+    def handle_endtag(self, tag):
+        if tag == 'a' and self._link is not None:
+            self.anchors.append((as_text(' '.join(self._link['parts'])), self._link['url']))
+            self._link = None
+        if tag == 'tr' and self._row is not None:
+            self.rows.append((as_text(' '.join(self._row['parts'])), self._row['urls']))
+            self._row = None
+
+
+def direct_firm_records(html_bytes, firm, base_url):
+    parser = ListingParser()
+    parser.feed(html_bytes.decode('utf-8', errors='replace'))
+    candidates = []
+    for label, href in parser.anchors:
+        if ALIASES.search(label + ' ' + href):
+            candidates.append((label, href))
+    for label, hrefs in parser.rows:
+        if ALIASES.search(label):
+            # A row often contains a company name in one cell and "Learn More" in a separate link.
+            for href in hrefs[:3]:
+                candidates.append((label, href))
+    results = {}
+    base_host = urllib.parse.urlsplit(base_url).hostname
+    for label, href in candidates:
+        url = urllib.parse.urljoin(base_url, href)
+        parsed = urllib.parse.urlsplit(url)
+        if parsed.scheme != 'https' or parsed.hostname != base_host or url == base_url:
+            continue
+        label = short(label or 'SK hynix firm case listing', 180)
+        rec_id = stable_id('firm-', url)
+        results[rec_id] = {
+            'id': rec_id, 'tracker': 'solicitations', 'title': label,
+            'entity': 'SK hynix / related name (firm listing match; review)',
+            'date': None, 'firstSeen': DATE, 'category': case_category(label),
+            'status': 'Unverified firm website lead', 'forum': 'Plaintiff-firm public website',
+            'firm': firm,
+            'summary': 'Company or ticker match found directly on a public plaintiff-firm case/investigation listing. Review the linked page to determine the client solicitation, litigation posture, and case status.',
+            'scope': 'Direct listing-page discovery; firm websites may use JavaScript and not expose all entries in HTML.',
+            'sources': [{'label': 'Plaintiff-firm website', 'url': url}], 'baseline': False,
+        }
+    return list(results.values())
+
+
+def robots_allowed(url):
+    """Fail closed when robots rules cannot be retrieved; no CAPTCHA or access bypass."""
+    origin = urllib.parse.urlsplit(url)
+    robots_url = f'{origin.scheme}://{origin.netloc}/robots.txt'
+    try:
+        text = get(robots_url, timeout=12).decode('utf-8', errors='replace')
+    except urllib.error.HTTPError as exc:
+        if exc.code == 404:  # robots.txt absent: no robots restrictions declared
+            return True
+        raise RuntimeError(f'robots.txt returned HTTP {exc.code}') from exc
+    except (OSError, ValueError, TimeoutError) as exc:
+        raise RuntimeError(f'robots.txt unavailable: {exc}') from exc
+    rules = urllib.robotparser.RobotFileParser()
+    rules.parse(text.splitlines())
+    return rules.can_fetch(AGENT, url)
+
+
+def firm_websites():
+    results, errors, successes = {}, [], 0
+    for firm, url in FIRM_PAGES:
+        try:
+            if not robots_allowed(url):
+                raise RuntimeError('robots.txt disallows automatic fetch')
+            matches = direct_firm_records(get(url), firm, url)
+            successes += 1
+            for record in matches:
+                results[record['id']] = record
+        except (ValueError, RuntimeError, urllib.error.URLError, TimeoutError) as exc:
+            errors.append(f'{firm}: {short(exc, 140)}')
+    if not successes:
+        raise RuntimeError('No public plaintiff-firm listing could be retrieved: ' + '; '.join(errors))
+    return list(results.values()), errors
 
 
 def main():
-    payload=json.loads(DATA_FILE.read_text(encoding='utf-8'))
-    existing={r['id']:r for r in payload.get('records',[])}
-    runs=payload.setdefault('runs',{})
-    results={}
-    for tracker,fn in [('cases',lambda:courtlistener(os.environ.get('COURTLISTENER_TOKEN',''))),
-                       ('solicitations',news_feed)]:
+    payload = json.loads(DATA_FILE.read_text(encoding='utf-8'))
+    existing = {r['id']: r for r in payload.get('records', [])}
+    runs = payload.setdefault('runs', {})
+    tasks = [
+        ('cases', lambda: courtlistener(os.environ.get('COURTLISTENER_TOKEN', ''))),
+        ('case_news', lambda: rss_feed('case_news')),
+        ('solicitations', lambda: rss_feed('solicitations')),
+        ('law_firms', firm_websites),
+    ]
+    for kind, fetcher in tasks:
         try:
-            value=fn()
-            matches,errors=value if tracker=='solicitations' else (value,[])
-            for new in matches:
-                if new['id'] in existing:
-                    # Preserve the original firstSeen and any previous manual review.
-                    new['firstSeen']=existing[new['id']].get('firstSeen',DATE)
-                    if existing[new['id']].get('status') in ('Confirmed filing','Reviewed solicitation'):
-                        new['status']=existing[new['id']]['status']
-                existing[new['id']]=new
-            runs[tracker]={'lastSuccessAt':STAMP,'lastAttemptAt':STAMP,
-                           'outcome':'partial' if errors else 'success',
-                           'summary':f'{len(matches)} source matches this run, {len(errors)} feed failures. Automated matches require review.'}
-            print(f'{tracker}: {len(matches)} matches, {len(errors)} feed errors')
-        except (ValueError,RuntimeError,urllib.error.URLError,TimeoutError,json.JSONDecodeError) as exc:
-            previous=runs.get(tracker,{})
-            runs[tracker]={'lastSuccessAt':previous.get('lastSuccessAt'),
-                           'lastAttemptAt':STAMP, 'outcome':'failed','summary':str(exc)[:240]}
-            print(f'{tracker}: unavailable: {exc}',file=sys.stderr)
-    payload['records']=sorted(existing.values(),key=lambda r:(r.get('date') or '',r['id']),reverse=True)[:1200]
-    case_ok=runs.get('cases',{}).get('outcome')=='success'
-    news_ok=runs.get('solicitations',{}).get('outcome') in ('success','partial')
-    if case_ok and news_ok:
-        note='Automated public-source checks completed. New matches are leads, not independently verified legal conclusions.'
-    elif news_ok:
-        note='Public solicitation feeds updated; CourtListener federal docket monitoring is unavailable or not configured.'
-    elif case_ok:
-        note='Federal docket search updated; solicitation news feeds unavailable.'
-    else:
-        note='Automated source checks failed or are not configured; the dashboard retains its saved records.'
-    payload['monitoring']={'deployed':True,'source':'automated-public-feeds','lastAttemptAt':STAMP,'note':note}
-    DATA_FILE.write_text(json.dumps(payload,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-    # Never mark the dashboard fully connected merely because execution finished.
-    if not (case_ok or news_ok):
-        return 2
-    return 0
+            matches, errors = fetcher()
+            for found in matches:
+                if found['id'] in existing:
+                    found['firstSeen'] = existing[found['id']].get('firstSeen', DATE)
+                    if existing[found['id']].get('status') in ('Confirmed filing', 'Reviewed solicitation'):
+                        found['status'] = existing[found['id']]['status']
+                existing[found['id']] = found
+            runs[kind] = {'lastSuccessAt': STAMP, 'lastAttemptAt': STAMP,
+                          'outcome': 'partial' if errors else 'success',
+                          'summary': f'{len(matches)} matched records; {len(errors)} source failures. Leads require review.'}
+            print(f'{kind}: {len(matches)} matches, {len(errors)} source failures')
+        except (ValueError, RuntimeError, urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
+            previous = runs.get(kind, {})
+            runs[kind] = {'lastSuccessAt': previous.get('lastSuccessAt'), 'lastAttemptAt': STAMP,
+                          'outcome': 'failed', 'summary': short(exc, 260)}
+            print(f'{kind}: unavailable: {exc}', file=sys.stderr)
+    payload['records'] = sorted(existing.values(), key=lambda r: (r.get('date') or '', r['id']), reverse=True)[:1500]
+    active = [k for k in ('cases', 'case_news', 'solicitations', 'law_firms') if runs.get(k, {}).get('outcome') in ('success', 'partial')]
+    note = 'Free-source discovery active: ' + ', '.join(active) if active else 'All monitored sources failed; showing saved records.'
+    if 'cases' not in active:
+        note += '. Federal CourtListener docket search inactive; add COURTLISTENER_TOKEN.'
+    note += ' State trial-court filing portals are not automatically searched.'
+    payload['monitoring'] = {'deployed': True, 'source': 'zero-cost-public-source-discovery',
+                             'lastAttemptAt': STAMP, 'note': note}
+    DATA_FILE.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+    return 0 if active else 2
 
-if __name__=='__main__':
+
+if __name__ == '__main__':
     sys.exit(main())
