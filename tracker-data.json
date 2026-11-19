@@ -22,25 +22,37 @@
       "baseline": false
     },
     {
-      "id": "news-57f6f85837a5e2a5",
+      "id": "levi-korsinsky-securities-2026-11",
       "tracker": "solicitations",
-      "title": "SK hynix Inc. Investigation Notice: Levi & Korsinsky Notifies Investors of Pending Investigation Into SK hynix Inc. (SKHY)",
-      "entity": "SK hynix (reporting/announcement match)",
+      "title": "Levi & Korsinsky — SK hynix securities investigation",
+      "entity": "SK hynix Inc.",
       "date": "2026-11-18",
       "firstSeen": "2026-11-19",
       "category": "Securities",
-      "status": "Unverified solicitation lead",
-      "forum": "Public announcement or media report",
-      "firm": "ACCESS Newswire",
-      "summary": "SK hynix Inc. Investigation Notice: Levi & Korsinsky Notifies Investors of Pending Investigation Into SK hynix Inc. (SKHY) ACCESS Newswire Review original publication to determine if a plaintiff firm is actually soliciting clients. A news report does not imply that a lawsuit was filed.",
-      "scope": "Automated RSS discovery; not verified against court records or direct firm website.",
+      "status": "Investigation",
+      "forum": "Prospective U.S. securities litigation",
+      "firm": "Levi & Korsinsky",
+      "summary": "Public investigation page concerning disclosures about the DRAM price-fixing litigation and related exposure. Publication date is not confirmed. This is a solicitation, not confirmation of a filed securities action.",
+      "scope": "SK hynix investors; class period not confirmed. Related notices and firm links consolidated as one potential campaign; verify that each source concerns the same matter.",
       "sources": [
+        {
+          "label": "Firm investigation page",
+          "url": "https://zlk.com/investigations/sk-hynix-inc-investigation-skhy"
+        },
         {
           "label": "News/press-release source via Google News",
           "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNa1RrbVRvVUhxMkhtcG10bGJGY3c4Nng2VmlBRjg1dTUyUGJtUFpia29MMmd1WUhjbGlxMEl6M1IzbjFRSUpGWENtUVFvejVZZmpJb3R5RGJpRFVVNGdEZHpsRkxxeHVIYmVHczRyWXB0SmtCNTFyRHZfeFhfaXlva0hGb0ZLeldHMHF1bnZfVEJqd01RTkpRWEJYNVNVN3JrWk5vMFp2c0JfVVJ3MnB4dFBSMGhZWUFWTldPX3dleEw4S2tnNjJnV19wczhRNmdseUFXeWdJcVNrSzE2emNoS3ZEXzQ?oc=5"
         }
       ],
-      "baseline": false
+      "baseline": true,
+      "campaignTopic": "securities-investigation",
+      "mergedRecordIds": [
+        "levi-korsinsky-securities-2026-11",
+        "news-57f6f85837a5e2a5"
+      ],
+      "relatedHeadlines": [
+        "SK hynix Inc. Investigation Notice: Levi & Korsinsky Notifies Investors of Pending Investigation Into SK hynix Inc. (SKHY)"
+      ]
     },
     {
       "id": "ktmc-securities-2026-11",
@@ -2381,51 +2393,30 @@
         }
       ],
       "baseline": false
-    },
-    {
-      "id": "levi-korsinsky-securities-2026-11",
-      "tracker": "solicitations",
-      "title": "Levi & Korsinsky",
-      "entity": "SK hynix Inc.",
-      "date": null,
-      "firstSeen": "2026-11-19",
-      "category": "Securities",
-      "status": "Investigation",
-      "forum": "Prospective U.S. securities litigation",
-      "firm": "Levi & Korsinsky, LLP",
-      "summary": "Public investigation page concerning disclosures about the DRAM price-fixing litigation and related exposure. Publication date is not confirmed. This is a solicitation, not confirmation of a filed securities action.",
-      "scope": "SK hynix investors; class period not confirmed.",
-      "sources": [
-        {
-          "label": "Firm investigation page",
-          "url": "https://zlk.com/investigations/sk-hynix-inc-investigation-skhy"
-        }
-      ],
-      "baseline": true
     }
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-19T19:28:44Z",
-      "lastAttemptAt": "2026-11-19T19:28:44Z",
+      "lastSuccessAt": "2026-11-19T19:30:59Z",
+      "lastAttemptAt": "2026-11-19T19:30:59Z",
       "outcome": "success",
       "summary": "80 matched records; 0 source failures. Leads require review."
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-19T19:28:44Z",
-      "lastAttemptAt": "2026-11-19T19:28:44Z",
-      "outcome": "success",
-      "summary": "6 matched records; 0 source failures. Leads require review."
+      "lastSuccessAt": "2026-11-19T19:30:59Z",
+      "lastAttemptAt": "2026-11-19T19:30:59Z",
+      "outcome": "partial",
+      "summary": "5 matched records; 2 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-19T19:28:44Z",
-      "lastAttemptAt": "2026-11-19T19:28:44Z",
+      "lastSuccessAt": "2026-11-19T19:30:59Z",
+      "lastAttemptAt": "2026-11-19T19:30:59Z",
       "outcome": "success",
       "summary": "21 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-19T19:28:44Z",
-      "lastAttemptAt": "2026-11-19T19:28:44Z",
+      "lastSuccessAt": "2026-11-19T19:30:59Z",
+      "lastAttemptAt": "2026-11-19T19:30:59Z",
       "outcome": "success",
       "summary": "1 matched records; 0 source failures. Leads require review."
     }
@@ -2434,7 +2425,7 @@
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-19T19:28:44Z",
+    "lastAttemptAt": "2026-11-19T19:30:59Z",
     "note": "Free-source discovery active: cases, case_news, solicitations, law_firms State trial-court filing portals are not automatically searched."
   }
 }
