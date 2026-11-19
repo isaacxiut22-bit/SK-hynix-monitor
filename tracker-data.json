@@ -1,46 +1,25 @@
 {
   "records": [
     {
-      "id": "candce-26-06345",
-      "tracker": "cases",
-      "title": "Garciaguirre et al. v. Samsung Electronics Co., Ltd. et al.",
-      "entity": "SK hynix entities; Samsung; Micron",
-      "date": "2026-06-25",
-      "firstSeen": "2026-11-19",
-      "category": "Antitrust",
-      "status": "Confirmed filing",
-      "forum": "N.D. California · 5:26-cv-06345",
-      "firm": "Bathaee Dunne LLP",
-      "summary": "Putative class action alleging coordinated restrictions on conventional DRAM supply and pricing. The court denied the defendants’ motion to dismiss on November 14, 2026. This is an existing baseline case, not a newly filed matter.",
-      "scope": "Consumers and small businesses; federal antitrust and state-law claims.",
-      "sources": [
-        {
-          "label": "Court order · November 14, 2026",
-          "url": "https://cases.justia.com/federal/district-courts/california/candce/5%3A2026cv06345/472931/68/0.pdf"
-        }
-      ],
-      "baseline": true
-    },
-    {
-      "id": "ktmc-securities-2026-11",
+      "id": "news-b4bb64d4f3192b44",
       "tracker": "solicitations",
-      "title": "Kessler Topaz Meltzer & Check",
-      "entity": "SK hynix Inc.",
-      "date": "2026-11-18",
+      "title": "NASDAQ: SKHY Investigation Alert: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz Meltzer & Check, LLP",
+      "entity": "SK hynix (reporting/announcement match)",
+      "date": "2026-11-19",
       "firstSeen": "2026-11-19",
       "category": "Securities",
-      "status": "Investigation",
-      "forum": "Prospective U.S. securities litigation",
-      "firm": "Kessler Topaz Meltzer & Check, LLP",
-      "summary": "Firm announcement investigating potential federal securities-law violations on behalf of investors, citing reports of the DRAM dismissal ruling. The announcement does not establish that a securities complaint has been filed.",
-      "scope": "Investors who acquired SK hynix securities and experienced significant losses; class period not confirmed.",
+      "status": "Unverified solicitation lead",
+      "forum": "Public announcement or media report",
+      "firm": "Morningstar",
+      "summary": "NASDAQ: SKHY Investigation Alert: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz Meltzer & Check, LLP Morningstar Review original publication to determine if a plaintiff firm is actually soliciting clients. A news report does not imply that a lawsuit was filed.",
+      "scope": "Automated RSS discovery; not verified against court records or direct firm website.",
       "sources": [
         {
-          "label": "Firm release · PR Newswire",
-          "url": "https://www.prnewswire.com/news-releases/nasdaq-skhy-investigation-alert-sk-hynix-inc-investors-are-encouraged-to-contact-kessler-topaz-meltzer--check-llp-302944571.html"
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQdWg0WlRndE9aY0hVTUVHdngzcURnR1hkazNrMGExOFZicXRQQmJzSHI2WTl2cmZXcjJUODRFeXNUQkV6cm90aTFkRDlnU3ZjSV9aQ1JhTkpncXFVa1BHQkx6c3pOMWpvM2dkd0NodFNNZXNrLVpKSlFvWEFZN0FZT2xwajhEb0xCYnhpZEdHREozMnFEWWw4YXdFRzg5Nm1mZ09hQS1GV0RWNE1xZFFWLWVRLUJJQW1yNGdTVURaVlRRbjZEYXBXTUdidnFidmM1cmc3ZGh6bzN4V2cxZk00T280R1JudVJMRzVpLUVhci1hck93Q3RKMnNFdjVDUG8zRlNZ?oc=5"
         }
       ],
-      "baseline": true
+      "baseline": false
     },
     {
       "id": "rosen-securities-2026-11",
@@ -64,6 +43,195 @@
       "baseline": true
     },
     {
+      "id": "news-57f6f85837a5e2a5",
+      "tracker": "solicitations",
+      "title": "SK hynix Inc. Investigation Notice: Levi & Korsinsky Notifies Investors of Pending Investigation Into SK hynix Inc. (SKHY)",
+      "entity": "SK hynix (reporting/announcement match)",
+      "date": "2026-11-18",
+      "firstSeen": "2026-11-19",
+      "category": "Securities",
+      "status": "Unverified solicitation lead",
+      "forum": "Public announcement or media report",
+      "firm": "ACCESS Newswire",
+      "summary": "SK hynix Inc. Investigation Notice: Levi & Korsinsky Notifies Investors of Pending Investigation Into SK hynix Inc. (SKHY) ACCESS Newswire Review original publication to determine if a plaintiff firm is actually soliciting clients. A news report does not imply that a lawsuit was filed.",
+      "scope": "Automated RSS discovery; not verified against court records or direct firm website.",
+      "sources": [
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNa1RrbVRvVUhxMkhtcG10bGJGY3c4Nng2VmlBRjg1dTUyUGJtUFpia29MMmd1WUhjbGlxMEl6M1IzbjFRSUpGWENtUVFvejVZZmpJb3R5RGJpRFVVNGdEZHpsRkxxeHVIYmVHczRyWXB0SmtCNTFyRHZfeFhfaXlva0hGb0ZLeldHMHF1bnZfVEJqd01RTkpRWEJYNVNVN3JrWk5vMFp2c0JfVVJ3MnB4dFBSMGhZWUFWTldPX3dleEw4S2tnNjJnV19wczhRNmdseUFXeWdJcVNrSzE2emNoS3ZEXzQ?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "ktmc-securities-2026-11",
+      "tracker": "solicitations",
+      "title": "Kessler Topaz Meltzer & Check",
+      "entity": "SK hynix Inc.",
+      "date": "2026-11-18",
+      "firstSeen": "2026-11-19",
+      "category": "Securities",
+      "status": "Investigation",
+      "forum": "Prospective U.S. securities litigation",
+      "firm": "Kessler Topaz Meltzer & Check, LLP",
+      "summary": "Firm announcement investigating potential federal securities-law violations on behalf of investors, citing reports of the DRAM dismissal ruling. The announcement does not establish that a securities complaint has been filed.",
+      "scope": "Investors who acquired SK hynix securities and experienced significant losses; class period not confirmed.",
+      "sources": [
+        {
+          "label": "Firm release · PR Newswire",
+          "url": "https://www.prnewswire.com/news-releases/nasdaq-skhy-investigation-alert-sk-hynix-inc-investors-are-encouraged-to-contact-kessler-topaz-meltzer--check-llp-302944571.html"
+        }
+      ],
+      "baseline": true
+    },
+    {
+      "id": "news-463d44d479103c12",
+      "tracker": "solicitations",
+      "title": "Rosen Law Firm Encourages SK hynix Inc. Investors to Inquire About Securities Class Action Investigation - SKHY",
+      "entity": "SK hynix (reporting/announcement match)",
+      "date": "2026-11-17",
+      "firstSeen": "2026-11-19",
+      "category": "Securities",
+      "status": "Unverified solicitation lead",
+      "forum": "Public announcement or media report",
+      "firm": "Business Wire",
+      "summary": "Rosen Law Firm Encourages SK hynix Inc. Investors to Inquire About Securities Class Action Investigation - SKHY Business Wire Review original publication to determine if a plaintiff firm is actually soliciting clients. A news report does not imply that a lawsuit was filed.",
+      "scope": "Automated RSS discovery; not verified against court records or direct firm website.",
+      "sources": [
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQN3NVd3RsTkljUDRPOGNCa19tT3pnaFFKM2ZSZHNCcVZCX2ZuT3NSakVHV25QcDB4NjEyNzA0NlpsUmNhOWNBSER3bV9qejM5VFc1dGZUTkFBVDJtSEFrN0FTazdoLTFjU19qV1Y1TmlSXzhkWWFQN0FBOUdSSUplbWVhV0ZSVFllMnNKSW5RaE5IZGM0MHd2a2l3OXRJaW1JU3pnWHBfMEJOM2pGMnNhQmFPR3oyeTdrUXNzQ1hOcjJnNzd2Rk1vZ2RYaTU5a3RNQmw3Ym45Ti01WFJ4NkQ3SW9iZWZGQ2p1eDI3blJpNHNJS01nb2hBckVIcFg?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "news-f66fc96e45948479",
+      "tracker": "solicitations",
+      "title": "RAM Class Action Lawsuit Targets Samsung, SK Hynix, and Micron Over Alleged Price-Fixing Scheme",
+      "entity": "SK hynix (reporting/announcement match)",
+      "date": "2026-07-06",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Unverified solicitation lead",
+      "forum": "Public announcement or media report",
+      "firm": "https://www.lawnews.co.uk/",
+      "summary": "RAM Class Action Lawsuit Targets Samsung, SK Hynix, and Micron Over Alleged Price-Fixing Scheme https://www.lawnews.co.uk/ Review original publication to determine if a plaintiff firm is actually soliciting clients. A news report does not imply that a lawsuit was filed.",
+      "scope": "Automated RSS discovery; not verified against court records or direct firm website.",
+      "sources": [
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQRDdlbU81dE9UN3lSX3N4LUZvUzEzNFZpRmdsSUdLdDlVbjRwaFh0VFVEWjAyVzdic3pLOWxMQ0o4czQ1ZE1CNmR3dkNpbFhmZFZaSzBkWW5HQzVhRnM2U0NITXhwS01pT1Eyd0FCd3NJSzRZbDc0ckpjaUtyNWVaaUVmXzl5bl9ld2FrUTVDSDBjU0xDaUZaTkFLU3Rhc3p5VHNnNFBBV1JxNnFHUXRjT1BDYVhNc2F3QXRab1NCOVFvUElhUGMzMUJSdw?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "news-4ee78c4e984a0902",
+      "tracker": "solicitations",
+      "title": "Samsung, SK Hynix, Micron face antitrust class action lawsuit",
+      "entity": "SK hynix (reporting/announcement match)",
+      "date": "2026-07-03",
+      "firstSeen": "2026-11-19",
+      "category": "Antitrust",
+      "status": "Unverified solicitation lead",
+      "forum": "Public announcement or media report",
+      "firm": "Quartz",
+      "summary": "Samsung, SK Hynix, Micron face antitrust class action lawsuit Quartz Review original publication to determine if a plaintiff firm is actually soliciting clients. A news report does not imply that a lawsuit was filed.",
+      "scope": "Automated RSS discovery; not verified against court records or direct firm website.",
+      "sources": [
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNjBjMGc2eGtaRHpJdzdIeGlzenRFcnB2SlBBQm4xRy1kRF9KRkNlUEpSTWVSLUVfV0FFYmFIc0FjakVmSlpGODd4UDJMSG0ybFJMVWdNelF4WkI3aU92ZHVMcjBMQXprVzdUQnlyV1ZsQzFBc0tjZVpWQjZjM2l1dTJLeUI1bnNCRzN6ZDJPOTgtUQ?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "news-08860d5cc0e20f52",
+      "tracker": "solicitations",
+      "title": "Samsung, SK hynix, and Micron Hit With U.S. Price-Fixing Class Action Over Memory Shortage",
+      "entity": "SK hynix (reporting/announcement match)",
+      "date": "2026-06-30",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Unverified solicitation lead",
+      "forum": "Public announcement or media report",
+      "firm": "Tech Times",
+      "summary": "Samsung, SK hynix, and Micron Hit With U.S. Price-Fixing Class Action Over Memory Shortage Tech Times Review original publication to determine if a plaintiff firm is actually soliciting clients. A news report does not imply that a lawsuit was filed.",
+      "scope": "Automated RSS discovery; not verified against court records or direct firm website.",
+      "sources": [
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOcEx2N05xZk5zSzlxRE84UHAwa1lnaU9wRVN4OXlYQXlFNEZGVmZhLTJBWWFZZU0yT1l1VWJZTHNtVlVhSGE0QVpfVUZ2MEVSa09Pc1NBWENqcEFsT3F4b19mTGZsRTE3Z19EMFVERXFQSEtFblE2djB1NmJaOW1MMXlmdVdjY1Rrc0VnNTd3aWYzcUNfNllqX0lsTTZhcFVieHBxMV91eWZydk1wRmIxRUZXRnFlbGpsRm9IZmpyenRJc3JzTHp6WDNObnE?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "news-ea1f8419336d6432",
+      "tracker": "solicitations",
+      "title": "Memory Trio Samsung, SK Hynix & Micron Face Class Action Lawsuit As Prices Reach Historical High Due To Shortages",
+      "entity": "SK hynix (reporting/announcement match)",
+      "date": "2026-06-29",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Unverified solicitation lead",
+      "forum": "Public announcement or media report",
+      "firm": "Wccftech",
+      "summary": "Memory Trio Samsung, SK Hynix & Micron Face Class Action Lawsuit As Prices Reach Historical High Due To Shortages Wccftech Review original publication to determine if a plaintiff firm is actually soliciting clients. A news report does not imply that a lawsuit was filed.",
+      "scope": "Automated RSS discovery; not verified against court records or direct firm website.",
+      "sources": [
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPcGdoTjhyaWYybWszRTRVNDZCbF9yOUEtQ2V2OGJHc1U5Vy1EeHNlV3U2WTg0Z3E1Rlkzd2t6NEstRTM1NDVBT2ZONE96M2VlcFlyZGV5d1ZQNEhFdkJvdVhZaEozWkx6ejBvb1p2UUhVRWNOSVVZd1hCT09DY2FHekxDWUV4YzVYOVU00gGQAUFVX3lxTE5HamdhYUNOSEYtNEU4SXU1TWpWQnJLWHgta0VZV0xQR3h0ZjRQR21fR20wRk91SmxtNTVEUTJQNkZWX29mZ3YyRW1US2NnU2xHMTdQTXcwT1o3Z0Y4b0dCWXJYVGpqaUZwNnFlUXBYdVVEcE5pZHdwTC1DVDcyc1NUX3NSUzZQTk11LWVuZ1RpVw?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "candce-26-06345",
+      "tracker": "cases",
+      "title": "Garciaguirre et al. v. Samsung Electronics Co., Ltd. et al.",
+      "entity": "SK hynix entities; Samsung; Micron",
+      "date": "2026-06-25",
+      "firstSeen": "2026-11-19",
+      "category": "Antitrust",
+      "status": "Confirmed filing",
+      "forum": "N.D. California · 5:26-cv-06345",
+      "firm": "Bathaee Dunne LLP",
+      "summary": "Putative class action alleging coordinated restrictions on conventional DRAM supply and pricing. The court denied the defendants’ motion to dismiss on November 14, 2026. This is an existing baseline case, not a newly filed matter.",
+      "scope": "Consumers and small businesses; federal antitrust and state-law claims.",
+      "sources": [
+        {
+          "label": "Court order · November 14, 2026",
+          "url": "https://cases.justia.com/federal/district-courts/california/candce/5%3A2026cv06345/472931/68/0.pdf"
+        }
+      ],
+      "baseline": true
+    },
+    {
+      "id": "news-f9490bf0fb3e97e4",
+      "tracker": "solicitations",
+      "title": "SK hynix NAND Product Solutions Investor Alert: Kahn Swick & Foti, LLC Investigates Proposed Asset Sale Regarding SK hynix NAND Product Solutions Corp. d/b/a Solidigm",
+      "entity": "SK hynix (reporting/announcement match)",
+      "date": "2026-02-12",
+      "firstSeen": "2026-11-19",
+      "category": "Securities",
+      "status": "Unverified solicitation lead",
+      "forum": "Public announcement or media report",
+      "firm": "Business Wire",
+      "summary": "SK hynix NAND Product Solutions Investor Alert: Kahn Swick & Foti, LLC Investigates Proposed Asset Sale Regarding SK hynix NAND Product Solutions Corp. d/b/a Solidigm Business Wire Review original publication to determine if a plaintiff firm is actually soliciting clients. A news report does not imply that a lawsuit was filed.",
+      "scope": "Automated RSS discovery; not verified against court records or direct firm website.",
+      "sources": [
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNeDhwZWlrRjFiMFhqTHVqeFpJcGlmczgyVW9WS3RrVlZSZ25QckZFZ0MxUVhQOHNPRlMxSmdiRVB6MFBCSUg5bDd0T1JnMkNMN21ENTZKTlRla25SMnFuenRTdmVTUTVaRG1OSVl4RzVBd2J1dHF3cDR4VVBvT1U2SW5nQ181M0s4em9PWFMxVVRUbzczR2ZWR0VjdG1jS3N4UkZlUEVkeG5MdUlIazM3U1BpS3VoLXh2WEpSQVhucWEyS2lBRDZHQW1kN3RoeFJEUUxwN25WeTlNS2tIemhCS1l6WVlERG13RWJnckRFM1h5RDFqbURMUjdoSUhzUzRqWEtTUlV6cV9nQUR3OG1XcGp2VUNvNF9CQWRENU1pcUxMMmNpMjM5UnhZV3Y3UVlPa1BJNEw2ek4zVzZFV2c?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
       "id": "levi-korsinsky-securities-2026-11",
       "tracker": "solicitations",
       "title": "Levi & Korsinsky",
@@ -85,11 +253,25 @@
       "baseline": true
     }
   ],
-  "runs": {},
+  "runs": {
+    "cases": {
+      "lastSuccessAt": null,
+      "lastAttemptAt": "2026-11-19T18:14:23Z",
+      "outcome": "failed",
+      "summary": "COURTLISTENER_TOKEN not configured"
+    },
+    "solicitations": {
+      "lastSuccessAt": "2026-11-19T18:14:23Z",
+      "lastAttemptAt": "2026-11-19T18:14:23Z",
+      "outcome": "success",
+      "summary": "8 source matches this run, 0 feed failures. Automated matches require review."
+    }
+  },
   "storageReady": false,
   "monitoring": {
-    "deployed": false,
-    "source": "baseline",
-    "note": "Automated monitoring is not yet enabled. Deploy and enable the scheduled workflow; add CourtListener token for federal docket coverage."
+    "deployed": true,
+    "source": "automated-public-feeds",
+    "lastAttemptAt": "2026-11-19T18:14:23Z",
+    "note": "Public solicitation feeds updated; CourtListener federal docket monitoring is unavailable or not configured."
   }
 }
