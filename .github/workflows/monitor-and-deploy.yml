@@ -44,5 +44,8 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+      # GitHub's artifact API can briefly lag the successful upload on Pages deploys.
+      - name: Allow Pages artifact metadata to become available
+        run: sleep 30
       - id: deployment
         uses: actions/deploy-pages@v4
