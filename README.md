@@ -15,6 +15,8 @@ The GitHub Actions workflow (`.github/workflows/monitor-and-deploy.yml`) runs at
 | Google News RSS — plaintiff solicitation queries | Investor notices, investigations, potential class actions | Newswire syndications and false positives possible; verify with firm. |
 | Direct public plaintiff-firm pages | Kessler Topaz, Rosen Law, and Hagens Berman case/investigation listings | Only public visible HTML links, once per run, where robots.txt allows; JavaScript lists or disallowed fetches may yield no results. |
 
+**Solicitation deduplication:** Known plaintiff-firm campaigns are consolidated conservatively by identified firm, claim subject, and a 45-day announcement window. The source links, original publication titles, and earliest announcement date are preserved under one entry. A campaign remains an unverified lead unless independently reviewed. Unknown firms, distinct claim subjects and sufficiently separated campaigns stay separate. Deduplication runs on *every* refresh to prevent repeat RSS items from recreating duplicate entries.
+
 `runs.cases`, `runs.case_news`, `runs.solicitations`, and `runs.law_firms` track independent source outcomes (success, partial, failed). Prior successful timestamps are retained if a later run fails. Empty results on a source **do not** prove no new cases/solicitations.
 
 ## Free state-court portals (manual only)

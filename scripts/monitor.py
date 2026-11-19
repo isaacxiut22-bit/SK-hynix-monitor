@@ -349,6 +349,170 @@ def firm_websites():
     return list(results.values()), errors
 
 
+
+# Known plaintiff-firm names are recognized in the headline, identified counsel,
+# or direct listing. A wire-service publisher is *not* treated as the firm.
+FIRM_IDENTITIES = (
+    ('Kessler Topaz Meltzer & Check', r'kessler\s+topaz|\bktmc\b'),
+    ('Rosen Law Firm', r'\brosen\s+law\s+firm\b|\brosenlegal\b'),
+    ('Levi & Korsinsky', r'levi\s*(?:&|and)\s*korsinsky|\bzlk\.com\b'),
+    ('Hagens Berman', r'hagens\s+berman|\bhbsslaw\b'),
+    ('Kahn Swick & Foti', r'kahn\s+swick\s*(?:&|and)\s*foti'),
+)
+CAMPAIGN_WINDOW_DAYS = 45
+
+
+def solicitation_firm(record):
+    """Return a known firm only when its name appears in the record's own text."""
+    body = ' '.join(str(record.get(k) or '') for k in ('title', 'firm', 'summary'))
+    # Direct firm pages can identify counsel even when their anchor is generic.
+    body += ' ' + ' '.join(str(src.get('url') or '') for src in record.get('sources', []))
+    for name, pattern in FIRM_IDENTITIES:
+        if re.search(pattern, body, re.I):
+            return name
+    return None
+
+
+def solicitation_topic(record):
+    """Conservative campaign family. Ambiguous subjects are *not* merged."""
+    body = ' '.join(str(record.get(k) or '') for k in ('title', 'summary', 'forum'))
+    body += ' ' + ' '.join(str(src.get('url') or '') for src in record.get('sources', []))
+    body = body.lower()
+    if 'solidigm' in body and re.search(r'asset sale|proposed sale|transaction|acquisition|merger', body):
+        return 'solidigm-transaction'
+    if re.search(r'price[ -]?fix|antitrust|anti-competitive|collusion', body):
+        return 'dram-antitrust'
+    if re.search(r'data breach|privacy breach|personal information leak', body):
+        return 'data-breach'
+    if re.search(r'patent infringement|copyright infringement|trade secret', body):
+        return 'intellectual-property'
+    if re.search(r'employment discrimination|unpaid wages|wage theft', body):
+        return 'employment'
+    if re.search(r'\bfiled (?:a |an )?(?:securities )?class[ -]?action lawsuit\b', body):
+        return 'filed-securities-class-action'
+    if re.search(r'securit|shareholder|investors?|\bskhy\b|shareholder rights', body):
+        return 'securities-investigation'
+    return None
+
+
+def campaign_key(record):
+    """A match requires a recognized *soliciting firm*, company and specific claim type."""
+    if record.get('tracker') != 'solicitations':
+        return None
+    firm, topic = solicitation_firm(record), solicitation_topic(record)
+    if not firm or not topic:
+        return None
+    # SKHY by itself is used only as a company ticker in this feed; every feed
+    # match must already concern SK hynix. Separate Solidigm transaction topics.
+    return (firm, topic)
+
+
+def representative_priority(record):
+    """Prefer manually reviewed / original firm material over syndicated items."""
+    return (int(record.get('status') == 'Reviewed solicitation'),
+            int(bool(record.get('baseline'))),
+            int(record.get('status') not in ('Unverified solicitation lead',
+                                            'Unverified firm website lead')),
+            int(str(record.get('id', '')).startswith('firm-')))
+
+
+def combined_sources(records):
+    """Keep original release, syndications and firm listing, once per URL."""
+    seen, combined = set(), []
+    for record in records:
+        for source in record.get('sources', []):
+            url = str(source.get('url') or '').strip()
+            if not url or url in seen:
+                continue
+            seen.add(url)
+            combined.append({'label': str(source.get('label') or 'Source'), 'url': url})
+    return combined
+
+
+def merge_campaign(records, firm, topic):
+    """Combine one firm's closely related notices into one stable campaign card."""
+    ordered = sorted(records, key=lambda r: (representative_priority(r),
+                                              str(r.get('id') or '')), reverse=True)
+    primary = dict(ordered[0])  # preserve baseline ID and its reviewed status
+    primary['sources'] = combined_sources(ordered)
+    dates = [r.get('date') for r in records if parse_date(r.get('date'))]
+    first_seen = [r.get('firstSeen') for r in records if parse_date(r.get('firstSeen'))]
+    if dates:
+        primary['date'] = min(dates)  # first announcement, not latest syndication
+    if first_seen:
+        primary['firstSeen'] = min(first_seen)
+    primary['firm'] = firm
+    primary['campaignTopic'] = topic
+    primary['mergedRecordIds'] = sorted(set(
+        str(id_) for r in records for id_ in [r.get('id'), *(r.get('mergedRecordIds') or [])] if id_))
+    primary['relatedHeadlines'] = sorted(set(t for r in records
+                                             for t in ([*(r.get('relatedHeadlines') or [])] if r.get('campaignTopic') else [str(r.get('title') or '')])
+                                             if t and t != firm))
+    if topic == 'securities-investigation':
+        primary['title'] = firm + ' — SK hynix securities investigation'
+        primary['category'] = 'Securities'
+    elif topic == 'solidigm-transaction':
+        primary['title'] = firm + ' — Solidigm transaction investigation'
+        primary['category'] = 'Securities'
+    elif topic == 'dram-antitrust':
+        primary['title'] = firm + ' — SK hynix DRAM antitrust matter'
+        primary['category'] = 'Antitrust'
+    elif len(records) > 1:
+        primary['title'] = firm + ' — SK hynix ' + topic.replace('-', ' ')
+    if len(records) > 1 or len(primary['sources']) > 1:
+        suffix = ('Related notices and firm links consolidated as one potential campaign; '
+                  'verify that each source concerns the same matter.')
+        current_scope = str(ordered[0].get('scope') or '')
+        if suffix not in current_scope:  # idempotent across scheduled refreshes
+            primary['scope'] = (current_scope + ' ' + suffix).strip()
+    return primary
+
+
+def consolidate_solicitations(records):
+    """Deduplicate known-firm campaigns without collapsing unrelated litigation.
+
+    Uses firm + subject, plus a 45-day window for *dated* announcements. A
+    date-less direct firm listing joins only when there is a single matching
+    dated campaign; if multiple separate periods exist, it stays independent.
+    Unrecognized firms and vague subjects remain separate for human review.
+    """
+    groups, unchanged = {}, []
+    for record in records:
+        key = campaign_key(record)
+        if key:
+            groups.setdefault(key, []).append(record)
+        else:
+            unchanged.append(record)
+
+    for (firm, topic), members in groups.items():
+        dated, undated = [], []
+        for r in members:
+            (dated if parse_date(r.get('date')) else undated).append(r)
+        dated.sort(key=lambda r: (r['date'], r['id']))
+        clusters = []
+        for r in dated:
+            if clusters:
+                start = dt.date.fromisoformat(clusters[-1][0]['date'])
+                current = dt.date.fromisoformat(r['date'])
+                if (current - start).days <= CAMPAIGN_WINDOW_DAYS:
+                    clusters[-1].append(r)
+                    continue
+            clusters.append([r])
+        if len(clusters) == 1:
+            clusters[0].extend(undated)
+        elif not clusters and undated:
+            clusters = [undated]
+        else:
+            # Do not arbitrarily link a date-less listing to one of many campaigns.
+            clusters.extend([[r] for r in undated])
+        for cluster in clusters:
+            if len(cluster) > 1 or any(r.get('mergedRecordIds') for r in cluster):
+                unchanged.append(merge_campaign(cluster, firm, topic))
+            else:
+                unchanged.append(cluster[0])
+    return unchanged
+
+
 def main():
     payload = json.loads(DATA_FILE.read_text(encoding='utf-8'))
     existing = {r['id']: r for r in payload.get('records', [])}
@@ -377,7 +541,9 @@ def main():
             runs[kind] = {'lastSuccessAt': previous.get('lastSuccessAt'), 'lastAttemptAt': STAMP,
                           'outcome': 'failed', 'summary': short(exc, 260)}
             print(f'{kind}: unavailable: {exc}', file=sys.stderr)
-    payload['records'] = sorted(existing.values(), key=lambda r: (r.get('date') or '', r['id']), reverse=True)[:1500]
+    # Consolidate after every refresh so syndicated copies cannot reappear later.
+    consolidated = consolidate_solicitations(list(existing.values()))
+    payload['records'] = sorted(consolidated, key=lambda r: (r.get('date') or '', r['id']), reverse=True)[:1500]
     active = [k for k in ('cases', 'case_news', 'solicitations', 'law_firms') if runs.get(k, {}).get('outcome') in ('success', 'partial')]
     note = 'Free-source discovery active: ' + ', '.join(active) if active else 'All monitored sources failed; showing saved records.'
     if 'cases' not in active:

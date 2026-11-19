@@ -81,5 +81,95 @@ class MonitorTests(unittest.TestCase):
             self.assertFalse(monitor.robots_allowed('https://www.hbsslaw.com/cases'))
 
 
+    def test_kessler_campaign_collapses_baseline_news_and_direct_firm_link(self):
+        baseline = dict(id='ktmc-securities-2026-11', tracker='solicitations',
+                        title='Kessler Topaz Meltzer & Check', firm='Kessler Topaz Meltzer & Check, LLP',
+                        date='2026-11-18', firstSeen='2026-11-19', baseline=True,
+                        category='Securities', status='Investigation',
+                        summary='Firm investigation of potential SK hynix federal securities violations.',
+                        scope='SK hynix securities; investors.',
+                        sources=[{'label':'Original PR Newswire release',
+                                  'url':'https://www.prnewswire.com/example'}])
+        news = dict(id='news-kessler', tracker='solicitations',
+                    title='NASDAQ: SKHY Investigation Alert: SK hynix Investors Encouraged to Contact Kessler Topaz',
+                    firm='PR Newswire', date='2026-11-19', firstSeen='2026-11-20',
+                    category='Securities', status='Unverified solicitation lead',
+                    summary='SK hynix investors urged to contact Kessler Topaz.',
+                    sources=[{'label':'Google News', 'url':'https://news.google.com/rss/articles/a'}])
+        direct = dict(id='firm-kessler', tracker='solicitations',
+                      title='SK hynix Inc. NASDAQ SKHY Learn More',
+                      firm='Kessler Topaz (investigations)', date=None,
+                      firstSeen='2026-11-20', category='Other Litigation',
+                      status='Unverified firm website lead',
+                      summary='Direct plaintiff-firm investigation listing.',
+                      sources=[{'label':'Firm website',
+                                'url':'https://www.ktmc.com/skhy-sk-hyix-inc-investigation/'}])
+        merged = monitor.consolidate_solicitations([news, baseline, direct])
+        self.assertEqual(len(merged), 1)
+        result = merged[0]
+        self.assertEqual(result['id'], baseline['id'])
+        self.assertEqual(result['date'], '2026-11-18')
+        self.assertEqual(result['firstSeen'], '2026-11-19')
+        self.assertEqual(result['status'], 'Investigation')
+        self.assertEqual(result['category'], 'Securities')
+        self.assertIn('securities investigation', result['title'])
+        self.assertEqual(len(result['sources']), 3)
+        self.assertEqual(len(result['mergedRecordIds']), 3)
+        # Simulate repeated scheduled RSS pulls: no duplicate or runaway scope.
+        again = monitor.consolidate_solicitations([result, news, direct])
+        self.assertEqual(len(again), 1)
+        self.assertEqual(again[0]['id'], baseline['id'])
+        self.assertEqual(len(again[0]['sources']), 3)
+        self.assertEqual(again[0]['scope'], result['scope'])
+        self.assertEqual(again[0]['relatedHeadlines'], result['relatedHeadlines'])
+
+    def test_rosen_same_campaign_merges_but_different_firm_stays_separate(self):
+        base = dict(id='rosen-baseline', tracker='solicitations',
+                    title='Rosen Law Firm', firm='Rosen Law Firm',
+                    date='2026-11-18', category='Securities', baseline=True,
+                    summary='Rosen announces SK hynix securities class action investigation.',
+                    sources=[{'label':'Firm press release', 'url':'https://example.com/rosen'}])
+        syndication = dict(base, id='news-rosen', baseline=False,
+                           title='Rosen Law Firm Encourages SK hynix Investors to Inquire About Securities Class Action Investigation',
+                           firm='Business Wire', date='2026-11-17',
+                           sources=[{'label':'Google News', 'url':'https://news.google.com/rosen'}])
+        another_firm = dict(base, id='levi', title='Levi & Korsinsky SK hynix investor investigation',
+                            firm='Levi & Korsinsky, LLP')
+        results = monitor.consolidate_solicitations([base, syndication, another_firm])
+        self.assertEqual(len(results), 2)
+        self.assertEqual({r['firm'] for r in results}, {'Rosen Law Firm', 'Levi & Korsinsky, LLP'})
+
+    def test_distinct_campaigns_are_not_grouped(self):
+        base = dict(id='securities', tracker='solicitations',
+                    title='Rosen Law Firm launches SK hynix securities investigation',
+                    firm='Rosen Law Firm', date='2026-11-18',
+                    category='Securities', sources=[{'url':'https://example.com/a','label':'A'}])
+        antitrust = dict(base, id='antitrust', title='Rosen Law Firm launches SK hynix price-fixing antitrust litigation',
+                         date='2026-11-18', category='Antitrust',
+                         sources=[{'url':'https://example.com/b','label':'B'}])
+        later = dict(base, id='later', date='2027-03-18',
+                     sources=[{'url':'https://example.com/c','label':'C'}])
+        no_firm = dict(base, id='no-firm', firm='Business Wire',
+                       title='SK hynix securities investigation noted by media',
+                       sources=[{'url':'https://example.com/d','label':'D'}])
+        case = dict(base, id='case', tracker='cases')
+        groups = monitor.consolidate_solicitations([base, antitrust, later, no_firm, case])
+        self.assertEqual(len(groups), 5)
+        self.assertEqual(len([r for r in groups if r['tracker']=='cases']), 1)
+
+    def test_merging_sources_keeps_every_unique_url(self):
+        base = dict(id='b', tracker='solicitations', firm='Kessler Topaz Meltzer & Check',
+                    title='Kessler Topaz SKHY shareholder investigation',
+                    date='2026-11-18', summary='',
+                    sources=[{'url':'https://example.com/a','label':'Original'}])
+        repeated = dict(base, id='n',
+                        sources=[{'url':'https://example.com/a','label':'Duplicate'},
+                                 {'url':'https://example.com/b','label':'Syndication'}])
+        result = monitor.consolidate_solicitations([base, repeated])
+        self.assertEqual(len(result), 1)
+        self.assertEqual([s['url'] for s in result[0]['sources']],
+                         ['https://example.com/a', 'https://example.com/b'])
+
+
 if __name__ == '__main__':
     unittest.main()
