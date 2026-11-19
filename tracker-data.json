@@ -1,0 +1,95 @@
+{
+  "records": [
+    {
+      "id": "candce-26-06345",
+      "tracker": "cases",
+      "title": "Garciaguirre et al. v. Samsung Electronics Co., Ltd. et al.",
+      "entity": "SK hynix entities; Samsung; Micron",
+      "date": "2026-06-25",
+      "firstSeen": "2026-11-19",
+      "category": "Antitrust",
+      "status": "Confirmed filing",
+      "forum": "N.D. California · 5:26-cv-06345",
+      "firm": "Bathaee Dunne LLP",
+      "summary": "Putative class action alleging coordinated restrictions on conventional DRAM supply and pricing. The court denied the defendants’ motion to dismiss on November 14, 2026. This is an existing baseline case, not a newly filed matter.",
+      "scope": "Consumers and small businesses; federal antitrust and state-law claims.",
+      "sources": [
+        {
+          "label": "Court order · November 14, 2026",
+          "url": "https://cases.justia.com/federal/district-courts/california/candce/5%3A2026cv06345/472931/68/0.pdf"
+        }
+      ],
+      "baseline": true
+    },
+    {
+      "id": "ktmc-securities-2026-11",
+      "tracker": "solicitations",
+      "title": "Kessler Topaz Meltzer & Check",
+      "entity": "SK hynix Inc.",
+      "date": "2026-11-18",
+      "firstSeen": "2026-11-19",
+      "category": "Securities",
+      "status": "Investigation",
+      "forum": "Prospective U.S. securities litigation",
+      "firm": "Kessler Topaz Meltzer & Check, LLP",
+      "summary": "Firm announcement investigating potential federal securities-law violations on behalf of investors, citing reports of the DRAM dismissal ruling. The announcement does not establish that a securities complaint has been filed.",
+      "scope": "Investors who acquired SK hynix securities and experienced significant losses; class period not confirmed.",
+      "sources": [
+        {
+          "label": "Firm release · PR Newswire",
+          "url": "https://www.prnewswire.com/news-releases/nasdaq-skhy-investigation-alert-sk-hynix-inc-investors-are-encouraged-to-contact-kessler-topaz-meltzer--check-llp-302944571.html"
+        }
+      ],
+      "baseline": true
+    },
+    {
+      "id": "rosen-securities-2026-11",
+      "tracker": "solicitations",
+      "title": "Rosen Law Firm",
+      "entity": "SK hynix Inc.",
+      "date": "2026-11-18",
+      "firstSeen": "2026-11-19",
+      "category": "Securities",
+      "status": "Prospective action",
+      "forum": "Prospective U.S. securities litigation",
+      "firm": "Rosen Law Firm",
+      "summary": "Firm announcement investigating potential securities claims and inviting investors to join a prospective class action. The firm states it is preparing an action; a filed securities complaint has not been independently verified here.",
+      "scope": "Shareholders; alleged misleading business information. Class period not confirmed.",
+      "sources": [
+        {
+          "label": "Firm release · ACCESS Newswire",
+          "url": "https://www.accessnewswire.com/newsroom/en/business-and-professional-services/rosen-leading-investor-counsel-encourages-sk-hynix-inc.-investor-1253652"
+        }
+      ],
+      "baseline": true
+    },
+    {
+      "id": "levi-korsinsky-securities-2026-11",
+      "tracker": "solicitations",
+      "title": "Levi & Korsinsky",
+      "entity": "SK hynix Inc.",
+      "date": null,
+      "firstSeen": "2026-11-19",
+      "category": "Securities",
+      "status": "Investigation",
+      "forum": "Prospective U.S. securities litigation",
+      "firm": "Levi & Korsinsky, LLP",
+      "summary": "Public investigation page concerning disclosures about the DRAM price-fixing litigation and related exposure. Publication date is not confirmed. This is a solicitation, not confirmation of a filed securities action.",
+      "scope": "SK hynix investors; class period not confirmed.",
+      "sources": [
+        {
+          "label": "Firm investigation page",
+          "url": "https://zlk.com/investigations/sk-hynix-inc-investigation-skhy"
+        }
+      ],
+      "baseline": true
+    }
+  ],
+  "runs": {},
+  "storageReady": false,
+  "monitoring": {
+    "deployed": false,
+    "source": "baseline",
+    "note": "Automated monitoring is not yet enabled. Deploy and enable the scheduled workflow; add CourtListener token for federal docket coverage."
+  }
+}
