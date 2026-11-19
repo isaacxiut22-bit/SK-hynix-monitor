@@ -380,6 +380,11 @@ def solicitation_topic(record):
     body = body.lower()
     if 'solidigm' in body and re.search(r'asset sale|proposed sale|transaction|acquisition|merger', body):
         return 'solidigm-transaction'
+    # Investor firms often cite the underlying DRAM antitrust suit as the basis
+    # for a *separate securities investigation*. Classify the actual counsel
+    # solicitation, not merely the background lawsuit it mentions.
+    if record.get('category') == 'Securities' and re.search(r'securit|shareholder|investors?|\bskhy\b', body):
+        return 'securities-investigation'
     if re.search(r'price[ -]?fix|antitrust|anti-competitive|collusion', body):
         return 'dram-antitrust'
     if re.search(r'data breach|privacy breach|personal information leak', body):

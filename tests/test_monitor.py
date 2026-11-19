@@ -157,6 +157,27 @@ class MonitorTests(unittest.TestCase):
         self.assertEqual(len(groups), 5)
         self.assertEqual(len([r for r in groups if r['tracker']=='cases']), 1)
 
+
+    def test_securities_investigation_does_not_become_antitrust_from_background(self):
+        baseline = dict(id='levi-baseline', tracker='solicitations',
+                        title='Levi & Korsinsky', firm='Levi & Korsinsky, LLP',
+                        date=None, category='Securities', baseline=True,
+                        forum='Prospective U.S. securities litigation',
+                        summary='Investigation page concerning disclosures about DRAM price-fixing litigation.',
+                        sources=[{'label':'Firm investigation page',
+                                  'url':'https://zlk.com/investigations/sk-hynix-inc-investigation-skhy'}])
+        news = dict(id='levi-news', tracker='solicitations',
+                    title='SK hynix Inc. Investigation Notice: Levi & Korsinsky Notifies Investors of Pending Investigation (SKHY)',
+                    firm='ACCESS Newswire', category='Securities', date='2026-11-18',
+                    summary='Levi & Korsinsky notifies SK hynix investors of investigation.',
+                    sources=[{'label':'Newswire', 'url':'https://news.google.com/levi'}])
+        self.assertEqual(monitor.solicitation_topic(baseline), 'securities-investigation')
+        self.assertEqual(monitor.solicitation_topic(news), 'securities-investigation')
+        merged = monitor.consolidate_solicitations([baseline, news])
+        self.assertEqual(len(merged), 1)
+        self.assertEqual(merged[0]['id'], 'levi-baseline')
+        self.assertEqual(len(merged[0]['sources']), 2)
+
     def test_merging_sources_keeps_every_unique_url(self):
         base = dict(id='b', tracker='solicitations', firm='Kessler Topaz Meltzer & Check',
                     title='Kessler Topaz SKHY shareholder investigation',
