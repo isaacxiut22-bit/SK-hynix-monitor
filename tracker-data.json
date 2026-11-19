@@ -1,27 +1,6 @@
 {
   "records": [
     {
-      "id": "news-b4bb64d4f3192b44",
-      "tracker": "solicitations",
-      "title": "NASDAQ: SKHY Investigation Alert: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz Meltzer & Check, LLP",
-      "entity": "SK hynix or subsidiary (unverified reference)",
-      "date": "2026-11-19",
-      "firstSeen": "2026-11-19",
-      "category": "Securities",
-      "status": "Unverified solicitation lead",
-      "forum": "Public announcement or media report",
-      "firm": "PR Newswire",
-      "summary": "NASDAQ: SKHY Investigation Alert: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz Meltzer & Check, LLP PR Newswire Check the original publication for a direct client solicitation; a news article does not prove a filing.",
-      "scope": "Google News RSS discovery; not a court docket or verified firm outreach.",
-      "sources": [
-        {
-          "label": "News/press-release source via Google News",
-          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPeC05ZzNtSHRXX1VJWW90SGwzWkNxeHFHQ1R3NlBHVXJMOEZCTjdOamxZQ0UzUDV4LXlES0hzNzZWeWZ5bVNfOHJTLUhiZzR1bXlhckkxTXlHZ2xrZmlxQkJvQzFtSEE1Wmh0Yi1scGkxX0hGdXppVWFUZkZNTVJkZXdpOE84RVJuazRRSDYwMU1zOUx0SXhYMDVMNTNTcGxxVzNnWUxYcWRCVmlhalBFaFRadUwtTXdSbFJELVo2Zk5hdURpdFpDS0E2WV9VNG5ZZVhVYXR4N2dDMW5wY1lzQThQaklxS2NpS0tLUW85WXF1aFluLWtTM2NyV3FIQQ?oc=5"
-        }
-      ],
-      "baseline": false
-    },
-    {
       "id": "tip-ny-levin-yen-20261118",
       "tracker": "cases",
       "title": "Levin Yen v. SK hynix — reported New York filing (unverified)",
@@ -41,27 +20,6 @@
         }
       ],
       "baseline": false
-    },
-    {
-      "id": "rosen-securities-2026-11",
-      "tracker": "solicitations",
-      "title": "Rosen Law Firm",
-      "entity": "SK hynix Inc.",
-      "date": "2026-11-18",
-      "firstSeen": "2026-11-19",
-      "category": "Securities",
-      "status": "Prospective action",
-      "forum": "Prospective U.S. securities litigation",
-      "firm": "Rosen Law Firm",
-      "summary": "Firm announcement investigating potential securities claims and inviting investors to join a prospective class action. The firm states it is preparing an action; a filed securities complaint has not been independently verified here.",
-      "scope": "Shareholders; alleged misleading business information. Class period not confirmed.",
-      "sources": [
-        {
-          "label": "Firm release · ACCESS Newswire",
-          "url": "https://www.accessnewswire.com/newsroom/en/business-and-professional-services/rosen-leading-investor-counsel-encourages-sk-hynix-inc.-investor-1253652"
-        }
-      ],
-      "baseline": true
     },
     {
       "id": "news-57f6f85837a5e2a5",
@@ -87,62 +45,92 @@
     {
       "id": "ktmc-securities-2026-11",
       "tracker": "solicitations",
-      "title": "Kessler Topaz Meltzer & Check",
+      "title": "Kessler Topaz Meltzer & Check — SK hynix securities investigation",
       "entity": "SK hynix Inc.",
       "date": "2026-11-18",
       "firstSeen": "2026-11-19",
       "category": "Securities",
       "status": "Investigation",
       "forum": "Prospective U.S. securities litigation",
-      "firm": "Kessler Topaz Meltzer & Check, LLP",
+      "firm": "Kessler Topaz Meltzer & Check",
       "summary": "Firm announcement investigating potential federal securities-law violations on behalf of investors, citing reports of the DRAM dismissal ruling. The announcement does not establish that a securities complaint has been filed.",
-      "scope": "Investors who acquired SK hynix securities and experienced significant losses; class period not confirmed.",
+      "scope": "Investors who acquired SK hynix securities and experienced significant losses; class period not confirmed. Related notices and firm links consolidated as one potential campaign; verify that each source concerns the same matter.",
       "sources": [
         {
           "label": "Firm release · PR Newswire",
           "url": "https://www.prnewswire.com/news-releases/nasdaq-skhy-investigation-alert-sk-hynix-inc-investors-are-encouraged-to-contact-kessler-topaz-meltzer--check-llp-302944571.html"
+        },
+        {
+          "label": "Plaintiff-firm website",
+          "url": "https://www.ktmc.com/skhy-sk-hyix-inc-investigation/"
+        },
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPeC05ZzNtSHRXX1VJWW90SGwzWkNxeHFHQ1R3NlBHVXJMOEZCTjdOamxZQ0UzUDV4LXlES0hzNzZWeWZ5bVNfOHJTLUhiZzR1bXlhckkxTXlHZ2xrZmlxQkJvQzFtSEE1Wmh0Yi1scGkxX0hGdXppVWFUZkZNTVJkZXdpOE84RVJuazRRSDYwMU1zOUx0SXhYMDVMNTNTcGxxVzNnWUxYcWRCVmlhalBFaFRadUwtTXdSbFJELVo2Zk5hdURpdFpDS0E2WV9VNG5ZZVhVYXR4N2dDMW5wY1lzQThQaklxS2NpS0tLUW85WXF1aFluLWtTM2NyV3FIQQ?oc=5"
         }
       ],
-      "baseline": true
+      "baseline": true,
+      "campaignTopic": "securities-investigation",
+      "mergedRecordIds": [
+        "firm-03905eca8858bd2a",
+        "ktmc-securities-2026-11",
+        "news-b4bb64d4f3192b44"
+      ],
+      "relatedHeadlines": [
+        "NASDAQ: SKHY Investigation Alert: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz Meltzer & Check, LLP",
+        "SK hynix Inc. NASDAQ SKHY Learn More"
+      ]
     },
     {
-      "id": "news-463d44d479103c12",
+      "id": "rosen-securities-2026-11",
       "tracker": "solicitations",
-      "title": "Rosen Law Firm Encourages SK hynix Inc. Investors to Inquire About Securities Class Action Investigation - SKHY",
-      "entity": "SK hynix or subsidiary (unverified reference)",
+      "title": "Rosen Law Firm — SK hynix securities investigation",
+      "entity": "SK hynix Inc.",
       "date": "2026-11-17",
       "firstSeen": "2026-11-19",
       "category": "Securities",
-      "status": "Unverified solicitation lead",
-      "forum": "Public announcement or media report",
-      "firm": "Business Wire",
-      "summary": "Rosen Law Firm Encourages SK hynix Inc. Investors to Inquire About Securities Class Action Investigation - SKHY Business Wire Check the original publication for a direct client solicitation; a news article does not prove a filing.",
-      "scope": "Google News RSS discovery; not a court docket or verified firm outreach.",
+      "status": "Prospective action",
+      "forum": "Prospective U.S. securities litigation",
+      "firm": "Rosen Law Firm",
+      "summary": "Firm announcement investigating potential securities claims and inviting investors to join a prospective class action. The firm states it is preparing an action; a filed securities complaint has not been independently verified here.",
+      "scope": "Shareholders; alleged misleading business information. Class period not confirmed. Related notices and firm links consolidated as one potential campaign; verify that each source concerns the same matter.",
       "sources": [
+        {
+          "label": "Firm release · ACCESS Newswire",
+          "url": "https://www.accessnewswire.com/newsroom/en/business-and-professional-services/rosen-leading-investor-counsel-encourages-sk-hynix-inc.-investor-1253652"
+        },
         {
           "label": "News/press-release source via Google News",
           "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQN3NVd3RsTkljUDRPOGNCa19tT3pnaFFKM2ZSZHNCcVZCX2ZuT3NSakVHV25QcDB4NjEyNzA0NlpsUmNhOWNBSER3bV9qejM5VFc1dGZUTkFBVDJtSEFrN0FTazdoLTFjU19qV1Y1TmlSXzhkWWFQN0FBOUdSSUplbWVhV0ZSVFllMnNKSW5RaE5IZGM0MHd2a2l3OXRJaW1JU3pnWHBfMEJOM2pGMnNhQmFPR3oyeTdrUXNzQ1hOcjJnNzd2Rk1vZ2RYaTU5a3RNQmw3Ym45Ti01WFJ4NkQ3SW9iZWZGQ2p1eDI3blJpNHNJS01nb2hBckVIcFg?oc=5"
         }
       ],
-      "baseline": false
+      "baseline": true,
+      "campaignTopic": "securities-investigation",
+      "mergedRecordIds": [
+        "news-463d44d479103c12",
+        "rosen-securities-2026-11"
+      ],
+      "relatedHeadlines": [
+        "Rosen Law Firm Encourages SK hynix Inc. Investors to Inquire About Securities Class Action Investigation - SKHY"
+      ]
     },
     {
       "id": "cl-74941609",
       "tracker": "cases",
       "title": "Mago Barca IP LLC v. SK hynix Inc.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2026-10-08",
       "firstSeen": "2026-11-19",
       "category": "IP",
       "status": "Docket match — review",
       "forum": "District Court, E.D. Texas · 2:26-cv-00916",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A74941609"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -151,19 +139,19 @@
       "id": "cl-74937756",
       "tracker": "cases",
       "title": "SK hynix Inc. v. Longhorn IP LLC",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2026-10-08",
       "firstSeen": "2026-11-19",
       "category": "IP",
       "status": "Docket match — review",
       "forum": "District Court, N.D. California · 3:26-cv-11609",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A74937756"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -697,19 +685,19 @@
       "id": "cl-73532135",
       "tracker": "cases",
       "title": "Garciaguirre v. Samsung Electronics Co., Ltd.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2026-06-25",
       "firstSeen": "2026-11-19",
       "category": "Other Litigation",
       "status": "Docket match — review",
       "forum": "District Court, N.D. California · 5:26-cv-06345",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A73532135"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -739,19 +727,19 @@
       "id": "cl-73323266",
       "tracker": "cases",
       "title": "MonolithIC 3D Inc. v. SK hynix Inc.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2026-05-11",
       "firstSeen": "2026-11-19",
       "category": "IP",
       "status": "Docket match — review",
       "forum": "District Court, E.D. Texas · 2:26-cv-00393",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A73323266"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -760,19 +748,19 @@
       "id": "cl-73116544",
       "tracker": "cases",
       "title": "SK hynix Inc. v. BeSang Inc.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2026-03-30",
       "firstSeen": "2026-11-19",
       "category": "Other Litigation",
       "status": "Docket match — review",
       "forum": "District Court, D. Oregon · 3:26-cv-00630",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A73116544"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -781,19 +769,19 @@
       "id": "cl-72308443",
       "tracker": "cases",
       "title": "MonolithIC 3D Inc. v. SK Hynix Inc.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2026-02-20",
       "firstSeen": "2026-11-19",
       "category": "IP",
       "status": "Docket match — review",
       "forum": "District Court, E.D. Texas · 2:26-cv-00145",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A72308443"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -844,19 +832,19 @@
       "id": "cl-71972052",
       "tracker": "cases",
       "title": "MonolithIC 3D Inc. v. SK Hynix Inc.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2025-11-26",
       "firstSeen": "2026-11-19",
       "category": "Other Litigation",
       "status": "Docket match — review",
       "forum": "District Court, E.D. Texas · 2:25-cv-01176",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A71972052"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -865,19 +853,19 @@
       "id": "cl-71970757",
       "tracker": "cases",
       "title": "MonolithIC 3D Inc. v. SK Hynix Inc.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2025-11-26",
       "firstSeen": "2026-11-19",
       "category": "Other Litigation",
       "status": "Docket match — review",
       "forum": "District Court, E.D. Texas · 2:25-cv-01167",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A71970757"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -886,19 +874,19 @@
       "id": "cl-71648352",
       "tracker": "cases",
       "title": "Network System Technologies, LLC v. SK hynix Inc.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2025-10-14",
       "firstSeen": "2026-11-19",
       "category": "IP",
       "status": "Docket match — review",
       "forum": "District Court, W.D. Texas · 1:25-cv-01647",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A71648352"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -907,19 +895,19 @@
       "id": "cl-69506732",
       "tracker": "cases",
       "title": "Advanced Memory Technologies, LLC v. SK Hynix Inc.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2024-12-30",
       "firstSeen": "2026-11-19",
       "category": "IP",
       "status": "Docket match — review",
       "forum": "District Court, E.D. Texas · 2:24-cv-01078",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A69506732"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -928,19 +916,19 @@
       "id": "cl-69032968",
       "tracker": "cases",
       "title": "MICRON TECHNOLOGY, INC. v. SK HYNIX INC.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2024-08-09",
       "firstSeen": "2026-11-19",
       "category": "Other Litigation",
       "status": "Docket match — review",
       "forum": "District Court, District of Columbia · 1:24-mc-00098",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A69032968"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -949,19 +937,19 @@
       "id": "cl-69021640",
       "tracker": "cases",
       "title": "MIMIRIP LLC v. SK HYNIX INC.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2024-07-26",
       "firstSeen": "2026-11-19",
       "category": "Other Litigation",
       "status": "Docket match — review",
       "forum": "District Court, District of Columbia · 1:24-mc-00093",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A69021640"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -970,19 +958,19 @@
       "id": "cl-63569464",
       "tracker": "cases",
       "title": "SK Hynix Inc. v. Longhorn IP LLC",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2022-07-05",
       "firstSeen": "2026-11-19",
       "category": "Other Litigation",
       "status": "Docket match — review",
       "forum": "District Court, N.D. California · 5:22-cv-03915",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A63569464"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -991,19 +979,19 @@
       "id": "cl-59876197",
       "tracker": "cases",
       "title": "Lee v. Micron Technology, Inc.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2021-05-03",
       "firstSeen": "2026-11-19",
       "category": "Other Litigation",
       "status": "Docket match — review",
       "forum": "District Court, N.D. California · 4:21-cv-03267",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A59876197"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -1012,19 +1000,19 @@
       "id": "cl-59684524",
       "tracker": "cases",
       "title": "In re: SK hynix Inc.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2021-02-08",
       "firstSeen": "2026-11-19",
       "category": "Other Litigation",
       "status": "Docket match — review",
       "forum": "Court of Appeals for the Federal Circuit · 21-114",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A59684524"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -1033,19 +1021,19 @@
       "id": "cl-58814047",
       "tracker": "cases",
       "title": "In re: SK hynix Inc.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2021-01-22",
       "firstSeen": "2026-11-19",
       "category": "Other Litigation",
       "status": "Docket match — review",
       "forum": "Court of Appeals for the Federal Circuit · 21-113",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A58814047"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -1054,19 +1042,19 @@
       "id": "cl-17251576",
       "tracker": "cases",
       "title": "Netlist, Inc. v. SK hynix America Inc.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2020-06-15",
       "firstSeen": "2026-11-19",
       "category": "IP",
       "status": "Docket match — review",
       "forum": "District Court, W.D. Texas · 6:20-cv-00525",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A17251576"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -1075,19 +1063,19 @@
       "id": "cl-17138864",
       "tracker": "cases",
       "title": "Haystack IP LLC v. SK Hynix Inc.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2020-05-07",
       "firstSeen": "2026-11-19",
       "category": "IP",
       "status": "Docket match — review",
       "forum": "District Court, W.D. Texas · 6:20-cv-00368",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A17138864"
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -1096,19 +1084,439 @@
       "id": "cl-16984521",
       "tracker": "cases",
       "title": "Netlist, Inc. v. SK hynix Inc.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
       "date": "2020-03-17",
       "firstSeen": "2026-11-19",
       "category": "IP",
       "status": "Docket match — review",
       "forum": "District Court, W.D. Texas · 6:20-cv-00194",
       "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
           "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A16984521"
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-27351",
+      "tracker": "cases",
+      "title": "SK Hynix Inc. v. Netlist, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2019-08-30",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "Court of Appeals for the Federal Circuit · 19-2340",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-27346",
+      "tracker": "cases",
+      "title": "SK Hynix Inc. v. Netlist, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2019-08-30",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "Court of Appeals for the Federal Circuit · 19-2341",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-7876531",
+      "tracker": "cases",
+      "title": "Netlist, Inc. v. SK Hynix Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2018-09-12",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "Court of Appeals for the Federal Circuit · 18-2358",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-7876530",
+      "tracker": "cases",
+      "title": "Netlist, Inc. v. SK Hynix Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2018-09-12",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "Court of Appeals for the Federal Circuit · 18-2357",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-7675855",
+      "tracker": "cases",
+      "title": "D'Amore v. Micron Technology, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2018-08-16",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 4:18-cv-05002",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-7612800",
+      "tracker": "cases",
+      "title": "Technology House Call v. Micron Technology Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2018-08-07",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 4:18-cv-04742",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-7585995",
+      "tracker": "cases",
+      "title": "Calloway v. Micron Technology, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2018-08-02",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 4:18-cv-04672",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-7552880",
+      "tracker": "cases",
+      "title": "Bryant v. Micron Technology, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2018-07-30",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 4:18-cv-04599",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-7390827",
+      "tracker": "cases",
+      "title": "Binz v. Micron Technology, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2018-07-09",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 4:18-cv-04090",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-7876534",
+      "tracker": "cases",
+      "title": "Netlist, Inc. v. SK Hynix Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2018-06-29",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "Court of Appeals for the Federal Circuit · 18-2123",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-7316241",
+      "tracker": "cases",
+      "title": "onShore Networks of Illinois, L.L.C v. Micron Technology Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2018-06-28",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 4:18-cv-03905",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-7287961",
+      "tracker": "cases",
+      "title": "In Re Dynamic Random Access Memory (DRAM) Direct Purchaser Antitrust Litigation",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2018-06-26",
+      "firstSeen": "2026-11-19",
+      "category": "Antitrust",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 4:18-cv-03805",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-7139962",
+      "tracker": "cases",
+      "title": "SK hynix Inc. v. BiTMICRO, LLC",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2018-06-12",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 3:18-cv-03505",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-6379330",
+      "tracker": "cases",
+      "title": "In Re Dynamic Random Access Memory (DRAM) Indirect Purchaser Antitrust Litigation",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2018-04-27",
+      "firstSeen": "2026-11-19",
+      "category": "Antitrust",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 4:18-cv-02518",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-7876509",
+      "tracker": "cases",
+      "title": "Netlist, Inc. v. ITC",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2018-03-14",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "Court of Appeals for the Federal Circuit · 18-1676",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-7125117",
+      "tracker": "cases",
+      "title": "Samsung Electronics Co., Ltd. v. Elm 3DS Innovations, LLC",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2017-08-25",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "Court of Appeals for the Federal Circuit · 17-2474",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-6075091",
+      "tracker": "cases",
+      "title": "Netlist Inc v. SK Hynix Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2017-06-14",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, C.D. California · 8:17-cv-01030",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-6134201",
+      "tracker": "cases",
+      "title": "511 TECHNOLOGIES INC. and CADDO SYSTEMS, INC v. SK HYNIX, INC., and SK HYNIX, AMERICA INC.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2017-05-12",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, E.D. Texas · 2:17-cv-00428",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-6657414",
+      "tracker": "cases",
+      "title": "Cypress Insurance Company v. SK Hynix America, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2017-03-23",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, W.D. Washington · 2:17-cv-00467",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-38656251",
+      "tracker": "cases",
+      "title": "NETLIST, INC. v. SK HYNIX INC.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2016-12-22",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, District of Columbia · 1:16-mc-02563",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -1555,6 +1963,426 @@
       "baseline": false
     },
     {
+      "id": "cl-54337802",
+      "tracker": "cases",
+      "title": "DRAM Claims Liquidation Trust v. Hynix Semiconductor, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2008-08-18",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "United States Judicial Panel on Multidistrict Litigation · 3:07-cv-01381",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-54337685",
+      "tracker": "cases",
+      "title": "All American Semiconductor, Inc. v. Hynix Semiconductor, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2008-08-18",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "United States Judicial Panel on Multidistrict Litigation · 4:07-cv-01200",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-54337681",
+      "tracker": "cases",
+      "title": "Edge Electronics, Inc. v. Hynix Semiconductor, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2008-08-18",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "United States Judicial Panel on Multidistrict Litigation · 3:07-cv-01207",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-54337675",
+      "tracker": "cases",
+      "title": "JACO Electronics, Inc. v. Hynix Semiconductor, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2008-08-18",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "United States Judicial Panel on Multidistrict Litigation · 3:07-cv-01212",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4174812",
+      "tracker": "cases",
+      "title": "Rambus Inc. v. Nvidia Corporation",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2008-07-10",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 3:08-cv-03343",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4168436",
+      "tracker": "cases",
+      "title": "Calif-Coast Investigative Services v. Lexar Media, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2007-07-23",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 4:07-cv-03775",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4167451",
+      "tracker": "cases",
+      "title": "Skorstad v. Samsung Electonics Co Ltd",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2007-04-24",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 4:07-cv-02228",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-19550952",
+      "tracker": "cases",
+      "title": "Hynix Semiconductor America Inc. v. United States",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2007-03-16",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "United States Court of International Trade · 1:07-cv-00096",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4166622",
+      "tracker": "cases",
+      "title": "Dram Claims Liquidation Trust v. Hynix Semiconductor, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2007-03-08",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 4:07-cv-01381",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4166650",
+      "tracker": "cases",
+      "title": "JACO Electronics, Inc v. Hynix Semiconductor, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2007-02-28",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 4:07-cv-01212",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4166649",
+      "tracker": "cases",
+      "title": "Edge Electronics, Inc. v. Hynix Semiconductor, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2007-02-28",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 4:07-cv-01207",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4166648",
+      "tracker": "cases",
+      "title": "All American Semiconductor, Inc. v. Hynix Semiconductor, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2007-02-28",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 4:07-cv-01200",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4166591",
+      "tracker": "cases",
+      "title": "In re: Static Random Access Memory (SRAM) Antitrust Litigation",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2007-02-20",
+      "firstSeen": "2026-11-19",
+      "category": "Antitrust",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 4:07-md-01819",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-14216407",
+      "tracker": "cases",
+      "title": "Sparks v. Cypress Semiconductor Corporation",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2007-02-01",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, S.D. Iowa · 3:07-cv-00008",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-8011147",
+      "tracker": "cases",
+      "title": "CLARKE v. CYPRESS SEMICONDUCTOR CORPORATION",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2007-01-19",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, D. Maine · 1:07-cv-00008",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-8004990",
+      "tracker": "cases",
+      "title": "Van Dyk v. Cypress Semiconductor Corporation",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2007-01-17",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, D. Kansas · 5:07-cv-04010",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-5788241",
+      "tracker": "cases",
+      "title": "Toshiba Corporation v. Hynix Semiconductor Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2007-01-09",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 3:07-cv-00153",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-12293504",
+      "tracker": "cases",
+      "title": "Olson v. Alliance Semiconductor Corp.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2006-12-08",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, D. Montana · 9:06-cv-00195",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-12200927",
+      "tracker": "cases",
+      "title": "KRAMER v. ALLIANCE SEMICONDUCTOR CORP",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2006-11-29",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, D. Maine · 2:06-cv-00213",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-7986990",
+      "tracker": "cases",
+      "title": "Romero v. Alliance Semi",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2006-11-21",
+      "firstSeen": "2026-11-19",
+      "category": "Antitrust",
+      "status": "Docket match — review",
+      "forum": "District Court, D. New Mexico · 6:06-cv-01134",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
       "id": "levi-korsinsky-securities-2026-11",
       "tracker": "solicitations",
       "title": "Levi & Korsinsky",
@@ -1574,51 +2402,30 @@
         }
       ],
       "baseline": true
-    },
-    {
-      "id": "firm-03905eca8858bd2a",
-      "tracker": "solicitations",
-      "title": "SK hynix Inc. NASDAQ SKHY Learn More",
-      "entity": "SK hynix / related name (firm listing match; review)",
-      "date": null,
-      "firstSeen": "2026-11-19",
-      "category": "Other Litigation",
-      "status": "Unverified firm website lead",
-      "forum": "Plaintiff-firm public website",
-      "firm": "Kessler Topaz (investigations)",
-      "summary": "Company or ticker match found directly on a public plaintiff-firm case/investigation listing. Review the linked page to determine the client solicitation, litigation posture, and case status.",
-      "scope": "Direct listing-page discovery; firm websites may use JavaScript and not expose all entries in HTML.",
-      "sources": [
-        {
-          "label": "Plaintiff-firm website",
-          "url": "https://www.ktmc.com/skhy-sk-hyix-inc-investigation/"
-        }
-      ],
-      "baseline": false
     }
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-19T19:07:02Z",
-      "lastAttemptAt": "2026-11-19T19:07:02Z",
-      "outcome": "partial",
-      "summary": "20 matched records; 3 source failures. Leads require review."
+      "lastSuccessAt": "2026-11-19T19:28:44Z",
+      "lastAttemptAt": "2026-11-19T19:28:44Z",
+      "outcome": "success",
+      "summary": "80 matched records; 0 source failures. Leads require review."
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-19T19:07:02Z",
-      "lastAttemptAt": "2026-11-19T19:07:02Z",
+      "lastSuccessAt": "2026-11-19T19:28:44Z",
+      "lastAttemptAt": "2026-11-19T19:28:44Z",
       "outcome": "success",
       "summary": "6 matched records; 0 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-19T19:07:02Z",
-      "lastAttemptAt": "2026-11-19T19:07:02Z",
+      "lastSuccessAt": "2026-11-19T19:28:44Z",
+      "lastAttemptAt": "2026-11-19T19:28:44Z",
       "outcome": "success",
       "summary": "21 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-19T19:07:02Z",
-      "lastAttemptAt": "2026-11-19T19:07:02Z",
+      "lastSuccessAt": "2026-11-19T19:28:44Z",
+      "lastAttemptAt": "2026-11-19T19:28:44Z",
       "outcome": "success",
       "summary": "1 matched records; 0 source failures. Leads require review."
     }
@@ -1627,7 +2434,7 @@
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-19T19:07:02Z",
+    "lastAttemptAt": "2026-11-19T19:28:44Z",
     "note": "Free-source discovery active: cases, case_news, solicitations, law_firms State trial-court filing portals are not automatically searched."
   }
 }
