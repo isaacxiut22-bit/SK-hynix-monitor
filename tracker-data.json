@@ -174,6 +174,27 @@
       "baseline": false
     },
     {
+      "id": "news-51a38428989e33b1",
+      "tracker": "solicitations",
+      "title": "Samsung, SK Hynix Chiefs Face Investigation Over Employee Bonus Deals",
+      "entity": "SK hynix or subsidiary (unverified reference)",
+      "date": "2026-08-06",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Unverified solicitation lead",
+      "forum": "Public announcement or media report",
+      "firm": "SammyGuru",
+      "summary": "Samsung, SK Hynix Chiefs Face Investigation Over Employee Bonus Deals SammyGuru Check the original publication for a direct client solicitation; a news article does not prove a filing.",
+      "scope": "Google News RSS discovery; not a court docket or verified firm outreach.",
+      "sources": [
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8wSmNyQTNSYm85V1BVeTBmVEdIdk8wQUFwU1lPSnJGUnVQeVBqUmRlMDFKbXZ6aFRxMkFoZEtnLVI1ZVFnVVA0ZkhnY2dDUUR3QnZvRmdXeUtVaFFCSi1RTDBzYTZYQ1BsZ1JpYm9WM2lBZTVfTWJELVg3Y3lvUXc?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
       "id": "news-e74c2d86a248de47",
       "tracker": "solicitations",
       "title": "Police open investigation into Samsung, SK hynix chiefs over bonuses after shareholder complaint filed",
@@ -2402,26 +2423,26 @@
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-19T19:36:44Z",
-      "lastAttemptAt": "2026-11-19T19:36:44Z",
-      "outcome": "success",
-      "summary": "80 matched records; 0 source failures. Leads require review."
+      "lastSuccessAt": "2026-11-19T19:37:44Z",
+      "lastAttemptAt": "2026-11-19T19:37:44Z",
+      "outcome": "partial",
+      "summary": "1 matched records; 2 source failures. Leads require review."
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-19T19:36:44Z",
-      "lastAttemptAt": "2026-11-19T19:36:44Z",
+      "lastSuccessAt": "2026-11-19T19:37:44Z",
+      "lastAttemptAt": "2026-11-19T19:37:44Z",
       "outcome": "success",
-      "summary": "6 matched records; 0 source failures. Leads require review."
+      "summary": "7 matched records; 0 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-19T19:36:44Z",
-      "lastAttemptAt": "2026-11-19T19:36:44Z",
+      "lastSuccessAt": "2026-11-19T19:37:44Z",
+      "lastAttemptAt": "2026-11-19T19:37:44Z",
       "outcome": "success",
       "summary": "21 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-19T19:36:44Z",
-      "lastAttemptAt": "2026-11-19T19:36:44Z",
+      "lastSuccessAt": "2026-11-19T19:37:44Z",
+      "lastAttemptAt": "2026-11-19T19:37:44Z",
       "outcome": "success",
       "summary": "1 matched records; 0 source failures. Leads require review."
     }
@@ -2430,7 +2451,7 @@
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-19T19:36:44Z",
+    "lastAttemptAt": "2026-11-19T19:37:44Z",
     "note": "Free-source discovery active: cases, case_news, solicitations, law_firms State trial-court filing portals are not automatically searched."
   }
 }
