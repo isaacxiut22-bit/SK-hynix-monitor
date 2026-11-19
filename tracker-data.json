@@ -2402,26 +2402,26 @@
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-19T19:30:59Z",
-      "lastAttemptAt": "2026-11-19T19:30:59Z",
+      "lastSuccessAt": "2026-11-19T19:36:44Z",
+      "lastAttemptAt": "2026-11-19T19:36:44Z",
       "outcome": "success",
       "summary": "80 matched records; 0 source failures. Leads require review."
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-19T19:30:59Z",
-      "lastAttemptAt": "2026-11-19T19:30:59Z",
-      "outcome": "partial",
-      "summary": "5 matched records; 2 source failures. Leads require review."
+      "lastSuccessAt": "2026-11-19T19:36:44Z",
+      "lastAttemptAt": "2026-11-19T19:36:44Z",
+      "outcome": "success",
+      "summary": "6 matched records; 0 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-19T19:30:59Z",
-      "lastAttemptAt": "2026-11-19T19:30:59Z",
+      "lastSuccessAt": "2026-11-19T19:36:44Z",
+      "lastAttemptAt": "2026-11-19T19:36:44Z",
       "outcome": "success",
       "summary": "21 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-19T19:30:59Z",
-      "lastAttemptAt": "2026-11-19T19:30:59Z",
+      "lastSuccessAt": "2026-11-19T19:36:44Z",
+      "lastAttemptAt": "2026-11-19T19:36:44Z",
       "outcome": "success",
       "summary": "1 matched records; 0 source failures. Leads require review."
     }
@@ -2430,7 +2430,7 @@
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-19T19:30:59Z",
+    "lastAttemptAt": "2026-11-19T19:36:44Z",
     "note": "Free-source discovery active: cases, case_news, solicitations, law_firms State trial-court filing portals are not automatically searched."
   }
 }
