@@ -22,43 +22,22 @@
       "baseline": false
     },
     {
-      "id": "ktmc-securities-2026-11",
-      "tracker": "solicitations",
-      "title": "Kessler Topaz Meltzer & Check",
-      "entity": "SK hynix Inc.",
+      "id": "tip-ny-levin-yen-20261118",
+      "tracker": "cases",
+      "title": "Levin Yen v. SK hynix — reported New York filing (unverified)",
+      "entity": "SK hynix (reported defendant; exact legal entity not verified)",
       "date": "2026-11-18",
       "firstSeen": "2026-11-19",
-      "category": "Securities",
-      "status": "Investigation",
-      "forum": "Prospective U.S. securities litigation",
-      "firm": "Kessler Topaz Meltzer & Check, LLP",
-      "summary": "Firm announcement investigating potential federal securities-law violations on behalf of investors, citing reports of the DRAM dismissal ruling. The announcement does not establish that a securities complaint has been filed.",
-      "scope": "Investors who acquired SK hynix securities and experienced significant losses; class period not confirmed.",
+      "category": "Other Litigation",
+      "status": "User-reported filing — unverified",
+      "forum": "Supreme Court of the State of New York (county not provided)",
+      "firm": "Not established",
+      "summary": "User reported that plaintiff Levin Yen filed a case against SK hynix on November 18, 2026, in the Supreme Court of the State of New York. The court index number, county, official caption, exact defendants, filing date, and allegations have not been independently confirmed. The source link is to the general NYSCEF search portal, not to a case-specific docket.",
+      "scope": "Unverified user-reported lead. Do not treat as a verified state-court filing until the NYSCEF docket is checked.",
       "sources": [
         {
-          "label": "Firm release · PR Newswire",
-          "url": "https://www.prnewswire.com/news-releases/nasdaq-skhy-investigation-alert-sk-hynix-inc-investors-are-encouraged-to-contact-kessler-topaz-meltzer--check-llp-302944571.html"
-        }
-      ],
-      "baseline": true
-    },
-    {
-      "id": "news-57f6f85837a5e2a5",
-      "tracker": "solicitations",
-      "title": "SK hynix Inc. Investigation Notice: Levi & Korsinsky Notifies Investors of Pending Investigation Into SK hynix Inc. (SKHY)",
-      "entity": "SK hynix (reporting/announcement match)",
-      "date": "2026-11-18",
-      "firstSeen": "2026-11-19",
-      "category": "Securities",
-      "status": "Unverified solicitation lead",
-      "forum": "Public announcement or media report",
-      "firm": "ACCESS Newswire",
-      "summary": "SK hynix Inc. Investigation Notice: Levi & Korsinsky Notifies Investors of Pending Investigation Into SK hynix Inc. (SKHY) ACCESS Newswire Review original publication to determine if a plaintiff firm is actually soliciting clients. A news report does not imply that a lawsuit was filed.",
-      "scope": "Automated RSS discovery; not verified against court records or direct firm website.",
-      "sources": [
-        {
-          "label": "News/press-release source via Google News",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNa1RrbVRvVUhxMkhtcG10bGJGY3c4Nng2VmlBRjg1dTUyUGJtUFpia29MMmd1WUhjbGlxMEl6M1IzbjFRSUpGWENtUVFvejVZZmpJb3R5RGJpRFVVNGdEZHpsRkxxeHVIYmVHczRyWXB0SmtCNTFyRHZfeFhfaXlva0hGb0ZLeldHMHF1bnZfVEJqd01RTkpRWEJYNVNVN3JrWk5vMFp2c0JfVVJ3MnB4dFBSMGhZWUFWTldPX3dleEw4S2tnNjJnV19wczhRNmdseUFXeWdJcVNrSzE2emNoS3ZEXzQ?oc=5"
+          "label": "NYSCEF public case search (general portal; not docket verification)",
+          "url": "https://www.nycourts.gov/efile/"
         }
       ],
       "baseline": false
@@ -85,25 +64,46 @@
       "baseline": true
     },
     {
-      "id": "tip-ny-levin-yen-20261118",
-      "tracker": "cases",
-      "title": "Levin Yen v. SK hynix — reported New York filing (unverified)",
-      "entity": "SK hynix (reported defendant; exact legal entity not verified)",
+      "id": "news-57f6f85837a5e2a5",
+      "tracker": "solicitations",
+      "title": "SK hynix Inc. Investigation Notice: Levi & Korsinsky Notifies Investors of Pending Investigation Into SK hynix Inc. (SKHY)",
+      "entity": "SK hynix (reporting/announcement match)",
       "date": "2026-11-18",
       "firstSeen": "2026-11-19",
-      "category": "Other Litigation",
-      "status": "User-reported filing — unverified",
-      "forum": "Supreme Court of the State of New York (county not provided)",
-      "firm": "Not established",
-      "summary": "User reported that plaintiff Levin Yen filed a case against SK hynix on November 18, 2026, in the Supreme Court of the State of New York. The court index number, county, official caption, exact defendants, filing date, and allegations have not been independently confirmed. The source link is to the general NYSCEF search portal, not to a case-specific docket.",
-      "scope": "Unverified user-reported lead. Do not treat as a verified state-court filing until the NYSCEF docket is checked.",
+      "category": "Securities",
+      "status": "Unverified solicitation lead",
+      "forum": "Public announcement or media report",
+      "firm": "ACCESS Newswire",
+      "summary": "SK hynix Inc. Investigation Notice: Levi & Korsinsky Notifies Investors of Pending Investigation Into SK hynix Inc. (SKHY) ACCESS Newswire Review original publication to determine if a plaintiff firm is actually soliciting clients. A news report does not imply that a lawsuit was filed.",
+      "scope": "Automated RSS discovery; not verified against court records or direct firm website.",
       "sources": [
         {
-          "label": "NYSCEF public case search (general portal; not docket verification)",
-          "url": "https://www.nycourts.gov/efile/"
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNa1RrbVRvVUhxMkhtcG10bGJGY3c4Nng2VmlBRjg1dTUyUGJtUFpia29MMmd1WUhjbGlxMEl6M1IzbjFRSUpGWENtUVFvejVZZmpJb3R5RGJpRFVVNGdEZHpsRkxxeHVIYmVHczRyWXB0SmtCNTFyRHZfeFhfaXlva0hGb0ZLeldHMHF1bnZfVEJqd01RTkpRWEJYNVNVN3JrWk5vMFp2c0JfVVJ3MnB4dFBSMGhZWUFWTldPX3dleEw4S2tnNjJnV19wczhRNmdseUFXeWdJcVNrSzE2emNoS3ZEXzQ?oc=5"
         }
       ],
       "baseline": false
+    },
+    {
+      "id": "ktmc-securities-2026-11",
+      "tracker": "solicitations",
+      "title": "Kessler Topaz Meltzer & Check",
+      "entity": "SK hynix Inc.",
+      "date": "2026-11-18",
+      "firstSeen": "2026-11-19",
+      "category": "Securities",
+      "status": "Investigation",
+      "forum": "Prospective U.S. securities litigation",
+      "firm": "Kessler Topaz Meltzer & Check, LLP",
+      "summary": "Firm announcement investigating potential federal securities-law violations on behalf of investors, citing reports of the DRAM dismissal ruling. The announcement does not establish that a securities complaint has been filed.",
+      "scope": "Investors who acquired SK hynix securities and experienced significant losses; class period not confirmed.",
+      "sources": [
+        {
+          "label": "Firm release · PR Newswire",
+          "url": "https://www.prnewswire.com/news-releases/nasdaq-skhy-investigation-alert-sk-hynix-inc-investors-are-encouraged-to-contact-kessler-topaz-meltzer--check-llp-302944571.html"
+        }
+      ],
+      "baseline": true
     },
     {
       "id": "news-463d44d479103c12",
@@ -122,27 +122,6 @@
         {
           "label": "News/press-release source via Google News",
           "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQN3NVd3RsTkljUDRPOGNCa19tT3pnaFFKM2ZSZHNCcVZCX2ZuT3NSakVHV25QcDB4NjEyNzA0NlpsUmNhOWNBSER3bV9qejM5VFc1dGZUTkFBVDJtSEFrN0FTazdoLTFjU19qV1Y1TmlSXzhkWWFQN0FBOUdSSUplbWVhV0ZSVFllMnNKSW5RaE5IZGM0MHd2a2l3OXRJaW1JU3pnWHBfMEJOM2pGMnNhQmFPR3oyeTdrUXNzQ1hOcjJnNzd2Rk1vZ2RYaTU5a3RNQmw3Ym45Ti01WFJ4NkQ3SW9iZWZGQ2p1eDI3blJpNHNJS01nb2hBckVIcFg?oc=5"
-        }
-      ],
-      "baseline": false
-    },
-    {
-      "id": "cl-74937756",
-      "tracker": "cases",
-      "title": "SK hynix Inc. v. Longhorn IP LLC",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
-      "date": "2026-10-08",
-      "firstSeen": "2026-11-19",
-      "category": "IP",
-      "status": "Docket match — review",
-      "forum": "District Court, N.D. California · 3:26-cv-11609",
-      "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
-      "sources": [
-        {
-          "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A74937756"
         }
       ],
       "baseline": false
@@ -169,22 +148,22 @@
       "baseline": false
     },
     {
-      "id": "filingnews-b683cf5a47931fad",
+      "id": "cl-74937756",
       "tracker": "cases",
-      "title": "Samsung, SK Hynix CEOs Sued by South Korean Shareholder Group as Police Open Investigation - TradingKey",
-      "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-08-05",
+      "title": "SK hynix Inc. v. Longhorn IP LLC",
+      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "date": "2026-10-08",
       "firstSeen": "2026-11-19",
-      "category": "Securities",
-      "status": "Unverified filing report",
-      "forum": "Court and filing jurisdiction unverified",
-      "firm": "TradingKey",
-      "summary": "Samsung, SK Hynix CEOs Sued by South Korean Shareholder Group as Police Open Investigation TradingKey This is a media-source lead; verify court, docket number, party role and original filing.",
-      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 3:26-cv-11609",
+      "firm": "Not established",
+      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
+      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
       "sources": [
         {
-          "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQN0doZ1ZoN0Zpc0dsczE5c0Q5c2dvNWctRG43bHNZbUh1Skh3VWFUcDlSZjh4R1BZdnpIRHdYamhaUjBMdmNaTEpXV05CaWQ3Q3dIYmVCSXVHeE95a085NURXa1J1R2l0OUdqaVBuU20zSlE1UGZtZzUxT1pseDl2dVFUaElXM253ZktYTHZBYWY2a0k0Wm5tcnlMek9XVnBzd056aXdhY2FGQQ?oc=5"
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A74937756"
         }
       ],
       "baseline": false
@@ -211,22 +190,22 @@
       "baseline": false
     },
     {
-      "id": "filingnews-8102edbbf210698f",
+      "id": "filingnews-b683cf5a47931fad",
       "tracker": "cases",
-      "title": "RAM Class Action Lawsuit Targets Samsung, SK Hynix, and Micron Over Alleged Price-Fixing Scheme - https://www.lawnews.co.uk/",
+      "title": "Samsung, SK Hynix CEOs Sued by South Korean Shareholder Group as Police Open Investigation - TradingKey",
       "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-07-06",
+      "date": "2026-08-05",
       "firstSeen": "2026-11-19",
-      "category": "Other Litigation",
+      "category": "Securities",
       "status": "Unverified filing report",
       "forum": "Court and filing jurisdiction unverified",
-      "firm": "https://www.lawnews.co.uk/",
-      "summary": "RAM Class Action Lawsuit Targets Samsung, SK Hynix, and Micron Over Alleged Price-Fixing Scheme https://www.lawnews.co.uk/ This is a media-source lead; verify court, docket number, party role and original filing.",
+      "firm": "TradingKey",
+      "summary": "Samsung, SK Hynix CEOs Sued by South Korean Shareholder Group as Police Open Investigation TradingKey This is a media-source lead; verify court, docket number, party role and original filing.",
       "scope": "May concern federal or state court; NOT identified from a court docket.",
       "sources": [
         {
           "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQRDdlbU81dE9UN3lSX3N4LUZvUzEzNFZpRmdsSUdLdDlVbjRwaFh0VFVEWjAyVzdic3pLOWxMQ0o4czQ1ZE1CNmR3dkNpbFhmZFZaSzBkWW5HQzVhRnM2U0NITXhwS01pT1Eyd0FCd3NJSzRZbDc0ckpjaUtyNWVaaUVmXzl5bl9ld2FrUTVDSDBjU0xDaUZaTkFLU3Rhc3p5VHNnNFBBV1JxNnFHUXRjT1BDYVhNc2F3QXRab1NCOVFvUElhUGMzMUJSdw?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQN0doZ1ZoN0Zpc0dsczE5c0Q5c2dvNWctRG43bHNZbUh1Skh3VWFUcDlSZjh4R1BZdnpIRHdYamhaUjBMdmNaTEpXV05CaWQ3Q3dIYmVCSXVHeE95a085NURXa1J1R2l0OUdqaVBuU20zSlE1UGZtZzUxT1pseDl2dVFUaElXM253ZktYTHZBYWY2a0k0Wm5tcnlMek9XVnBzd056aXdhY2FGQQ?oc=5"
         }
       ],
       "baseline": false
@@ -247,6 +226,27 @@
       "sources": [
         {
           "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQRDdlbU81dE9UN3lSX3N4LUZvUzEzNFZpRmdsSUdLdDlVbjRwaFh0VFVEWjAyVzdic3pLOWxMQ0o4czQ1ZE1CNmR3dkNpbFhmZFZaSzBkWW5HQzVhRnM2U0NITXhwS01pT1Eyd0FCd3NJSzRZbDc0ckpjaUtyNWVaaUVmXzl5bl9ld2FrUTVDSDBjU0xDaUZaTkFLU3Rhc3p5VHNnNFBBV1JxNnFHUXRjT1BDYVhNc2F3QXRab1NCOVFvUElhUGMzMUJSdw?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "filingnews-8102edbbf210698f",
+      "tracker": "cases",
+      "title": "RAM Class Action Lawsuit Targets Samsung, SK Hynix, and Micron Over Alleged Price-Fixing Scheme - https://www.lawnews.co.uk/",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-07-06",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "https://www.lawnews.co.uk/",
+      "summary": "RAM Class Action Lawsuit Targets Samsung, SK Hynix, and Micron Over Alleged Price-Fixing Scheme https://www.lawnews.co.uk/ This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQRDdlbU81dE9UN3lSX3N4LUZvUzEzNFZpRmdsSUdLdDlVbjRwaFh0VFVEWjAyVzdic3pLOWxMQ0o4czQ1ZE1CNmR3dkNpbFhmZFZaSzBkWW5HQzVhRnM2U0NITXhwS01pT1Eyd0FCd3NJSzRZbDc0ckpjaUtyNWVaaUVmXzl5bl9ld2FrUTVDSDBjU0xDaUZaTkFLU3Rhc3p5VHNnNFBBV1JxNnFHUXRjT1BDYVhNc2F3QXRab1NCOVFvUElhUGMzMUJSdw?oc=5"
         }
       ],
@@ -274,27 +274,6 @@
       "baseline": false
     },
     {
-      "id": "filingnews-15ff7a2642ea46e2",
-      "tracker": "cases",
-      "title": "Samsung and SK Hynix Sued for Alleged RAM Price Fixing - ProPakistani",
-      "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-07-01",
-      "firstSeen": "2026-11-19",
-      "category": "Antitrust",
-      "status": "Unverified filing report",
-      "forum": "Court and filing jurisdiction unverified",
-      "firm": "ProPakistani",
-      "summary": "Samsung and SK Hynix Sued for Alleged RAM Price Fixing ProPakistani This is a media-source lead; verify court, docket number, party role and original filing.",
-      "scope": "May concern federal or state court; NOT identified from a court docket.",
-      "sources": [
-        {
-          "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMW9sVFJ5VTJqUEYwNnIzNk9NX09XdGlkcGJLeVhMOFBkc0JNM2U0OEd4dXpDaDV4X29aSWNaRTBqUmwtR0t6WHlFYVRZSGhCUzJLbWVPUHQ3QzhTSDVuMnhRMGpBUnpJMnpwd0wwUmVaX1NXVS11ZUFzN0ozRWJ5ZmtWOGM4QW5TdTlaVjdKY29sc1M00gGaAUFVX3lxTE5FQmduSVZhbzl6by1xM203Q21yMXlLRElxV1U4dFMxQ1FqLWJoMWZjV2NjT2tVWW52Mmw2YWxHRktwN1B3LVpacm5FQnlxNUpvd3pYeTBaLVFtVDRaUlJ1LVNudW9SNm5NLXlzdlJJLXV6LU1hZmI0RTUyTmVVbUpSM09TekFJTTBlRkJZUV9TU2xqOEJidGFoUVE?oc=5"
-        }
-      ],
-      "baseline": false
-    },
-    {
       "id": "filingnews-564c04b3c49d6cca",
       "tracker": "cases",
       "title": "Samsung Electronics, SK Hynix, Micron sued in US over DRAM supply shift to AI memory - electronics.economictimes.indiatimes.com",
@@ -316,148 +295,22 @@
       "baseline": false
     },
     {
-      "id": "filingnews-84f762b40db1373e",
+      "id": "filingnews-15ff7a2642ea46e2",
       "tracker": "cases",
-      "title": "Samsung, SK Hynix, and Micron are being sued for alleged DRAM price fixing and collusion - TweakTown",
+      "title": "Samsung and SK Hynix Sued for Alleged RAM Price Fixing - ProPakistani",
       "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-06-30",
+      "date": "2026-07-01",
       "firstSeen": "2026-11-19",
       "category": "Antitrust",
       "status": "Unverified filing report",
       "forum": "Court and filing jurisdiction unverified",
-      "firm": "TweakTown",
-      "summary": "Samsung, SK Hynix, and Micron are being sued for alleged DRAM price fixing and collusion TweakTown This is a media-source lead; verify court, docket number, party role and original filing.",
+      "firm": "ProPakistani",
+      "summary": "Samsung and SK Hynix Sued for Alleged RAM Price Fixing ProPakistani This is a media-source lead; verify court, docket number, party role and original filing.",
       "scope": "May concern federal or state court; NOT identified from a court docket.",
       "sources": [
         {
           "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOVkdmUU51RlVVWUtPc0NQSFJhdFpPdXliT0pacE8ybVBJWklqWk12dDd5NzZQRzA3RDJzb19qZ1pEeUxacUpkMDg5QVRHbE43ZmxZM05qVkRNUjJJb0hseXZBS0VzYi1QalhSRGZ2aE4xMkhPUFlHcHpTQTV2NmZnNWlpbzBGaTNBZHNSelB5RGYyR2dzSG5kUXJFenpIb1RfUWtNZG1aY3ZONXlGaUh5VEZGRGNqamE0cnA5TXdfaEV1YUVpUG9NOE5JT2VVSVdj?oc=5"
-        }
-      ],
-      "baseline": false
-    },
-    {
-      "id": "filingnews-9e218516513c0490",
-      "tracker": "cases",
-      "title": "Samsung, SK Hynix, Micron Sued for Alleged Memory Price-Fixing - PCMag",
-      "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-06-30",
-      "firstSeen": "2026-11-19",
-      "category": "Other Litigation",
-      "status": "Unverified filing report",
-      "forum": "Court and filing jurisdiction unverified",
-      "firm": "PCMag",
-      "summary": "Samsung, SK Hynix, Micron Sued for Alleged Memory Price-Fixing PCMag This is a media-source lead; verify court, docket number, party role and original filing.",
-      "scope": "May concern federal or state court; NOT identified from a court docket.",
-      "sources": [
-        {
-          "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQdmhJLUVza3hIQVhjRWV2X3dqTUFwSi1rby13czVJeFNjVUNMU2NCTmVFRDlyTnh5Vmx6cmJaV2RFTHA1bzdOOUlwby1nY1ZLUVVJdGdqUzFOX1dfN20xUHlkNndwMDNQalo4NW40aWNPSjlycDRHeVhFMnFHcVkxWVdYVFI0NENqNFNvMHdwS2I?oc=5"
-        }
-      ],
-      "baseline": false
-    },
-    {
-      "id": "filingnews-ad36aa86bb889c9e",
-      "tracker": "cases",
-      "title": "Samsung, Micron, and SK Hynix sued over artificial RAM shortage and price hikes - Gizmochina",
-      "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-06-30",
-      "firstSeen": "2026-11-19",
-      "category": "Other Litigation",
-      "status": "Unverified filing report",
-      "forum": "Court and filing jurisdiction unverified",
-      "firm": "Gizmochina",
-      "summary": "Samsung, Micron, and SK Hynix sued over artificial RAM shortage and price hikes Gizmochina This is a media-source lead; verify court, docket number, party role and original filing.",
-      "scope": "May concern federal or state court; NOT identified from a court docket.",
-      "sources": [
-        {
-          "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOV3FrZmFzRzl6NUE4bEJSOTh1N0ktOTBSX0RUaG5RQTNPaTZVOGM2NnhpODVpV2ZkZWhDTkc3SnE1VDJMa1FHenNFV3hrZ2F6dVhFbHNIWEdiVGpOWXMtVjZ6bG5ZbzdtQXU1S29wanp3VlV1d2tqclc3b3NfNnp1WlNySjNSQkhLTENkSktkdW9rdDRBZ3lyZ1pMZzRzZVJoU0RBbmoyWDhKeDFDMXVOQ0lacFBfOWc?oc=5"
-        }
-      ],
-      "baseline": false
-    },
-    {
-      "id": "filingnews-c7d502ae8de2aed4",
-      "tracker": "cases",
-      "title": "Samsung, SK hynix, Micron sued over alleged DRAM supply coordination as prices surge | 2026-06-30 | Investing News - Stockhouse",
-      "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-06-30",
-      "firstSeen": "2026-11-19",
-      "category": "Other Litigation",
-      "status": "Unverified filing report",
-      "forum": "Court and filing jurisdiction unverified",
-      "firm": "Stockhouse",
-      "summary": "Samsung, SK hynix, Micron sued over alleged DRAM supply coordination as prices surge | 2026-06-30 | Investing News Stockhouse This is a media-source lead; verify court, docket number, party role and original filing.",
-      "scope": "May concern federal or state court; NOT identified from a court docket.",
-      "sources": [
-        {
-          "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNclVXdmQ0U1dKNVJld1Z0a1I4Z3R4UG9vOG5RNmxKVF81M2V6NWt0enoyMXh4VmUxLUdKRkY4MjFDNUNzTGlLY2VDNXR2b1REaGJDbGNjZmhPM3FKUl9SUV9ERHcxQ0RGa0E0VFZRYXRZb2ItaWoxcHZGVXNKcFllMWZEMkJ0ZnV4b0hYQmlGLUtVemR6LUNSMFZYUGdGNmx0WHN3MGlIRl83cE84VS12YXdWM3IwX3RENTgzdmZCUVhZUQ?oc=5"
-        }
-      ],
-      "baseline": false
-    },
-    {
-      "id": "filingnews-cc9ccd8892903215",
-      "tracker": "cases",
-      "title": "Samsung, SK hynix, and Micron sued in the US for colluding to inflate RAM prices - Techish Kenya",
-      "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-06-30",
-      "firstSeen": "2026-11-19",
-      "category": "Other Litigation",
-      "status": "Unverified filing report",
-      "forum": "Court and filing jurisdiction unverified",
-      "firm": "Techish Kenya",
-      "summary": "Samsung, SK hynix, and Micron sued in the US for colluding to inflate RAM prices Techish Kenya This is a media-source lead; verify court, docket number, party role and original filing.",
-      "scope": "May concern federal or state court; NOT identified from a court docket.",
-      "sources": [
-        {
-          "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdkpzVW5zcHdvVC1ibWZ3WEZ1R0otLUlqVlREN3VpM3c0ZXljcmY0NGZEbFFDVS0xbWYtVWFwSXlYb3RiUGlTWWVhVFFTVTg1UTFJNGh1ZEhCNzA1eVNKR1ZsYmZxOWhEM3dmTUYyMnVZdTJGcXRSNEZXYkpkY2cyaTc3UnFXanU2LUVJ?oc=5"
-        }
-      ],
-      "baseline": false
-    },
-    {
-      "id": "filingnews-ed4358e5d7874238",
-      "tracker": "cases",
-      "title": "Samsung, SK Hynix, Micron Sued Over Alleged DRAM Price Fixing | Outlook Respawn - Outlook Respawn",
-      "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-06-30",
-      "firstSeen": "2026-11-19",
-      "category": "Antitrust",
-      "status": "Unverified filing report",
-      "forum": "Court and filing jurisdiction unverified",
-      "firm": "Outlook Respawn",
-      "summary": "Samsung, SK Hynix, Micron Sued Over Alleged DRAM Price Fixing | Outlook Respawn Outlook Respawn This is a media-source lead; verify court, docket number, party role and original filing.",
-      "scope": "May concern federal or state court; NOT identified from a court docket.",
-      "sources": [
-        {
-          "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaGowR0pjWEFnem9BREVZS0Nfd3E5YnhCdWVtVkMtbHpwMmZQbXdtam42U0s2XzdheXR2S3k4d292aHBIWVVITzBJNjRYa21JUy1SLTQ5LVlTQmE3TTUxNXFBVHZtTDJPQko3N25WWGdVb211c2FNMWVnaGROV2tySW1ZamFqdElTTG9pV0pneWFsM1BUNmxsQ0hDd0dlSzVRU3RwX2V1SmJydFBXRUVJZdIBvgFBVV95cUxNMXZZVkN3OU5CMUFhZGdLTzUtMFJCdTlYRXNpRlZtX3ZJSTRjSlhUcy1rTXprM3diekxveWVjZ3FFa2JuYm9Rd2hUU2FNbTdjaU9faS1Sb1ZmR2ExeXBscEpBRG5rVVpIUENHcDB5cU82Smx1ZjdzQUJZUnNWTWt5ZEJEZjhlMUFVQ3UtUUhydTdwal9URWxzM0lEWmF4MndIMmdneWhpcVBCLThrekVycExqNnhpYnd1dUVLbWhR?oc=5"
-        }
-      ],
-      "baseline": false
-    },
-    {
-      "id": "filingnews-f362c8259a358710",
-      "tracker": "cases",
-      "title": "Samsung, Micron and SK hynix sued over alleged RAM price-fixing scheme - The Eastleigh Voice",
-      "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-06-30",
-      "firstSeen": "2026-11-19",
-      "category": "Other Litigation",
-      "status": "Unverified filing report",
-      "forum": "Court and filing jurisdiction unverified",
-      "firm": "The Eastleigh Voice",
-      "summary": "Samsung, Micron and SK hynix sued over alleged RAM price-fixing scheme The Eastleigh Voice This is a media-source lead; verify court, docket number, party role and original filing.",
-      "scope": "May concern federal or state court; NOT identified from a court docket.",
-      "sources": [
-        {
-          "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQa25WbDJFVERTbnBkRU5GLW1MU21xcHh1QlhsOFZzc1NHRzhCcm16SE1lYlpKZy1CMWQ4VFdpaG5fTEZZdjRBbnpWU1VFT3dFcXV2Zl9scXl5ZTF6SmhyLWwwN09hbWZvcUFVYko4V0FrMGpFS1RoVGpESXpTYzI2UXI3YUdKbmdCaHBIS3Z1aDdxWkdpQW9GTFVueDNMY3VsRGZia1JwOTBRX0gxV2N6cGJIR0s?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMW9sVFJ5VTJqUEYwNnIzNk9NX09XdGlkcGJLeVhMOFBkc0JNM2U0OEd4dXpDaDV4X29aSWNaRTBqUmwtR0t6WHlFYVRZSGhCUzJLbWVPUHQ3QzhTSDVuMnhRMGpBUnpJMnpwd0wwUmVaX1NXVS11ZUFzN0ozRWJ5ZmtWOGM4QW5TdTlaVjdKY29sc1M00gGaAUFVX3lxTE5FQmduSVZhbzl6by1xM203Q21yMXlLRElxV1U4dFMxQ1FqLWJoMWZjV2NjT2tVWW52Mmw2YWxHRktwN1B3LVpacm5FQnlxNUpvd3pYeTBaLVFtVDRaUlJ1LVNudW9SNm5NLXlzdlJJLXV6LU1hZmI0RTUyTmVVbUpSM09TekFJTTBlRkJZUV9TU2xqOEJidGFoUVE?oc=5"
         }
       ],
       "baseline": false
@@ -484,190 +337,148 @@
       "baseline": false
     },
     {
-      "id": "filingnews-1d95cfda137ff85c",
+      "id": "filingnews-f362c8259a358710",
       "tracker": "cases",
-      "title": "DRAM price-fixing allegations return: Samsung, SK Hynix, Micron sued in US - Seeking Alpha",
+      "title": "Samsung, Micron and SK hynix sued over alleged RAM price-fixing scheme - The Eastleigh Voice",
       "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "firstSeen": "2026-11-19",
       "category": "Other Litigation",
       "status": "Unverified filing report",
       "forum": "Court and filing jurisdiction unverified",
-      "firm": "Seeking Alpha",
-      "summary": "DRAM price-fixing allegations return: Samsung, SK Hynix, Micron sued in US Seeking Alpha This is a media-source lead; verify court, docket number, party role and original filing.",
+      "firm": "The Eastleigh Voice",
+      "summary": "Samsung, Micron and SK hynix sued over alleged RAM price-fixing scheme The Eastleigh Voice This is a media-source lead; verify court, docket number, party role and original filing.",
       "scope": "May concern federal or state court; NOT identified from a court docket.",
       "sources": [
         {
           "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOY21kMDNhdFNDcGVLaFQtN2tBcTN0NWlZZDVwZExuaUZQTWt1bGVTaFdzbFpucmhmZUN4M1BYa1NkeGNxdzVjNG5iNWpQYURtYkNlTGp2TVNqU1BwRlJQNmUwcGhiNTFPenFPSVZ2VzVSUzAwemhMNTFiOUJsSjc4T0doVWhDejAwMXFHT1NLRGVYN3kwdWZIZFRGajZHLTlDV2Z0ZHVQTEFrdmItcmc?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQa25WbDJFVERTbnBkRU5GLW1MU21xcHh1QlhsOFZzc1NHRzhCcm16SE1lYlpKZy1CMWQ4VFdpaG5fTEZZdjRBbnpWU1VFT3dFcXV2Zl9scXl5ZTF6SmhyLWwwN09hbWZvcUFVYko4V0FrMGpFS1RoVGpESXpTYzI2UXI3YUdKbmdCaHBIS3Z1aDdxWkdpQW9GTFVueDNMY3VsRGZia1JwOTBRX0gxV2N6cGJIR0s?oc=5"
         }
       ],
       "baseline": false
     },
     {
-      "id": "filingnews-32fa6dcf2d29271f",
+      "id": "filingnews-ed4358e5d7874238",
       "tracker": "cases",
-      "title": "Samsung, SK Hynix, and Micron Sued Over Allegedly Keeping DRAM Prices Artificially High - Smartprix",
+      "title": "Samsung, SK Hynix, Micron Sued Over Alleged DRAM Price Fixing | Outlook Respawn - Outlook Respawn",
       "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-06-29",
-      "firstSeen": "2026-11-19",
-      "category": "Other Litigation",
-      "status": "Unverified filing report",
-      "forum": "Court and filing jurisdiction unverified",
-      "firm": "Smartprix",
-      "summary": "Samsung, SK Hynix, and Micron Sued Over Allegedly Keeping DRAM Prices Artificially High Smartprix This is a media-source lead; verify court, docket number, party role and original filing.",
-      "scope": "May concern federal or state court; NOT identified from a court docket.",
-      "sources": [
-        {
-          "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNS09rbGoxX3lmaUZnc2pWanltMUhyZ3FQc0dYQzhHZjRlbENlLWJxeUU3SUlxMVAtZUJDaUNTT1NWdHczX1JhRnR6Nm5DQ0Q0dHNybUpTbEpqZG9TUXplN2tsdFl0NGEyVnBQRlRnYVpkRlNycV9hamxMQk1zaTlkdldZSXFKYkN6eHR3alBEeEx4bnFNaDRPZ3NEN1VNNFBzN2JsVnZuX3BoZjF2cXpfcS1YWjNBNXRmRlE?oc=5"
-        }
-      ],
-      "baseline": false
-    },
-    {
-      "id": "filingnews-3e6f3612f194c43d",
-      "tracker": "cases",
-      "title": "Some U.S. consumers filed a class action lawsuit against Samsung Electronics, SK Hynix, and Micron - 매일경제",
-      "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-06-29",
-      "firstSeen": "2026-11-19",
-      "category": "Other Litigation",
-      "status": "Unverified filing report",
-      "forum": "Court and filing jurisdiction unverified",
-      "firm": "매일경제",
-      "summary": "Some U.S. consumers filed a class action lawsuit against Samsung Electronics, SK Hynix, and Micron 매일경제 This is a media-source lead; verify court, docket number, party role and original filing.",
-      "scope": "May concern federal or state court; NOT identified from a court docket.",
-      "sources": [
-        {
-          "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9BSDNqLTNoVHJncUtHbldRUTV5ck85VlBPTllaZFlXSkxyR1FqVkJJYjZ4TDBGdjZMMjN0bW1LME16WW9ybXpOMF80d21tUzQ?oc=5"
-        }
-      ],
-      "baseline": false
-    },
-    {
-      "id": "filingnews-4ce166e5305e7569",
-      "tracker": "cases",
-      "title": "Samsung, SK Hynix and Micron sued over alleged price-fixing amid RAM crisis - India Today",
-      "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-06-29",
-      "firstSeen": "2026-11-19",
-      "category": "Other Litigation",
-      "status": "Unverified filing report",
-      "forum": "Court and filing jurisdiction unverified",
-      "firm": "India Today",
-      "summary": "Samsung, SK Hynix and Micron sued over alleged price-fixing amid RAM crisis India Today This is a media-source lead; verify court, docket number, party role and original filing.",
-      "scope": "May concern federal or state court; NOT identified from a court docket.",
-      "sources": [
-        {
-          "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPc0dvR0ZTSnRzNi1jMW5RMlliUzFIRVdiS3ZtZWtqaERWQUNlSHJEQVphSm5TOHpJLWZSSUNlYzZxUnFibTgtdzluMmRPS0lhUDZBcjhXZy1vVTZkUWdqdjhVelhkWkw2N0pTUUhIR2dxNDdSbHJlRmQ5OHZOclFNc2xPSlM5LS03MkFKWEwxdFlaOVZuRHFaVHlYYjBRYTdWNWx1bUJJckJfdzl1SWlMNkd0QkxkY3o2aEFSaURUSXE2TXNHV3ZKWEQ3bVFHSHFISVBHcHNva1TSAd4BQVVfeXFMUC03SEpWeFBFUWZ0VWhUTVJ4dGxXdUJTNGNobVExMVRsbFBMOUR0eFVPcmZwcFBMTHVFd2RfaHpQbnZVZzlBMWFfWlR4REpBQnJra0xtZVVaQjRmeTVTUDdBb3dKMnpVOEpIdXpTRnNOa090aUpxbGN3d29JZW9ZUks3U2hmN1h2ZkFGY0xUTjVuOTlOYWtjNlJtWXZWeVdzbTZxZEJCblJSWEpvZ2hjSVQwRDh5RDJHQXlSQmNaQ1FRWjdBLTVWVFlwaHdBMGhkc0l0SDh0aWNudXBvN2ZR?oc=5"
-        }
-      ],
-      "baseline": false
-    },
-    {
-      "id": "filingnews-4d76eb1abc31673b",
-      "tracker": "cases",
-      "title": "Lawsuit filed against Samsung, SK Hynix and Micron, claims these companies restricted RAM supply to infla - The Times of India",
-      "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-06-29",
-      "firstSeen": "2026-11-19",
-      "category": "Other Litigation",
-      "status": "Unverified filing report",
-      "forum": "Court and filing jurisdiction unverified",
-      "firm": "The Times of India",
-      "summary": "Lawsuit filed against Samsung, SK Hynix and Micron, claims these companies restricted RAM supply to infla The Times of India This is a media-source lead; verify court, docket number, party role and original filing.",
-      "scope": "May concern federal or state court; NOT identified from a court docket.",
-      "sources": [
-        {
-          "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPWEJNUWljQUNYcTBiN0pVYWxrX1ViU0FnVHZPSHFNdzE2ZXZrNW1zNFhBYVdkbkZrOGdJNjZCNmpVVk91V0F2aTJjZlctQzl1YWxyX3JGZTZ5NWxjNVJhTTh4Q1htMngtclBJdkY4RXhEa2hydWM5MVE4bTBLN1plcldCaVg2MVNzRS14SXJzNlF0ck1hODVpMUM3cDBuMlhOQ1p5NmN0eWlycXlGeGJzc1JHMW9UdDRISTlTUGxycHd6ckdraVJUekpuZXRCelI2WU1Vb2RHSmNSbTdQUWVrRW1xajR1RTIwNF8zUmJoWW1qSzJmbnpGVzZpanBaSW9tNFRaeUlvazFuRmh3WTJyamI2NVNkUFNWXzJsSGRUeDXSAaYCQVVfeXFMTkgyVlNpRk9PMUlPMWduV21ldWlCYktaX1l2MVFCWVdlTnZxNzlWNVZlSmxZZzlfcXlwT1hzT2ZXemljZGxKSUh0R2k2SXB3LTZyMGtaWUxjUUlUVmJMRHRoYmJPd1B1b1lwMWZHTUNkOG54aWhfbHRkWHZBalB6VGEyeEhFSjRvQzZNbG9NTnM5NGtFYkJTYmhoQk9PZUd2LTdtRktEMDNFaTRnenlicVV4LVNZdUkweHdBMlllVzUyTHVRZnRDTW9oLVp2bW5BWlRMSmZnZEg2UkduMDBrTkVkZzc2bTBETEU2U2Z2Qm43ZVhydVhkcXo1UHQ4NE9FYlpoLUVTQ3dhOHltV05VUUNYcS16dE9wa0V4RGdpRWhkMTQxbHV3?oc=5"
-        }
-      ],
-      "baseline": false
-    },
-    {
-      "id": "filingnews-6bbe9b4117a5850a",
-      "tracker": "cases",
-      "title": "Samsung, SK hynix, and Micron sued over alleged DRAM price fixing amid record memory costs — lawsuit claims coordinated HBM shift was cover to curtail DDR3 and DDR4 production - Tom's Hardware",
-      "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "firstSeen": "2026-11-19",
       "category": "Antitrust",
       "status": "Unverified filing report",
       "forum": "Court and filing jurisdiction unverified",
-      "firm": "Tom's Hardware",
-      "summary": "Samsung, SK hynix, and Micron sued over alleged DRAM price fixing amid record memory costs — lawsuit claims coordinated HBM shift was cover to curtail DDR3 and DDR4 production Tom's Hardware This is a media-source lead; verify court, docket number, party role and original filing.",
+      "firm": "Outlook Respawn",
+      "summary": "Samsung, SK Hynix, Micron Sued Over Alleged DRAM Price Fixing | Outlook Respawn Outlook Respawn This is a media-source lead; verify court, docket number, party role and original filing.",
       "scope": "May concern federal or state court; NOT identified from a court docket.",
       "sources": [
         {
           "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQcXhJaHQ4elkzZnpvNHVZb0FMRENWLXI3cXlOYk55R2pacURNREhQb0RqMEF4Y3Nxc1NSVmtTbjBYYlJtODdXMG1WQ2JaNmktSm9yM0EyM0RYZE9LTGtCRy16S20tekRiRjB0ZUxDTlYtWVQwY19lZUYtX1VxaGVuc25RN1Y1Y1k1TDIycjBmUHVVNUVYX0NraU04UEotQTNwd0tZVXV6by1ncTJkd0JJMEx5OUp2MG9ZcWxqSkdnbjNCRy1xRjFKc1A3Yw?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaGowR0pjWEFnem9BREVZS0Nfd3E5YnhCdWVtVkMtbHpwMmZQbXdtam42U0s2XzdheXR2S3k4d292aHBIWVVITzBJNjRYa21JUy1SLTQ5LVlTQmE3TTUxNXFBVHZtTDJPQko3N25WWGdVb211c2FNMWVnaGROV2tySW1ZamFqdElTTG9pV0pneWFsM1BUNmxsQ0hDd0dlSzVRU3RwX2V1SmJydFBXRUVJZdIBvgFBVV95cUxNMXZZVkN3OU5CMUFhZGdLTzUtMFJCdTlYRXNpRlZtX3ZJSTRjSlhUcy1rTXprM3diekxveWVjZ3FFa2JuYm9Rd2hUU2FNbTdjaU9faS1Sb1ZmR2ExeXBscEpBRG5rVVpIUENHcDB5cU82Smx1ZjdzQUJZUnNWTWt5ZEJEZjhlMUFVQ3UtUUhydTdwal9URWxzM0lEWmF4MndIMmdneWhpcVBCLThrekVycExqNnhpYnd1dUVLbWhR?oc=5"
         }
       ],
       "baseline": false
     },
     {
-      "id": "filingnews-83741c96f22ff325",
+      "id": "filingnews-cc9ccd8892903215",
       "tracker": "cases",
-      "title": "SK Hynix, Samsung and Micron sued over allegations of \"concerted anticompetitive behaviour\" in DRAM market - GamesIndustry.biz",
+      "title": "Samsung, SK hynix, and Micron sued in the US for colluding to inflate RAM prices - Techish Kenya",
       "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "firstSeen": "2026-11-19",
       "category": "Other Litigation",
       "status": "Unverified filing report",
       "forum": "Court and filing jurisdiction unverified",
-      "firm": "GamesIndustry.biz",
-      "summary": "SK Hynix, Samsung and Micron sued over allegations of \"concerted anticompetitive behaviour\" in DRAM market GamesIndustry.biz This is a media-source lead; verify court, docket number, party role and original filing.",
+      "firm": "Techish Kenya",
+      "summary": "Samsung, SK hynix, and Micron sued in the US for colluding to inflate RAM prices Techish Kenya This is a media-source lead; verify court, docket number, party role and original filing.",
       "scope": "May concern federal or state court; NOT identified from a court docket.",
       "sources": [
         {
           "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPbHo1bllIQWw2cklESUJFX3N3M0FlUEowSXNBYlkyaEVNUy1tdTN1bXV0ZWVWV0N5M3lFQjhYbElZdm5YTFdpNlN0WG1qU2xVajl6bl82blNibjhLVW50RUpNd3l4bEVYNVQ4RnYxbW52TGN5VENCZmpha3RIaEtocC1aYkVEbmRUTzdoeTNHSnFmdHFOUUtkaWRxaGExSjNWVE04Q001UDZuZ2l6dFlDOEsyODFBMThsNWs5M29xZDMyRmZKd2FyaVZWbElNdw?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdkpzVW5zcHdvVC1ibWZ3WEZ1R0otLUlqVlREN3VpM3c0ZXljcmY0NGZEbFFDVS0xbWYtVWFwSXlYb3RiUGlTWWVhVFFTVTg1UTFJNGh1ZEhCNzA1eVNKR1ZsYmZxOWhEM3dmTUYyMnVZdTJGcXRSNEZXYkpkY2cyaTc3UnFXanU2LUVJ?oc=5"
         }
       ],
       "baseline": false
     },
     {
-      "id": "filingnews-da60da5fac913a66",
+      "id": "filingnews-c7d502ae8de2aed4",
       "tracker": "cases",
-      "title": "RAM prices skyrocketing: Samsung, Micron, and SK Hynix sued for alleged market manipulation - Diario AS",
+      "title": "Samsung, SK hynix, Micron sued over alleged DRAM supply coordination as prices surge | 2026-06-30 | Investing News - Stockhouse",
       "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "firstSeen": "2026-11-19",
       "category": "Other Litigation",
       "status": "Unverified filing report",
       "forum": "Court and filing jurisdiction unverified",
-      "firm": "Diario AS",
-      "summary": "RAM prices skyrocketing: Samsung, Micron, and SK Hynix sued for alleged market manipulation Diario AS This is a media-source lead; verify court, docket number, party role and original filing.",
+      "firm": "Stockhouse",
+      "summary": "Samsung, SK hynix, Micron sued over alleged DRAM supply coordination as prices surge | 2026-06-30 | Investing News Stockhouse This is a media-source lead; verify court, docket number, party role and original filing.",
       "scope": "May concern federal or state court; NOT identified from a court docket.",
       "sources": [
         {
           "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPenRIeE9zUFpDX01VOWhZMDlYdDZBbXEzVU9JeWloUFpFUnBGZWdVS3BxRkNDMW9aVlBIR01oZXVJUzJIN1o4M3FTeXN2U3MxLUpGMzM2RTBRd21VTHVLeVdNSHhNUkxxRVAzc19DSG5VSU5ZYjZyME45aUVuYmFmWjdCblFUVDZ0NmNhNVVRdlRVT2MzVWs2cGlLcW11a2FtYWh5c2djVWJsa1BxWXN5VXBsWjN3bm5iektfMUlabVJzNUk2MVZJamJSQ1NKeXPSAeMBQVVfeXFMTnQ4NmZobXdDQUFhY0FVQkg1d2p0XzBHd0hhSWVRWS03Vzltelprb2NQN0ZUS3JGRkRyT0JqUWd2OVpvYUZSaXBZcmQ4a3VZdVI5d0VPVWY5Y1JYc2swY2VodE13RnhkcmJTd2g0Y0xiQ2ZldWFfWDc2WmI5NXJnM3lpNTk4ZC1KbVk2QXFtZ0xocDhUbUd4TGoweVJWNXh4VW1ubnhISi1ZUGFnTmY5QS1GdDFDLXliTXROZUFxVmROVXRyb2dnS0w3MGNSVjdpQjRWTVRLaE05anFJYlVoSHNlcUU?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNclVXdmQ0U1dKNVJld1Z0a1I4Z3R4UG9vOG5RNmxKVF81M2V6NWt0enoyMXh4VmUxLUdKRkY4MjFDNUNzTGlLY2VDNXR2b1REaGJDbGNjZmhPM3FKUl9SUV9ERHcxQ0RGa0E0VFZRYXRZb2ItaWoxcHZGVXNKcFllMWZEMkJ0ZnV4b0hYQmlGLUtVemR6LUNSMFZYUGdGNmx0WHN3MGlIRl83cE84VS12YXdWM3IwX3RENTgzdmZCUVhZUQ?oc=5"
         }
       ],
       "baseline": false
     },
     {
-      "id": "filingnews-db35e928fa11d2a2",
+      "id": "filingnews-ad36aa86bb889c9e",
       "tracker": "cases",
-      "title": "Samsung, SK hynix, Micron Sued in US Over Memory Price Fixing - Seoul Economic Daily",
+      "title": "Samsung, Micron, and SK Hynix sued over artificial RAM shortage and price hikes - Gizmochina",
       "entity": "SK hynix or subsidiary (media reference; verify role)",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "Gizmochina",
+      "summary": "Samsung, Micron, and SK Hynix sued over artificial RAM shortage and price hikes Gizmochina This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOV3FrZmFzRzl6NUE4bEJSOTh1N0ktOTBSX0RUaG5RQTNPaTZVOGM2NnhpODVpV2ZkZWhDTkc3SnE1VDJMa1FHenNFV3hrZ2F6dVhFbHNIWEdiVGpOWXMtVjZ6bG5ZbzdtQXU1S29wanp3VlV1d2tqclc3b3NfNnp1WlNySjNSQkhLTENkSktkdW9rdDRBZ3lyZ1pMZzRzZVJoU0RBbmoyWDhKeDFDMXVOQ0lacFBfOWc?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "filingnews-9e218516513c0490",
+      "tracker": "cases",
+      "title": "Samsung, SK Hynix, Micron Sued for Alleged Memory Price-Fixing - PCMag",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-06-30",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "PCMag",
+      "summary": "Samsung, SK Hynix, Micron Sued for Alleged Memory Price-Fixing PCMag This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQdmhJLUVza3hIQVhjRWV2X3dqTUFwSi1rby13czVJeFNjVUNMU2NCTmVFRDlyTnh5Vmx6cmJaV2RFTHA1bzdOOUlwby1nY1ZLUVVJdGdqUzFOX1dfN20xUHlkNndwMDNQalo4NW40aWNPSjlycDRHeVhFMnFHcVkxWVdYVFI0NENqNFNvMHdwS2I?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "filingnews-84f762b40db1373e",
+      "tracker": "cases",
+      "title": "Samsung, SK Hynix, and Micron are being sued for alleged DRAM price fixing and collusion - TweakTown",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-06-30",
       "firstSeen": "2026-11-19",
       "category": "Antitrust",
       "status": "Unverified filing report",
       "forum": "Court and filing jurisdiction unverified",
-      "firm": "Seoul Economic Daily",
-      "summary": "Samsung, SK hynix, Micron Sued in US Over Memory Price Fixing Seoul Economic Daily This is a media-source lead; verify court, docket number, party role and original filing.",
+      "firm": "TweakTown",
+      "summary": "Samsung, SK Hynix, and Micron are being sued for alleged DRAM price fixing and collusion TweakTown This is a media-source lead; verify court, docket number, party role and original filing.",
       "scope": "May concern federal or state court; NOT identified from a court docket.",
       "sources": [
         {
           "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZUJoOTlEX2d0ZlFJNUtCYVpONFh2V01rQ0IyUWtHNzU5a0JKN1NWQlFRWXUzR0VHdXNrcTFuLWVxQXhlUWpuRE90cHFVeDkxckpmUUZtQ2NtT3ZEbkNESEdKdUZMVDBfVHdzcWd3VkFZSXU0YlJWTVNKb25KU092Y3RlSTFFczAyNzA4OG95UzdpQkxyclFwVlJZS0tGcWsw?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOVkdmUU51RlVVWUtPc0NQSFJhdFpPdXliT0pacE8ybVBJWklqWk12dDd5NzZQRzA3RDJzb19qZ1pEeUxacUpkMDg5QVRHbE43ZmxZM05qVkRNUjJJb0hseXZBS0VzYi1QalhSRGZ2aE4xMkhPUFlHcHpTQTV2NmZnNWlpbzBGaTNBZHNSelB5RGYyR2dzSG5kUXJFenpIb1RfUWtNZG1aY3ZONXlGaUh5VEZGRGNqamE0cnA5TXdfaEV1YUVpUG9NOE5JT2VVSVdj?oc=5"
         }
       ],
       "baseline": false
@@ -694,25 +505,193 @@
       "baseline": false
     },
     {
-      "id": "candce-26-06345",
+      "id": "filingnews-db35e928fa11d2a2",
       "tracker": "cases",
-      "title": "Garciaguirre et al. v. Samsung Electronics Co., Ltd. et al.",
-      "entity": "SK hynix entities; Samsung; Micron",
-      "date": "2026-06-25",
+      "title": "Samsung, SK hynix, Micron Sued in US Over Memory Price Fixing - Seoul Economic Daily",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-06-29",
       "firstSeen": "2026-11-19",
       "category": "Antitrust",
-      "status": "Confirmed filing",
-      "forum": "N.D. California · 5:26-cv-06345",
-      "firm": "Bathaee Dunne LLP",
-      "summary": "Putative class action alleging coordinated restrictions on conventional DRAM supply and pricing. The court denied the defendants’ motion to dismiss on November 14, 2026. This is an existing baseline case, not a newly filed matter.",
-      "scope": "Consumers and small businesses; federal antitrust and state-law claims.",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "Seoul Economic Daily",
+      "summary": "Samsung, SK hynix, Micron Sued in US Over Memory Price Fixing Seoul Economic Daily This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
       "sources": [
         {
-          "label": "Court order · November 14, 2026",
-          "url": "https://cases.justia.com/federal/district-courts/california/candce/5%3A2026cv06345/472931/68/0.pdf"
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZUJoOTlEX2d0ZlFJNUtCYVpONFh2V01rQ0IyUWtHNzU5a0JKN1NWQlFRWXUzR0VHdXNrcTFuLWVxQXhlUWpuRE90cHFVeDkxckpmUUZtQ2NtT3ZEbkNESEdKdUZMVDBfVHdzcWd3VkFZSXU0YlJWTVNKb25KU092Y3RlSTFFczAyNzA4OG95UzdpQkxyclFwVlJZS0tGcWsw?oc=5"
         }
       ],
-      "baseline": true
+      "baseline": false
+    },
+    {
+      "id": "filingnews-da60da5fac913a66",
+      "tracker": "cases",
+      "title": "RAM prices skyrocketing: Samsung, Micron, and SK Hynix sued for alleged market manipulation - Diario AS",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-06-29",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "Diario AS",
+      "summary": "RAM prices skyrocketing: Samsung, Micron, and SK Hynix sued for alleged market manipulation Diario AS This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPenRIeE9zUFpDX01VOWhZMDlYdDZBbXEzVU9JeWloUFpFUnBGZWdVS3BxRkNDMW9aVlBIR01oZXVJUzJIN1o4M3FTeXN2U3MxLUpGMzM2RTBRd21VTHVLeVdNSHhNUkxxRVAzc19DSG5VSU5ZYjZyME45aUVuYmFmWjdCblFUVDZ0NmNhNVVRdlRVT2MzVWs2cGlLcW11a2FtYWh5c2djVWJsa1BxWXN5VXBsWjN3bm5iektfMUlabVJzNUk2MVZJamJSQ1NKeXPSAeMBQVVfeXFMTnQ4NmZobXdDQUFhY0FVQkg1d2p0XzBHd0hhSWVRWS03Vzltelprb2NQN0ZUS3JGRkRyT0JqUWd2OVpvYUZSaXBZcmQ4a3VZdVI5d0VPVWY5Y1JYc2swY2VodE13RnhkcmJTd2g0Y0xiQ2ZldWFfWDc2WmI5NXJnM3lpNTk4ZC1KbVk2QXFtZ0xocDhUbUd4TGoweVJWNXh4VW1ubnhISi1ZUGFnTmY5QS1GdDFDLXliTXROZUFxVmROVXRyb2dnS0w3MGNSVjdpQjRWTVRLaE05anFJYlVoSHNlcUU?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "filingnews-83741c96f22ff325",
+      "tracker": "cases",
+      "title": "SK Hynix, Samsung and Micron sued over allegations of \"concerted anticompetitive behaviour\" in DRAM market - GamesIndustry.biz",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-06-29",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "GamesIndustry.biz",
+      "summary": "SK Hynix, Samsung and Micron sued over allegations of \"concerted anticompetitive behaviour\" in DRAM market GamesIndustry.biz This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPbHo1bllIQWw2cklESUJFX3N3M0FlUEowSXNBYlkyaEVNUy1tdTN1bXV0ZWVWV0N5M3lFQjhYbElZdm5YTFdpNlN0WG1qU2xVajl6bl82blNibjhLVW50RUpNd3l4bEVYNVQ4RnYxbW52TGN5VENCZmpha3RIaEtocC1aYkVEbmRUTzdoeTNHSnFmdHFOUUtkaWRxaGExSjNWVE04Q001UDZuZ2l6dFlDOEsyODFBMThsNWs5M29xZDMyRmZKd2FyaVZWbElNdw?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "filingnews-6bbe9b4117a5850a",
+      "tracker": "cases",
+      "title": "Samsung, SK hynix, and Micron sued over alleged DRAM price fixing amid record memory costs — lawsuit claims coordinated HBM shift was cover to curtail DDR3 and DDR4 production - Tom's Hardware",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-06-29",
+      "firstSeen": "2026-11-19",
+      "category": "Antitrust",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "Tom's Hardware",
+      "summary": "Samsung, SK hynix, and Micron sued over alleged DRAM price fixing amid record memory costs — lawsuit claims coordinated HBM shift was cover to curtail DDR3 and DDR4 production Tom's Hardware This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQcXhJaHQ4elkzZnpvNHVZb0FMRENWLXI3cXlOYk55R2pacURNREhQb0RqMEF4Y3Nxc1NSVmtTbjBYYlJtODdXMG1WQ2JaNmktSm9yM0EyM0RYZE9LTGtCRy16S20tekRiRjB0ZUxDTlYtWVQwY19lZUYtX1VxaGVuc25RN1Y1Y1k1TDIycjBmUHVVNUVYX0NraU04UEotQTNwd0tZVXV6by1ncTJkd0JJMEx5OUp2MG9ZcWxqSkdnbjNCRy1xRjFKc1A3Yw?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "filingnews-4d76eb1abc31673b",
+      "tracker": "cases",
+      "title": "Lawsuit filed against Samsung, SK Hynix and Micron, claims these companies restricted RAM supply to infla - The Times of India",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-06-29",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "The Times of India",
+      "summary": "Lawsuit filed against Samsung, SK Hynix and Micron, claims these companies restricted RAM supply to infla The Times of India This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPWEJNUWljQUNYcTBiN0pVYWxrX1ViU0FnVHZPSHFNdzE2ZXZrNW1zNFhBYVdkbkZrOGdJNjZCNmpVVk91V0F2aTJjZlctQzl1YWxyX3JGZTZ5NWxjNVJhTTh4Q1htMngtclBJdkY4RXhEa2hydWM5MVE4bTBLN1plcldCaVg2MVNzRS14SXJzNlF0ck1hODVpMUM3cDBuMlhOQ1p5NmN0eWlycXlGeGJzc1JHMW9UdDRISTlTUGxycHd6ckdraVJUekpuZXRCelI2WU1Vb2RHSmNSbTdQUWVrRW1xajR1RTIwNF8zUmJoWW1qSzJmbnpGVzZpanBaSW9tNFRaeUlvazFuRmh3WTJyamI2NVNkUFNWXzJsSGRUeDXSAaYCQVVfeXFMTkgyVlNpRk9PMUlPMWduV21ldWlCYktaX1l2MVFCWVdlTnZxNzlWNVZlSmxZZzlfcXlwT1hzT2ZXemljZGxKSUh0R2k2SXB3LTZyMGtaWUxjUUlUVmJMRHRoYmJPd1B1b1lwMWZHTUNkOG54aWhfbHRkWHZBalB6VGEyeEhFSjRvQzZNbG9NTnM5NGtFYkJTYmhoQk9PZUd2LTdtRktEMDNFaTRnenlicVV4LVNZdUkweHdBMlllVzUyTHVRZnRDTW9oLVp2bW5BWlRMSmZnZEg2UkduMDBrTkVkZzc2bTBETEU2U2Z2Qm43ZVhydVhkcXo1UHQ4NE9FYlpoLUVTQ3dhOHltV05VUUNYcS16dE9wa0V4RGdpRWhkMTQxbHV3?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "filingnews-4ce166e5305e7569",
+      "tracker": "cases",
+      "title": "Samsung, SK Hynix and Micron sued over alleged price-fixing amid RAM crisis - India Today",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-06-29",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "India Today",
+      "summary": "Samsung, SK Hynix and Micron sued over alleged price-fixing amid RAM crisis India Today This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPc0dvR0ZTSnRzNi1jMW5RMlliUzFIRVdiS3ZtZWtqaERWQUNlSHJEQVphSm5TOHpJLWZSSUNlYzZxUnFibTgtdzluMmRPS0lhUDZBcjhXZy1vVTZkUWdqdjhVelhkWkw2N0pTUUhIR2dxNDdSbHJlRmQ5OHZOclFNc2xPSlM5LS03MkFKWEwxdFlaOVZuRHFaVHlYYjBRYTdWNWx1bUJJckJfdzl1SWlMNkd0QkxkY3o2aEFSaURUSXE2TXNHV3ZKWEQ3bVFHSHFISVBHcHNva1TSAd4BQVVfeXFMUC03SEpWeFBFUWZ0VWhUTVJ4dGxXdUJTNGNobVExMVRsbFBMOUR0eFVPcmZwcFBMTHVFd2RfaHpQbnZVZzlBMWFfWlR4REpBQnJra0xtZVVaQjRmeTVTUDdBb3dKMnpVOEpIdXpTRnNOa090aUpxbGN3d29JZW9ZUks3U2hmN1h2ZkFGY0xUTjVuOTlOYWtjNlJtWXZWeVdzbTZxZEJCblJSWEpvZ2hjSVQwRDh5RDJHQXlSQmNaQ1FRWjdBLTVWVFlwaHdBMGhkc0l0SDh0aWNudXBvN2ZR?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "filingnews-3e6f3612f194c43d",
+      "tracker": "cases",
+      "title": "Some U.S. consumers filed a class action lawsuit against Samsung Electronics, SK Hynix, and Micron - 매일경제",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-06-29",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "매일경제",
+      "summary": "Some U.S. consumers filed a class action lawsuit against Samsung Electronics, SK Hynix, and Micron 매일경제 This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9BSDNqLTNoVHJncUtHbldRUTV5ck85VlBPTllaZFlXSkxyR1FqVkJJYjZ4TDBGdjZMMjN0bW1LME16WW9ybXpOMF80d21tUzQ?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "filingnews-32fa6dcf2d29271f",
+      "tracker": "cases",
+      "title": "Samsung, SK Hynix, and Micron Sued Over Allegedly Keeping DRAM Prices Artificially High - Smartprix",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-06-29",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "Smartprix",
+      "summary": "Samsung, SK Hynix, and Micron Sued Over Allegedly Keeping DRAM Prices Artificially High Smartprix This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNS09rbGoxX3lmaUZnc2pWanltMUhyZ3FQc0dYQzhHZjRlbENlLWJxeUU3SUlxMVAtZUJDaUNTT1NWdHczX1JhRnR6Nm5DQ0Q0dHNybUpTbEpqZG9TUXplN2tsdFl0NGEyVnBQRlRnYVpkRlNycV9hamxMQk1zaTlkdldZSXFKYkN6eHR3alBEeEx4bnFNaDRPZ3NEN1VNNFBzN2JsVnZuX3BoZjF2cXpfcS1YWjNBNXRmRlE?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "filingnews-1d95cfda137ff85c",
+      "tracker": "cases",
+      "title": "DRAM price-fixing allegations return: Samsung, SK Hynix, Micron sued in US - Seeking Alpha",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-06-29",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "Seeking Alpha",
+      "summary": "DRAM price-fixing allegations return: Samsung, SK Hynix, Micron sued in US Seeking Alpha This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOY21kMDNhdFNDcGVLaFQtN2tBcTN0NWlZZDVwZExuaUZQTWt1bGVTaFdzbFpucmhmZUN4M1BYa1NkeGNxdzVjNG5iNWpQYURtYkNlTGp2TVNqU1BwRlJQNmUwcGhiNTFPenFPSVZ2VzVSUzAwemhMNTFiOUJsSjc4T0doVWhDejAwMXFHT1NLRGVYN3kwdWZIZFRGajZHLTlDV2Z0ZHVQTEFrdmItcmc?oc=5"
+        }
+      ],
+      "baseline": false
     },
     {
       "id": "cl-73532135",
@@ -734,6 +713,27 @@
         }
       ],
       "baseline": false
+    },
+    {
+      "id": "candce-26-06345",
+      "tracker": "cases",
+      "title": "Garciaguirre et al. v. Samsung Electronics Co., Ltd. et al.",
+      "entity": "SK hynix entities; Samsung; Micron",
+      "date": "2026-06-25",
+      "firstSeen": "2026-11-19",
+      "category": "Antitrust",
+      "status": "Confirmed filing",
+      "forum": "N.D. California · 5:26-cv-06345",
+      "firm": "Bathaee Dunne LLP",
+      "summary": "Putative class action alleging coordinated restrictions on conventional DRAM supply and pricing. The court denied the defendants’ motion to dismiss on November 14, 2026. This is an existing baseline case, not a newly filed matter.",
+      "scope": "Consumers and small businesses; federal antitrust and state-law claims.",
+      "sources": [
+        {
+          "label": "Court order · November 14, 2026",
+          "url": "https://cases.justia.com/federal/district-courts/california/candce/5%3A2026cv06345/472931/68/0.pdf"
+        }
+      ],
+      "baseline": true
     },
     {
       "id": "cl-73323266",
@@ -841,27 +841,6 @@
       "baseline": false
     },
     {
-      "id": "cl-71970757",
-      "tracker": "cases",
-      "title": "MonolithIC 3D Inc. v. SK Hynix Inc.",
-      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
-      "date": "2025-11-26",
-      "firstSeen": "2026-11-19",
-      "category": "Other Litigation",
-      "status": "Docket match — review",
-      "forum": "District Court, E.D. Texas · 2:25-cv-01167",
-      "firm": "Not established",
-      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
-      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
-      "sources": [
-        {
-          "label": "CourtListener federal docket",
-          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A71970757"
-        }
-      ],
-      "baseline": false
-    },
-    {
       "id": "cl-71972052",
       "tracker": "cases",
       "title": "MonolithIC 3D Inc. v. SK Hynix Inc.",
@@ -878,6 +857,27 @@
         {
           "label": "CourtListener federal docket",
           "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A71972052"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-71970757",
+      "tracker": "cases",
+      "title": "MonolithIC 3D Inc. v. SK Hynix Inc.",
+      "entity": "SK hynix / subsidiary (party-name search match; confirm on docket)",
+      "date": "2025-11-26",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, E.D. Texas · 2:25-cv-01167",
+      "firm": "Not established",
+      "summary": "Federal docket matched CourtListener’s SK hynix party-name search. Review the linked docket for the exact party identity, claims, and filing status. A search match alone does not establish that SK hynix is a defendant.",
+      "scope": "U.S. federal docket; RECAP coverage is not comprehensive and can lag PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/?type=d&q=docket_id%3A71970757"
         }
       ],
       "baseline": false
@@ -1114,6 +1114,69 @@
       "baseline": false
     },
     {
+      "id": "cl-4387967",
+      "tracker": "cases",
+      "title": "DSS Technology Management, Inc. v. Qualcomm Incorporated",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2015-07-16",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, E.D. Texas · 6:15-cv-00692",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4387966",
+      "tracker": "cases",
+      "title": "DSS Technology Management, Inc. v. SK Hynix, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2015-07-16",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, E.D. Texas · 6:15-cv-00691",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4542780",
+      "tracker": "cases",
+      "title": "Elm 3DS Innovations LLC v. SK hynix Inc., a Korean corporation",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2014-11-21",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, D. Delaware · 1:14-cv-01432",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
       "id": "filingnews-e70823ade77505ad",
       "tracker": "cases",
       "title": "SK Hynix Sued By SanDisk And Toshiba Over Alleged Theft Of Trade Secrets - The SSD Review",
@@ -1135,22 +1198,358 @@
       "baseline": false
     },
     {
-      "id": "firm-03905eca8858bd2a",
-      "tracker": "solicitations",
-      "title": "SK hynix Inc. NASDAQ SKHY Learn More",
-      "entity": "SK hynix / related name (firm listing match; review)",
-      "date": null,
+      "id": "cl-4511779",
+      "tracker": "cases",
+      "title": "Zond, LLC v. SK Hynix, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2013-07-03",
       "firstSeen": "2026-11-19",
-      "category": "Other Litigation",
-      "status": "Unverified firm website lead",
-      "forum": "Plaintiff-firm public website",
-      "firm": "Kessler Topaz (investigations)",
-      "summary": "Company or ticker match found directly on a public plaintiff-firm case/investigation listing. Review the linked page to determine the client solicitation, litigation posture, and case status.",
-      "scope": "Direct listing-page discovery; firm websites may use JavaScript and not expose all entries in HTML.",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, D. Massachusetts · 1:13-cv-11591",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
       "sources": [
         {
-          "label": "Plaintiff-firm website",
-          "url": "https://www.ktmc.com/skhy-sk-hyix-inc-investigation/"
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-5804420",
+      "tracker": "cases",
+      "title": "Forest Ambulatory Surgical Associates, L.P. v. United Healthcare Insurance Company",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2012-04-03",
+      "firstSeen": "2026-11-19",
+      "category": "Employment",
+      "status": "Docket match — review",
+      "forum": "District Court, C.D. California · 2:12-cv-02916",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4405901",
+      "tracker": "cases",
+      "title": "Jaffe v. Samsung Electronics Co., Ltd.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2012-01-05",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, E.D. Virginia · 1:12-cv-00008",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-14320202",
+      "tracker": "cases",
+      "title": "Hynix Semiconductor Inc. v. Acacia Research Corporation",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2011-12-21",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "District Court, E.D. Texas · 1:11-cv-00731",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-52167216",
+      "tracker": "cases",
+      "title": "Semiconductor Technologies LLC v. Hynix Semiconductor America Inc",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2011-11-18",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, C.D. California · 8:11-cv-01788",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-14333710",
+      "tracker": "cases",
+      "title": "DRAM Memory Technologies LLC v. Hynix Semiconductor America Inc",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2011-11-18",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, C.D. California · 8:11-cv-01789",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-5933381",
+      "tracker": "cases",
+      "title": "Talon Research, LLC v. Hynix Semiconductor America Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2011-10-14",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 4:11-cv-05058",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4219442",
+      "tracker": "cases",
+      "title": "HSM Portfolio LLC v. Elpida Memory Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2011-09-01",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, D. Delaware · 1:11-cv-00770",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4410906",
+      "tracker": "cases",
+      "title": "Intellectual Ventures I LLC v. Hynix Semiconductor Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2011-07-11",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, W.D. Washington · 2:11-cv-01145",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4260132",
+      "tracker": "cases",
+      "title": "Cascades Computer Innovation, LLC v. SK hynix Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2011-06-27",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. Illinois · 1:11-cv-04356",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4219279",
+      "tracker": "cases",
+      "title": "Intellectual Ventures I LLC v. Hynix Semiconductor Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2010-12-08",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, D. Delaware · 1:10-cv-01066",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-34430368",
+      "tracker": "cases",
+      "title": "The Liquidating Trustee of the MPC Liquidating Tru v. Hynix Semiconductor America Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2010-11-05",
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Docket match — review",
+      "forum": "United States Bankruptcy Court, D. Delaware · 10-54533",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4177638",
+      "tracker": "cases",
+      "title": "Forest Ambulatory Surgical Associates, L.P. v. United Healthcare Insurance Company",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2010-10-29",
+      "firstSeen": "2026-11-19",
+      "category": "Employment",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 5:10-cv-04911",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-5897139",
+      "tracker": "cases",
+      "title": "ON Semiconductor Corporation v. Hynix Semiconductor Inc",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2010-10-18",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, N.D. California · 5:10-cv-04687",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4385229",
+      "tracker": "cases",
+      "title": "Ring Technology Enterprises of Texas, LLC v. Add-On Computer Peripherals, LLC",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2010-03-24",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, E.D. Texas · 2:10-cv-00104",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4385198",
+      "tracker": "cases",
+      "title": "DRAM Technologies, LLC v. America II Group, Inc.",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2010-02-05",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, E.D. Texas · 2:10-cv-00045",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "cl-4385126",
+      "tracker": "cases",
+      "title": "ON Semiconductor Corporation v. Hynix Semiconductor Inc",
+      "entity": "SK hynix or subsidiary (party-query result; verify exact party and role)",
+      "date": "2009-08-28",
+      "firstSeen": "2026-11-19",
+      "category": "IP",
+      "status": "Docket match — review",
+      "forum": "District Court, E.D. Texas · 6:09-cv-00390",
+      "firm": "Not established",
+      "summary": "Federal docket returned by a CourtListener party-name search. Review the court record to confirm entity identity, defendant status, and whether this is a new case.",
+      "scope": "U.S. federal CourtListener/RECAP docket coverage; incomplete and potentially delayed versus PACER.",
+      "sources": [
+        {
+          "label": "CourtListener federal docket",
+          "url": "https://www.courtlistener.com/"
         }
       ],
       "baseline": false
@@ -1175,30 +1574,51 @@
         }
       ],
       "baseline": true
+    },
+    {
+      "id": "firm-03905eca8858bd2a",
+      "tracker": "solicitations",
+      "title": "SK hynix Inc. NASDAQ SKHY Learn More",
+      "entity": "SK hynix / related name (firm listing match; review)",
+      "date": null,
+      "firstSeen": "2026-11-19",
+      "category": "Other Litigation",
+      "status": "Unverified firm website lead",
+      "forum": "Plaintiff-firm public website",
+      "firm": "Kessler Topaz (investigations)",
+      "summary": "Company or ticker match found directly on a public plaintiff-firm case/investigation listing. Review the linked page to determine the client solicitation, litigation posture, and case status.",
+      "scope": "Direct listing-page discovery; firm websites may use JavaScript and not expose all entries in HTML.",
+      "sources": [
+        {
+          "label": "Plaintiff-firm website",
+          "url": "https://www.ktmc.com/skhy-sk-hyix-inc-investigation/"
+        }
+      ],
+      "baseline": false
     }
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-19T18:46:59Z",
-      "lastAttemptAt": "2026-11-19T18:46:59Z",
+      "lastSuccessAt": "2026-11-19T19:07:02Z",
+      "lastAttemptAt": "2026-11-19T19:07:02Z",
       "outcome": "partial",
-      "summary": "1 matched records; 2 source failures. Leads require review."
+      "summary": "20 matched records; 3 source failures. Leads require review."
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-19T18:46:59Z",
-      "lastAttemptAt": "2026-11-19T18:46:59Z",
+      "lastSuccessAt": "2026-11-19T19:07:02Z",
+      "lastAttemptAt": "2026-11-19T19:07:02Z",
       "outcome": "success",
       "summary": "6 matched records; 0 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-19T18:46:59Z",
-      "lastAttemptAt": "2026-11-19T18:46:59Z",
+      "lastSuccessAt": "2026-11-19T19:07:02Z",
+      "lastAttemptAt": "2026-11-19T19:07:02Z",
       "outcome": "success",
       "summary": "21 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-19T18:46:59Z",
-      "lastAttemptAt": "2026-11-19T18:46:59Z",
+      "lastSuccessAt": "2026-11-19T19:07:02Z",
+      "lastAttemptAt": "2026-11-19T19:07:02Z",
       "outcome": "success",
       "summary": "1 matched records; 0 source failures. Leads require review."
     }
@@ -1207,7 +1627,7 @@
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-19T18:46:59Z",
+    "lastAttemptAt": "2026-11-19T19:07:02Z",
     "note": "Free-source discovery active: cases, case_news, solicitations, law_firms State trial-court filing portals are not automatically searched."
   }
 }
