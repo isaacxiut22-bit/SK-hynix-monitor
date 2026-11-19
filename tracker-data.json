@@ -3,23 +3,28 @@
     {
       "id": "tip-ny-levin-yen-20261118",
       "tracker": "cases",
-      "title": "Levin Yen v. SK hynix — reported New York filing (unverified)",
-      "entity": "SK hynix (reported defendant; exact legal entity not verified)",
+      "title": "Levin Yen v. SK hynix Inc. et al. — NYSCEF received, index pending",
+      "entity": "SK hynix Inc. et al. (as named in the supplied NYSCEF search result)",
       "date": "2026-11-18",
       "firstSeen": "2026-11-19",
-      "category": "Other Litigation",
-      "status": "User-reported filing — unverified",
-      "forum": "Supreme Court of the State of New York (county not provided)",
+      "category": "Securities",
+      "status": "NYSCEF received — index pending",
+      "forum": "New York County Supreme Court · Securities Act of 1933 · Pre-RJI",
       "firm": "Not established",
-      "summary": "User reported that plaintiff Levin Yen filed a case against SK hynix on November 18, 2026, in the Supreme Court of the State of New York. The court index number, county, official caption, exact defendants, filing date, and allegations have not been independently confirmed. The source link is to the general NYSCEF search portal, not to a case-specific docket.",
-      "scope": "Unverified user-reported lead. Do not treat as a verified state-court filing until the NYSCEF docket is checked.",
+      "summary": "A user-supplied NYSCEF case-search screenshot lists Levin Yen v. SK hynix Inc. et al., New York County Supreme Court, case type Securities Act of 1933, received November 18, 2026. At the time shown, the case number was 'Not Assigned,' eFiling status was 'Waiting for Index Number,' and case status was 'Pre-RJI.' The underlying complaint, fee/payment status, index-number assignment, allegations, and later docket activity have not been independently reviewed. This is evidence of a court-system search entry, not verification of completed commencement or service.",
+      "scope": "State NYSCEF public case-search screenshot supplied by user; court search result received 2026-11-18; index number pending in screenshot. NYSCEF is not monitored automatically by this site.",
       "sources": [
         {
-          "label": "NYSCEF public case search (general portal; not docket verification)",
-          "url": "https://www.nycourts.gov/efile/"
+          "label": "NYSCEF public case search (search-result screenshot supplied separately; link is general portal, not a case docket)",
+          "url": "https://iapps.courts.state.ny.us/nyscef/CaseSearch"
         }
       ],
-      "baseline": false
+      "baseline": false,
+      "indexNumber": null,
+      "receivedDate": "2026-11-18",
+      "caseStatus": "Pre-RJI",
+      "eFilingStatus": "Waiting for Index Number",
+      "evidenceProvenance": "User-provided NYSCEF case-search screenshot; not independently accessed"
     },
     {
       "id": "levi-korsinsky-securities-2026-11",
