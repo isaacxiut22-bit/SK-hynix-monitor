@@ -52,13 +52,13 @@
       "category": "Securities",
       "status": "Unverified solicitation lead",
       "forum": "Public announcement or media report",
-      "firm": "ACCESS Newswire",
-      "summary": "SK hynix Inc. Investigation Notice: Levi & Korsinsky Notifies Investors of Pending Investigation Into SK hynix Inc. (SKHY) ACCESS Newswire Review original publication to determine if a plaintiff firm is actually soliciting clients. A news report does not imply that a lawsuit was filed.",
+      "firm": "FinancialContent",
+      "summary": "SK hynix Inc. Investigation Notice: Levi & Korsinsky Notifies Investors of Pending Investigation Into SK hynix Inc. (SKHY) FinancialContent Review original publication to determine if a plaintiff firm is actually soliciting clients. A news report does not imply that a lawsuit was filed.",
       "scope": "Automated RSS discovery; not verified against court records or direct firm website.",
       "sources": [
         {
           "label": "News/press-release source via Google News",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNa1RrbVRvVUhxMkhtcG10bGJGY3c4Nng2VmlBRjg1dTUyUGJtUFpia29MMmd1WUhjbGlxMEl6M1IzbjFRSUpGWENtUVFvejVZZmpJb3R5RGJpRFVVNGdEZHpsRkxxeHVIYmVHczRyWXB0SmtCNTFyRHZfeFhfaXlva0hGb0ZLeldHMHF1bnZfVEJqd01RTkpRWEJYNVNVN3JrWk5vMFp2c0JfVVJ3MnB4dFBSMGhZWUFWTldPX3dleEw4S2tnNjJnV19wczhRNmdseUFXeWdJcVNrSzE2emNoS3ZEXzQ?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxObU5vR1BKbGx3VmRUMjhUM25Ib0ZqeDhzM0pqakFQRUIxNS1OTHJYa2VuRjMtNXF4VTlfVUJwbEhKNTJHUE4wbVZWaElxTUpJUUtRQXpIemt5aDJZTURpQS1KNndrNkZrcnlzSzYxTlJkSzk5a2xfaHI1M1B6MjdIUmdXMGxGaE1lc0xOTGdxQkxSUVA5bUczOHU3VFdxQXZudXNLN2k0Xy0xQ05LdnkzcHVqOFRiU25pOEFTRmRvdjlCTzMyRG0ycXA5RzBhSWRud0tKcnVObGRJNEp3UFlhYW1RS1pScXZKRE8ybzdGN01xdUxHeU9qai1mQmJyUmJVS3NqdzN0VWdGZXFWUHc?oc=5"
         }
       ],
       "baseline": false
@@ -256,13 +256,13 @@
   "runs": {
     "cases": {
       "lastSuccessAt": null,
-      "lastAttemptAt": "2026-11-19T18:14:23Z",
+      "lastAttemptAt": "2026-11-19T18:15:13Z",
       "outcome": "failed",
       "summary": "COURTLISTENER_TOKEN not configured"
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-19T18:14:23Z",
-      "lastAttemptAt": "2026-11-19T18:14:23Z",
+      "lastSuccessAt": "2026-11-19T18:15:13Z",
+      "lastAttemptAt": "2026-11-19T18:15:13Z",
       "outcome": "success",
       "summary": "8 source matches this run, 0 feed failures. Automated matches require review."
     }
@@ -271,7 +271,7 @@
   "monitoring": {
     "deployed": true,
     "source": "automated-public-feeds",
-    "lastAttemptAt": "2026-11-19T18:14:23Z",
+    "lastAttemptAt": "2026-11-19T18:15:13Z",
     "note": "Public solicitation feeds updated; CourtListener federal docket monitoring is unavailable or not configured."
   }
 }
