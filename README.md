@@ -6,7 +6,7 @@ The dashboard is an **early-warning lead feed**, NOT comprehensive state or fede
 
 ## Automated monitoring (currently configured)
 
-The GitHub Actions workflow (`.github/workflows/monitor-and-deploy.yml`) runs at 8 a.m. and 5 p.m. America/Los_Angeles, on `main` pushes, and when manually dispatched. GitHub cron execution is best-effort and can be delayed. It refreshes `tracker-data.json`, persists the file, and publishes Pages.
+The GitHub Actions workflow (`.github/workflows/monitor-and-deploy.yml`) is scheduled for 8:17 a.m. and 5:17 p.m. America/Los_Angeles, on `main` pushes, and when manually dispatched. GitHub cron execution is best-effort and can be delayed. It refreshes `tracker-data.json`, persists the file, and publishes Pages.
 
 | Data source | Purpose | Requirements / caveats |
 | --- | --- | --- |
