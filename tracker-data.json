@@ -2595,32 +2595,32 @@
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-20T01:07:36Z",
-      "lastAttemptAt": "2026-11-20T01:31:30Z",
-      "outcome": "failed",
-      "summary": "All CourtListener searches failed: party:(hynix) page 1: HTTP Error 429: Too Many Requests; party:(\"Hynix Semiconductor\") page 1: HTTP Error 429: Too Many Requests; party:(solidigm) page 1: HTTP Error 429: Too Many Requests"
+      "lastSuccessAt": "2026-11-20T02:23:15Z",
+      "lastAttemptAt": "2026-11-20T02:23:15Z",
+      "outcome": "success",
+      "summary": "80 matched records; 0 source failures. Leads require review."
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-20T01:31:30Z",
-      "lastAttemptAt": "2026-11-20T01:31:30Z",
-      "outcome": "partial",
-      "summary": "10 matched records; 2 source failures. Leads require review."
+      "lastSuccessAt": "2026-11-20T02:23:15Z",
+      "lastAttemptAt": "2026-11-20T02:23:15Z",
+      "outcome": "success",
+      "summary": "6 matched records; 0 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-20T01:31:30Z",
-      "lastAttemptAt": "2026-11-20T01:31:30Z",
-      "outcome": "partial",
-      "summary": "22 matched records; 1 source failures. Leads require review."
+      "lastSuccessAt": "2026-11-20T02:23:15Z",
+      "lastAttemptAt": "2026-11-20T02:23:15Z",
+      "outcome": "success",
+      "summary": "22 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-20T01:31:30Z",
-      "lastAttemptAt": "2026-11-20T01:31:30Z",
+      "lastSuccessAt": "2026-11-20T02:23:15Z",
+      "lastAttemptAt": "2026-11-20T02:23:15Z",
       "outcome": "success",
       "summary": "1 matched records; 0 source failures. Leads require review."
     },
     "google_alerts": {
       "lastSuccessAt": null,
-      "lastAttemptAt": "2026-11-20T01:31:30Z",
+      "lastAttemptAt": "2026-11-20T02:23:15Z",
       "outcome": "not_configured",
       "summary": "Create Web-source Google Alerts and add their RSS URLs to the GOOGLE_ALERTS_RSS_URLS GitHub Actions secret."
     }
@@ -2629,7 +2629,7 @@
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-20T01:31:30Z",
-    "note": "Free-source discovery active: case_news, solicitations, law_firms. Federal CourtListener docket search inactive; add COURTLISTENER_TOKEN. Google Alerts Web feeds await configuration. State trial-court filing portals are not automatically searched."
+    "lastAttemptAt": "2026-11-20T02:23:15Z",
+    "note": "Free-source discovery active: cases, case_news, solicitations, law_firms Google Alerts Web feeds await configuration. State trial-court filing portals are not automatically searched."
   }
 }
