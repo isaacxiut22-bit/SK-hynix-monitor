@@ -26,15 +26,15 @@ The GitHub Actions workflow (`.github/workflows/monitor-and-deploy.yml`) is sche
 Google Alerts requires you to create alerts while signed in to your own Google account; the monitor cannot create them automatically. RSS feeds are Atom XML with publisher URLs embedded in some Google redirect links. The collector handles both, filters results for SK hynix plus litigation/solicitation wording, and groups related campaigns. **It cannot guarantee discovery of every web page or provide real-time notifications.**
 
 1. Sign in at https://www.google.com/alerts . Create several separate alerts using queries such as:
-   - \`"SK hynix" investigation\`
-   - \`"SK hynix" antitrust\`
-   - \`"SK hynix" "class action"\`
-   - \`"SK hynix" "law firm"\`
-   - \`"Solidigm" investigation\`
-   - Optional: \`site:lieffcabraser.com "SK hynix"\`
+   - `"SK hynix" investigation`
+   - `"SK hynix" antitrust`
+   - `"SK hynix" "class action"`
+   - `"SK hynix" "law firm"`
+   - `"Solidigm" investigation`
+   - Optional: `site:lieffcabraser.com "SK hynix"`
 2. For each query, choose **Show options → Sources: Web → Language: English → Region: United States → How many: All results → Deliver to: RSS feed**, then **Create Alert**. Once you choose RSS, Google may set the frequency to **As-it-happens**; GitHub still polls at its own scheduled times.
-3. From **My alerts**, right-click the RSS icon beside each alert and **Copy link address**. Each link should look like \`https://www.google.com/alerts/feeds/123456789/987654321\` (actual numbers differ).
-4. Open this repository's **Settings → Secrets and variables → Actions → New repository secret**. Name it **\`GOOGLE_ALERTS_RSS_URLS\`**. Paste all your feed URLs, **one URL per line**, into the secret value. Keep the URLs private: anyone possessing one can read that feed.
+3. From **My alerts**, right-click the RSS icon beside each alert and **Copy link address**. Each link should look like `https://www.google.com/alerts/feeds/123456789/987654321` (actual numbers differ).
+4. Open this repository's **Settings → Secrets and variables → Actions → New repository secret**. Name it **`GOOGLE_ALERTS_RSS_URLS`**. Paste all your feed URLs, **one URL per line**, into the secret value. Keep the URLs private: anyone possessing one can read that feed.
 5. Open **Actions → Update litigation watch and deploy → Run workflow**. Confirm **Google Alerts (Web): success** or **partial** in the public dashboard. When no URLs are configured, the dashboard reports **not_configured**, not a successful scan. The secret's full URLs are never committed to the repository or published in JSON.
 
 Google Alerts can return only a limited set of indexed links and may omit older or low-ranked results; creating an alert today is **not** a backfill of every historical solicitation. Results in this tracker remain unverified until the underlying firm page is reviewed.
