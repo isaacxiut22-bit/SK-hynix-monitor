@@ -220,8 +220,11 @@ class MonitorTests(unittest.TestCase):
         urls = 'https://www.google.com/alerts/feeds/123/456\nhttps://www.google.com/alerts/feeds/123/789'
         with patch.dict('os.environ', {'GOOGLE_ALERTS_RSS_URLS': urls}):
             with patch.object(monitor, 'get', return_value=atom) as getter:
-                records, errors = monitor.google_alerts_feed()
+                records, errors, metrics = monitor.google_alerts_feed()
         self.assertEqual(getter.call_count, 2)
+        self.assertEqual(metrics['feeds_checked'], 2)
+        self.assertEqual(metrics['entries_examined'], 4)
+        self.assertEqual(metrics['entries_filtered'], 2)
         self.assertEqual(errors, [])
         self.assertEqual(len(records), 1)
         self.assertEqual(records[0]['status'], 'Unverified solicitation lead')

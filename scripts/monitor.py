@@ -311,12 +311,14 @@ def google_alerts_feed():
     urls = google_alerts_urls(os.environ.get('GOOGLE_ALERTS_RSS_URLS', ''))
     if not urls:
         raise RuntimeError('Google Alerts feeds not configured')
-    results, errors, successes = {}, [], 0
+    results, errors, successes, parsed_entries, filtered_entries = {}, [], 0, 0, 0
     for index, url in enumerate(urls, 1):
         try:
             for article in google_alerts_articles(get(url)):
+                parsed_entries += 1
                 record = solicitation_record(article)
                 if record is None:
+                    filtered_entries += 1
                     continue
                 # Use the destination URL so overlaps across separate alerts
                 # don't create multiple records for the same web page.
@@ -335,7 +337,11 @@ def google_alerts_feed():
             errors.append(f'Google Alert feed #{index}: {detail}')
     if not successes:
         raise RuntimeError('All Google Alerts feeds failed: ' + '; '.join(errors))
-    return list(results.values()), errors
+    return list(results.values()), errors, {
+        'feeds_checked': successes,
+        'entries_examined': parsed_entries,
+        'entries_filtered': filtered_entries,
+    }
 
 
 class ListingParser(HTMLParser):
@@ -635,17 +641,31 @@ def main():
             print('google_alerts: not configured (no private RSS feed URLs)')
             continue
         try:
-            matches, errors = fetcher()
+            fetched = fetcher()
+            if kind == 'google_alerts':
+                matches, errors, feed_metrics = fetched
+            else:
+                matches, errors = fetched
+                feed_metrics = None
             for found in matches:
                 if found['id'] in existing:
                     found['firstSeen'] = existing[found['id']].get('firstSeen', DATE)
                     if existing[found['id']].get('status') in ('Confirmed filing', 'Reviewed solicitation'):
                         found['status'] = existing[found['id']]['status']
                 existing[found['id']] = found
+            summary = f'{len(matches)} matched records; {len(errors)} source failures. Leads require review.'
+            if feed_metrics is not None:
+                summary = (
+                    f"{feed_metrics['entries_examined']} Google Alerts entries examined across "
+                    f"{feed_metrics['feeds_checked']} feed(s); "
+                    f"{len(matches)} unique solicitation candidates accepted; "
+                    f"{feed_metrics['entries_filtered']} rejected by keyword filter; "
+                    f"{len(errors)} feed failures. Leads require review."
+                )
             runs[kind] = {'lastSuccessAt': STAMP, 'lastAttemptAt': STAMP,
                           'outcome': 'partial' if errors else 'success',
-                          'summary': f'{len(matches)} matched records; {len(errors)} source failures. Leads require review.'}
-            print(f'{kind}: {len(matches)} matches, {len(errors)} source failures')
+                          'summary': summary}
+            print(f'{kind}: {summary}')
         except (ValueError, RuntimeError, urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
             previous = runs.get(kind, {})
             runs[kind] = {'lastSuccessAt': previous.get('lastSuccessAt'), 'lastAttemptAt': STAMP,
