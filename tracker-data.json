@@ -77,11 +77,13 @@
       "baseline": true,
       "campaignTopic": "securities-investigation",
       "mergedRecordIds": [
+        "firm-c00c6372703b3d1b",
         "levi-korsinsky-securities-2026-11",
         "news-57f6f85837a5e2a5"
       ],
       "relatedHeadlines": [
-        "SK hynix Inc. Investigation Notice: Levi & Korsinsky Notifies Investors of Pending Investigation Into SK hynix Inc. (SKHY)"
+        "SK hynix Inc. Investigation Notice: Levi & Korsinsky Notifies Investors of Pending Investigation Into SK hynix Inc. (SKHY)",
+        "SKHY SK hynix Inc. Learn more"
       ]
     },
     {
@@ -2698,32 +2700,32 @@
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-20T19:10:28Z",
-      "lastAttemptAt": "2026-11-20T19:10:28Z",
-      "outcome": "partial",
-      "summary": "1 matched records; 2 source failures. Leads require review."
+      "lastSuccessAt": "2026-11-20T19:24:36Z",
+      "lastAttemptAt": "2026-11-20T19:24:36Z",
+      "outcome": "success",
+      "summary": "80 matched records; 0 source failures. Leads require review."
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-20T19:10:28Z",
-      "lastAttemptAt": "2026-11-20T19:10:28Z",
+      "lastSuccessAt": "2026-11-20T19:24:36Z",
+      "lastAttemptAt": "2026-11-20T19:24:36Z",
       "outcome": "success",
-      "summary": "7 matched records; 0 source failures. Leads require review."
+      "summary": "8 matched records; 0 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-20T19:10:28Z",
-      "lastAttemptAt": "2026-11-20T19:10:28Z",
+      "lastSuccessAt": "2026-11-20T19:24:36Z",
+      "lastAttemptAt": "2026-11-20T19:24:36Z",
       "outcome": "success",
       "summary": "23 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-20T19:10:28Z",
-      "lastAttemptAt": "2026-11-20T19:10:28Z",
+      "lastSuccessAt": "2026-11-20T19:24:36Z",
+      "lastAttemptAt": "2026-11-20T19:24:36Z",
       "outcome": "success",
-      "summary": "1 matched records; 0 source failures. Leads require review."
+      "summary": "21/21 public listing pages retrieved across 18/18 firms; 2 SK hynix listing matches; 0 page failures. This does not search the firms' entire websites."
     },
     "google_alerts": {
-      "lastSuccessAt": "2026-11-20T19:10:28Z",
-      "lastAttemptAt": "2026-11-20T19:10:28Z",
+      "lastSuccessAt": "2026-11-20T19:24:36Z",
+      "lastAttemptAt": "2026-11-20T19:24:36Z",
       "outcome": "success",
       "summary": "31 Google Alerts entries examined across 7 feed(s); 1 unique solicitation candidates accepted; 30 rejected by keyword filter; 0 feed failures. Leads require review."
     }
@@ -2732,7 +2734,7 @@
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-20T19:10:28Z",
+    "lastAttemptAt": "2026-11-20T19:24:36Z",
     "note": "Free-source discovery active: cases, case_news, solicitations, google_alerts, law_firms State trial-court filing portals are not automatically searched."
   }
 }
