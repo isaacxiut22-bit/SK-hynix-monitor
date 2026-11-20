@@ -1,6 +1,27 @@
 {
   "records": [
     {
+      "id": "news-7e876044a843afea",
+      "tracker": "solicitations",
+      "title": "SKHY Investors Have Opportunity to Join SK hynix Inc. Fraud Investigation with SBS Law",
+      "entity": "SK hynix or subsidiary (unverified reference)",
+      "date": "2026-11-20",
+      "firstSeen": "2026-11-20",
+      "category": "Securities",
+      "status": "Unverified solicitation lead",
+      "forum": "Public announcement or media report",
+      "firm": "Business Wire",
+      "summary": "SKHY Investors Have Opportunity to Join SK hynix Inc. Fraud Investigation with SBS Law Business Wire Check the original publication for a direct client solicitation; a news article does not prove a filing.",
+      "scope": "Google News RSS discovery; not a court docket or verified firm outreach.",
+      "sources": [
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPM2NfNHFHcXUwdnoxcThHY1NlS0Q3b09TLVhfeHhKQUhGSVhHX0hSWFQ2M0gyNGxiWVlWVEZpdnpYUzBacmNRd0VyNEE5RkE2WTFFOW9zNWVhamVJZi1fMGdUVGk4VmxnLVJkUVFhQjFkSDM3bWpQRWJTZFhQMUlmZDRwOHJOQUNranpra1c4c0lYcmdraWZkZkZpZ3Y4RUxvOFBDZkU5YlVSSWJYd0lBZjZQdGxpck9xMmQwMkNKWC1kZDVaSVotaHZZQm5lcnpuOGFoQm14TXlSclk?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
       "id": "tip-ny-levin-yen-20261118",
       "tracker": "cases",
       "title": "Levin Yen v. SK hynix Inc. et al. — NYSCEF received, index pending",
@@ -88,6 +109,14 @@
         {
           "label": "News/press-release source via Google News",
           "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPeC05ZzNtSHRXX1VJWW90SGwzWkNxeHFHQ1R3NlBHVXJMOEZCTjdOamxZQ0UzUDV4LXlES0hzNzZWeWZ5bVNfOHJTLUhiZzR1bXlhckkxTXlHZ2xrZmlxQkJvQzFtSEE1Wmh0Yi1scGkxX0hGdXppVWFUZkZNTVJkZXdpOE84RVJuazRRSDYwMU1zOUx0SXhYMDVMNTNTcGxxVzNnWUxYcWRCVmlhalBFaFRadUwtTXdSbFJELVo2Zk5hdURpdFpDS0E2WV9VNG5ZZVhVYXR4N2dDMW5wY1lzQThQaklxS2NpS0tLUW85WXF1aFluLWtTM2NyV3FIQQ?oc=5"
+        },
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPSXNSZzRacVF5aXVzbFJXZG83S1V3REZyeHAtNHhCV19IMWxYLVhuLWY5TTJxNUo3aHdrT09qcjNVT1FudGtPQTFremRCeFdVdm9uNTg5dTNaMzQzY2lQVTB4aHViY216UjBONEsyZzhSbmdtYVZ5UEJWY2t3c185ZUw0SUdNdmpwa1c0OXpsdWdZckRJdGxJU2VHdzRxcHhBVWl1amJNcjkxeEd1b0lva1JQak5Hbmd1UzlVR3ZLLVk0cWplYjU1MS1VRlV6NFg0U01ZV21Fd25hNGlvUzV5UUJNZDE2YWticXNXUnFreDZQLUxjczluSTl0aWJXcXpPQ3NtLW9PRV9SUQ?oc=5"
+        },
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNVkpiZHZKVnB6YnpQRGpReWczaC1iZ2FPU0JweWRhY3dHam1ITldwb1J3ckFWS1F0OV85ZWN0QmM3dUVDbnUxdld0X0IyRlREdWRuSnpuem1ZVWZhUmsyanJJOGswanFIa0g4Q0xpdWVGMEttRkR3Sk5wRG5UN3NVNFFjS2tQU0pvTDNDYzJPa0s2WW4wNnp5WE9QOHVYR0NEcTdzYVNBMl8xRmJHalFySjU3UVM5eVZ4WFprSzZHclpVeWJZcU85Rk5zWkd2WHAxd0NPcFB4WDVDZm5QZ1ZFZWQyZmNhbFBWNkFuM3JLNjFZTWp1X3E2WGpzZ1M4dHM?oc=5"
         }
       ],
       "baseline": true,
@@ -95,10 +124,14 @@
       "mergedRecordIds": [
         "firm-03905eca8858bd2a",
         "ktmc-securities-2026-11",
-        "news-b4bb64d4f3192b44"
+        "news-b4bb64d4f3192b44",
+        "news-ebdcee64a6ad18ff",
+        "news-eeb128130ac1165d"
       ],
       "relatedHeadlines": [
         "NASDAQ: SKHY Investigation Alert: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz Meltzer & Check, LLP",
+        "NASDAQ: SKHY Investigation: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz Meltzer & Check, LLP",
+        "Notice of Investigation of SKHY: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz Meltzer & Check, LLP",
         "SK hynix Inc. NASDAQ SKHY Learn More"
       ]
     },
@@ -383,6 +416,27 @@
         {
           "label": "Media filing report via Google News",
           "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMW9sVFJ5VTJqUEYwNnIzNk9NX09XdGlkcGJLeVhMOFBkc0JNM2U0OEd4dXpDaDV4X29aSWNaRTBqUmwtR0t6WHlFYVRZSGhCUzJLbWVPUHQ3QzhTSDVuMnhRMGpBUnpJMnpwd0wwUmVaX1NXVS11ZUFzN0ozRWJ5ZmtWOGM4QW5TdTlaVjdKY29sc1M00gGaAUFVX3lxTE5FQmduSVZhbzl6by1xM203Q21yMXlLRElxV1U4dFMxQ1FqLWJoMWZjV2NjT2tVWW52Mmw2YWxHRktwN1B3LVpacm5FQnlxNUpvd3pYeTBaLVFtVDRaUlJ1LVNudW9SNm5NLXlzdlJJLXV6LU1hZmI0RTUyTmVVbUpSM09TekFJTTBlRkJZUV9TU2xqOEJidGFoUVE?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "filingnews-014778258e37ccd9",
+      "tracker": "cases",
+      "title": "Samsung, SK Hynix, Micron sued over DRAM prices: what’s at stake - Invezz",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-07-01",
+      "firstSeen": "2026-11-20",
+      "category": "Other Litigation",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "Invezz",
+      "summary": "Samsung, SK Hynix, Micron sued over DRAM prices: what’s at stake Invezz This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOTNhbTBPQXBFSlVydF9JbVFCZ2JsT0NReUI5UDZnOVNHaDh1R3B3cld5dU1FQUNXdUZ6NkN5c0ZMTVpTZUFuaWNjSTk0M005NmxUMXFVdUY5S0VFVmQtNkFYSTRId0U2U2hhRmgxX2VjSThITDV0RExqRUZJUkM1aG1nbXVYSUkxSjhoVzMtU3hVSEdmTWs4UjdlNko?oc=5"
         }
       ],
       "baseline": false
@@ -2595,32 +2649,32 @@
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-20T02:23:15Z",
-      "lastAttemptAt": "2026-11-20T02:23:15Z",
+      "lastSuccessAt": "2026-11-20T17:13:27Z",
+      "lastAttemptAt": "2026-11-20T17:13:27Z",
       "outcome": "success",
       "summary": "80 matched records; 0 source failures. Leads require review."
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-20T02:23:15Z",
-      "lastAttemptAt": "2026-11-20T02:23:15Z",
+      "lastSuccessAt": "2026-11-20T17:13:27Z",
+      "lastAttemptAt": "2026-11-20T17:13:27Z",
       "outcome": "success",
-      "summary": "6 matched records; 0 source failures. Leads require review."
+      "summary": "8 matched records; 0 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-20T02:23:15Z",
-      "lastAttemptAt": "2026-11-20T02:23:15Z",
+      "lastSuccessAt": "2026-11-20T17:13:27Z",
+      "lastAttemptAt": "2026-11-20T17:13:27Z",
       "outcome": "success",
-      "summary": "22 matched records; 0 source failures. Leads require review."
+      "summary": "23 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-20T02:23:15Z",
-      "lastAttemptAt": "2026-11-20T02:23:15Z",
+      "lastSuccessAt": "2026-11-20T17:13:27Z",
+      "lastAttemptAt": "2026-11-20T17:13:27Z",
       "outcome": "success",
       "summary": "1 matched records; 0 source failures. Leads require review."
     },
     "google_alerts": {
       "lastSuccessAt": null,
-      "lastAttemptAt": "2026-11-20T02:23:15Z",
+      "lastAttemptAt": "2026-11-20T17:13:27Z",
       "outcome": "not_configured",
       "summary": "Create Web-source Google Alerts and add their RSS URLs to the GOOGLE_ALERTS_RSS_URLS GitHub Actions secret."
     }
@@ -2629,7 +2683,7 @@
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-20T02:23:15Z",
+    "lastAttemptAt": "2026-11-20T17:13:27Z",
     "note": "Free-source discovery active: cases, case_news, solicitations, law_firms Google Alerts Web feeds await configuration. State trial-court filing portals are not automatically searched."
   }
 }
