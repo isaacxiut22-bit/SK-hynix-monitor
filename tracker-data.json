@@ -47,6 +47,10 @@
         {
           "label": "News/press-release source via Google News",
           "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNa1RrbVRvVUhxMkhtcG10bGJGY3c4Nng2VmlBRjg1dTUyUGJtUFpia29MMmd1WUhjbGlxMEl6M1IzbjFRSUpGWENtUVFvejVZZmpJb3R5RGJpRFVVNGdEZHpsRkxxeHVIYmVHczRyWXB0SmtCNTFyRHZfeFhfaXlva0hGb0ZLeldHMHF1bnZfVEJqd01RTkpRWEJYNVNVN3JrWk5vMFp2c0JfVVJ3MnB4dFBSMGhZWUFWTldPX3dleEw4S2tnNjJnV19wczhRNmdseUFXeWdJcVNrSzE2emNoS3ZEXzQ?oc=5"
+        },
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxObU5vR1BKbGx3VmRUMjhUM25Ib0ZqeDhzM0pqakFQRUIxNS1OTHJYa2VuRjMtNXF4VTlfVUJwbEhKNTJHUE4wbVZWaElxTUpJUUtRQXpIemt5aDJZTURpQS1KNndrNkZrcnlzSzYxTlJkSzk5a2xfaHI1M1B6MjdIUmdXMGxGaE1lc0xOTGdxQkxSUVA5bUczOHU3VFdxQXZudXNLN2k0Xy0xQ05LdnkzcHVqOFRiU25pOEFTRmRvdjlCTzMyRG0ycXA5RzBhSWRud0tKcnVObGRJNEp3UFlhYW1RS1pScXZKRE8ybzdGN01xdUxHeU9qai1mQmJyUmJVS3NqdzN0VWdGZXFWUHc?oc=5"
         }
       ],
       "baseline": true,
@@ -384,6 +388,27 @@
       "baseline": false
     },
     {
+      "id": "news-cab57dd0496527ab",
+      "tracker": "solicitations",
+      "title": "DRAM Prices Surge 700% in Four Years: Micron, Samsung, SK Hynix Hit with US Class-Action Lawsuit Alleging 'RAMpocalypse' Conspiracy",
+      "entity": "SK hynix or subsidiary (unverified reference)",
+      "date": "2026-06-30",
+      "firstSeen": "2026-11-20",
+      "category": "Other Litigation",
+      "status": "Unverified solicitation lead",
+      "forum": "Public announcement or media report",
+      "firm": "finance.biggo.com",
+      "summary": "DRAM Prices Surge 700% in Four Years: Micron, Samsung, SK Hynix Hit with US Class-Action Lawsuit Alleging 'RAMpocalypse' Conspiracy finance.biggo.com Check the original publication for a direct client solicitation; a news article does not prove a filing.",
+      "scope": "Google News RSS discovery; not a court docket or verified firm outreach.",
+      "sources": [
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1SdEVmbENULWpNcHNWRFRua2hoN2ZqVUN6YWJCYlY2ZW5yT2x0dzZWdmJicm1vUng2S2pNZHlZWU50VjVXOUVXdE0yVVhxTnZfNDdZanp6dHlKQnNsd2RCaU1oQ000emZSdnlOUkhWS1BPYXdDYkE?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
       "id": "news-08860d5cc0e20f52",
       "tracker": "solicitations",
       "title": "Samsung, SK hynix, and Micron Hit With U.S. Price-Fixing Class Action Over Memory Shortage",
@@ -573,18 +598,39 @@
       "baseline": false
     },
     {
+      "id": "news-eb6505aa9b999739",
+      "tracker": "solicitations",
+      "title": "Manipulating DRAM Prices Through HBM Transition? Memory Giants Samsung, SK Hynix, Micron Face US Antitrust Class Action",
+      "entity": "SK hynix or subsidiary (unverified reference)",
+      "date": "2026-06-29",
+      "firstSeen": "2026-11-20",
+      "category": "Antitrust",
+      "status": "Unverified solicitation lead",
+      "forum": "Public announcement or media report",
+      "firm": "TradingKey",
+      "summary": "Manipulating DRAM Prices Through HBM Transition? Memory Giants Samsung, SK Hynix, Micron Face US Antitrust Class Action TradingKey Check the original publication for a direct client solicitation; a news article does not prove a filing.",
+      "scope": "Google News RSS discovery; not a court docket or verified firm outreach.",
+      "sources": [
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPay00NHB1SEJ6ZFRqZ1ZkUnlVWjBaSDlSZ0lFMHZhUElXeE1TRE1nS0ZXbTU1ejF3djFpMk5TdEpoVmlZUEYzT3pBWXZpY054N0IwMG5yNDZ1NldxbkZCcDBkWWpCWmpJLWVlNXlmNk95LUsyYTVmOW5yaUp1UlVITGhDYjl5UGJNNUEzVFQ2ZXdZXzFMQlVOU1ltTzNYZU5QWk5CTGhRam1oNUFrbm52TDJfM2RBbzl6VjV6Y2IyVDQ5VzQ0emF2dlZLTTk?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
       "id": "news-ea1f8419336d6432",
       "tracker": "solicitations",
       "title": "Memory Trio Samsung, SK Hynix & Micron Face Class Action Lawsuit As Prices Reach Historical High Due To Shortages",
-      "entity": "SK hynix (reporting/announcement match)",
+      "entity": "SK hynix or subsidiary (unverified reference)",
       "date": "2026-06-29",
       "firstSeen": "2026-11-19",
       "category": "Other Litigation",
       "status": "Unverified solicitation lead",
       "forum": "Public announcement or media report",
       "firm": "Wccftech",
-      "summary": "Memory Trio Samsung, SK Hynix & Micron Face Class Action Lawsuit As Prices Reach Historical High Due To Shortages Wccftech Review original publication to determine if a plaintiff firm is actually soliciting clients. A news report does not imply that a lawsuit was filed.",
-      "scope": "Automated RSS discovery; not verified against court records or direct firm website.",
+      "summary": "Memory Trio Samsung, SK Hynix & Micron Face Class Action Lawsuit As Prices Reach Historical High Due To Shortages Wccftech Check the original publication for a direct client solicitation; a news article does not prove a filing.",
+      "scope": "Google News RSS discovery; not a court docket or verified firm outreach.",
       "sources": [
         {
           "label": "News/press-release source via Google News",
@@ -2550,34 +2596,40 @@
   "runs": {
     "cases": {
       "lastSuccessAt": "2026-11-20T01:07:36Z",
-      "lastAttemptAt": "2026-11-20T01:07:36Z",
-      "outcome": "success",
-      "summary": "80 matched records; 0 source failures. Leads require review."
+      "lastAttemptAt": "2026-11-20T01:31:30Z",
+      "outcome": "failed",
+      "summary": "All CourtListener searches failed: party:(hynix) page 1: HTTP Error 429: Too Many Requests; party:(\"Hynix Semiconductor\") page 1: HTTP Error 429: Too Many Requests; party:(solidigm) page 1: HTTP Error 429: Too Many Requests"
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-20T01:07:36Z",
-      "lastAttemptAt": "2026-11-20T01:07:36Z",
-      "outcome": "success",
-      "summary": "6 matched records; 0 source failures. Leads require review."
+      "lastSuccessAt": "2026-11-20T01:31:30Z",
+      "lastAttemptAt": "2026-11-20T01:31:30Z",
+      "outcome": "partial",
+      "summary": "10 matched records; 2 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-20T01:07:36Z",
-      "lastAttemptAt": "2026-11-20T01:07:36Z",
-      "outcome": "success",
-      "summary": "27 matched records; 0 source failures. Leads require review."
+      "lastSuccessAt": "2026-11-20T01:31:30Z",
+      "lastAttemptAt": "2026-11-20T01:31:30Z",
+      "outcome": "partial",
+      "summary": "22 matched records; 1 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-20T01:07:36Z",
-      "lastAttemptAt": "2026-11-20T01:07:36Z",
+      "lastSuccessAt": "2026-11-20T01:31:30Z",
+      "lastAttemptAt": "2026-11-20T01:31:30Z",
       "outcome": "success",
       "summary": "1 matched records; 0 source failures. Leads require review."
+    },
+    "google_alerts": {
+      "lastSuccessAt": null,
+      "lastAttemptAt": "2026-11-20T01:31:30Z",
+      "outcome": "not_configured",
+      "summary": "Create Web-source Google Alerts and add their RSS URLs to the GOOGLE_ALERTS_RSS_URLS GitHub Actions secret."
     }
   },
   "storageReady": false,
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-20T01:07:36Z",
-    "note": "Free-source discovery active: cases, case_news, solicitations, law_firms State trial-court filing portals are not automatically searched."
+    "lastAttemptAt": "2026-11-20T01:31:30Z",
+    "note": "Free-source discovery active: case_news, solicitations, law_firms. Federal CourtListener docket search inactive; add COURTLISTENER_TOKEN. Google Alerts Web feeds await configuration. State trial-court filing portals are not automatically searched."
   }
 }
