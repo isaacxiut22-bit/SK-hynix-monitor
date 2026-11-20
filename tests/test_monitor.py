@@ -192,5 +192,73 @@ class MonitorTests(unittest.TestCase):
                          ['https://example.com/a', 'https://example.com/b'])
 
 
+    def test_google_alerts_atom_html_and_original_publisher_url(self):
+        atom = b"""<feed xmlns="http://www.w3.org/2005/Atom"><entry>
+        <title type="html">&lt;b&gt;NAND Flash Memory&lt;/b&gt; Antitrust Investigation</title>
+        <link href="https://www.google.com/url?sa=t&amp;url=https%3A%2F%2Fwww.lieffcabraser.com%2Fantitrust%2Fnand-memory%2F&amp;ct=ga" />
+        <published>2026-11-19T22:05:00Z</published>
+        <content type="html">Lieff Cabraser investigates SK hynix and other NAND memory manufacturers.</content>
+        </entry></feed>"""
+        article = list(monitor.google_alerts_articles(atom))[0]
+        self.assertEqual(article['title'], 'NAND Flash Memory Antitrust Investigation')
+        self.assertEqual(article['link'], 'https://www.lieffcabraser.com/antitrust/nand-memory/')
+        self.assertEqual(monitor.publication_date(article), '2026-11-19')
+        rec = monitor.solicitation_record(article)
+        self.assertEqual(rec['category'], 'Antitrust')
+        self.assertEqual(monitor.solicitation_firm(rec), 'Lieff Cabraser')
+        self.assertEqual(monitor.solicitation_topic(rec), 'nand-antitrust')
+
+    def test_google_alerts_feed_filters_and_deduplicates_overlapping_alerts(self):
+        atom = b"""<feed xmlns="http://www.w3.org/2005/Atom"><entry>
+        <title>Lieff Cabraser NAND Flash Memory Antitrust Investigation</title>
+        <link href="https://www.lieffcabraser.com/antitrust/nand-memory/"/>
+        <published>2026-11-19T22:05:00Z</published>
+        <content>SK hynix NAND antitrust investigation seeking purchasers.</content>
+        </entry><entry><title>SK hynix product launch</title>
+        <link href="https://example.com/product"/><published>2026-11-19T22:05:00Z</published>
+        <content>A new memory product was launched.</content></entry></feed>"""
+        urls = 'https://www.google.com/alerts/feeds/123/456\nhttps://www.google.com/alerts/feeds/123/789'
+        with patch.dict('os.environ', {'GOOGLE_ALERTS_RSS_URLS': urls}):
+            with patch.object(monitor, 'get', return_value=atom) as getter:
+                records, errors = monitor.google_alerts_feed()
+        self.assertEqual(getter.call_count, 2)
+        self.assertEqual(errors, [])
+        self.assertEqual(len(records), 1)
+        self.assertEqual(records[0]['status'], 'Unverified solicitation lead')
+        self.assertEqual(records[0]['id'][:9], 'webalert-')
+        self.assertEqual(records[0]['sources'][0]['url'],
+                         'https://www.lieffcabraser.com/antitrust/nand-memory/')
+        self.assertEqual(records[0]['sources'][0]['label'], 'Google Alerts web result')
+
+    def test_google_alerts_private_urls_validated(self):
+        good = 'https://www.google.com/alerts/feeds/12345/67890'
+        self.assertEqual(monitor.google_alerts_urls(good + '\n' + good), [good])
+        with self.assertRaisesRegex(ValueError, 'Invalid Google Alerts'):
+            monitor.google_alerts_urls('https://www.google.com.evil.invalid/alerts/feeds/123/456')
+        with self.assertRaisesRegex(ValueError, 'Invalid Google Alerts'):
+            monitor.google_alerts_urls('https://www.google.com/search?q=SK+hynix')
+
+    def test_google_alerts_error_does_not_leak_private_feed_url(self):
+        import urllib.error
+        private = 'https://www.google.com/alerts/feeds/12345/67890'
+        with patch.dict('os.environ', {'GOOGLE_ALERTS_RSS_URLS': private}):
+            with patch.object(monitor, 'get', side_effect=urllib.error.HTTPError(private, 503, 'Fail', {}, None)):
+                with self.assertRaises(RuntimeError) as caught:
+                    monitor.google_alerts_feed()
+        self.assertNotIn('12345', str(caught.exception))
+        self.assertIn('HTTP 503', str(caught.exception))
+
+    def test_nand_and_dram_antitrust_investigations_remain_separate(self):
+        base = dict(tracker='solicitations', firm='Lieff Cabraser',
+                    category='Antitrust', date='2026-11-19',
+                    status='Unverified solicitation lead',
+                    sources=[{'label':'Firm','url':'https://example.com/a'}])
+        nand = dict(base, id='nand', title='Lieff Cabraser SK hynix NAND Flash Memory Antitrust Investigation')
+        dram = dict(base, id='dram', title='Lieff Cabraser SK hynix DRAM Antitrust Investigation')
+        self.assertEqual(monitor.solicitation_topic(nand), 'nand-antitrust')
+        self.assertEqual(monitor.solicitation_topic(dram), 'dram-antitrust')
+        self.assertEqual(len(monitor.consolidate_solicitations([nand, dram])), 2)
+
+
 if __name__ == '__main__':
     unittest.main()

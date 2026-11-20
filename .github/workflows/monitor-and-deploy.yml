@@ -30,6 +30,7 @@ jobs:
         continue-on-error: true
         env:
           COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
+          GOOGLE_ALERTS_RSS_URLS: ${{ secrets.GOOGLE_ALERTS_RSS_URLS }}
         run: python scripts/monitor.py
       - name: Save data for subsequent runs
         run: |

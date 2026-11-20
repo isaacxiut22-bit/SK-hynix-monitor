@@ -186,10 +186,14 @@ def rss_articles(xml_bytes):
 
 
 def publication_date(article):
+    raw = article.get('published', '')
     try:
-        return email.utils.parsedate_to_datetime(article.get('published', '')).date().isoformat()
+        return email.utils.parsedate_to_datetime(raw).date().isoformat()
     except (TypeError, ValueError):
-        return None
+        try:
+            return dt.datetime.fromisoformat(str(raw).replace('Z', '+00:00')).date().isoformat()
+        except (TypeError, ValueError):
+            return None
 
 
 def solicitation_record(article):
@@ -246,6 +250,91 @@ def rss_feed(kind):
             errors.append(short(f'{query}: {exc}', 180))
     if not successes:
         raise RuntimeError('All ' + kind + ' RSS queries failed: ' + '; '.join(errors))
+    return list(results.values()), errors
+
+
+
+# Google Alerts RSS delivery uses the Atom format. Unlike Google News RSS search,
+# these URLs are created manually in a Google account and treated as bearer links.
+# Never include them in public JSON, commits, source labels or error messages.
+ATOM_NS = '{http://www.w3.org/2005/Atom}'
+
+
+def google_alerts_urls(raw):
+    """Validate newline-separated, private Google Alerts Atom feed URLs."""
+    urls = []
+    for raw_url in str(raw or '').splitlines():
+        url = raw_url.strip()
+        if not url:
+            continue
+        parsed = urllib.parse.urlsplit(url)
+        if (parsed.scheme != 'https'
+                or parsed.hostname not in ('www.google.com', 'google.com')
+                or not re.fullmatch(r'/alerts/feeds/[0-9]+/[0-9]+/?', parsed.path)
+                or parsed.username or parsed.password or parsed.fragment):
+            raise ValueError('Invalid Google Alerts RSS URL (expected an https://www.google.com/alerts/feeds/... link)')
+        if url not in urls:
+            urls.append(url)
+    if len(urls) > 40:
+        raise ValueError('Too many Google Alerts feeds; maximum is 40')
+    return urls
+
+
+def google_alerts_articles(xml_bytes):
+    """Extract plain-text Atom entries and underlying publisher URLs."""
+    root = ET.fromstring(xml_bytes)
+    if root.tag != ATOM_NS + 'feed':
+        raise ValueError('Expected Google Alerts Atom feed')
+    for entry in root.findall(ATOM_NS + 'entry'):
+        title = as_text(html.unescape(entry.findtext(ATOM_NS + 'title') or ''))
+        desc = as_text(html.unescape(entry.findtext(ATOM_NS + 'content')
+                                    or entry.findtext(ATOM_NS + 'summary') or ''))
+        raw_link = ''
+        for node in entry.findall(ATOM_NS + 'link'):
+            if node.get('rel', 'alternate') == 'alternate' and node.get('href'):
+                raw_link = node.get('href')
+                break
+        parsed = urllib.parse.urlsplit(raw_link)
+        if parsed.hostname in ('www.google.com', 'google.com') and parsed.path == '/url':
+            # Google Alerts commonly wraps publisher links in ?url=https://...
+            raw_link = urllib.parse.parse_qs(parsed.query).get('url', [''])[0]
+        if not raw_link.startswith('https://'):
+            continue
+        yield {'title': title, 'desc': desc, 'link': raw_link,
+               'published': entry.findtext(ATOM_NS + 'published')
+                            or entry.findtext(ATOM_NS + 'updated') or '',
+               'publisher': 'Google Alerts web result'}
+
+
+def google_alerts_feed():
+    """Check saved Alert feeds; partial results are explicitly reported."""
+    urls = google_alerts_urls(os.environ.get('GOOGLE_ALERTS_RSS_URLS', ''))
+    if not urls:
+        raise RuntimeError('Google Alerts feeds not configured')
+    results, errors, successes = {}, [], 0
+    for index, url in enumerate(urls, 1):
+        try:
+            for article in google_alerts_articles(get(url)):
+                record = solicitation_record(article)
+                if record is None:
+                    continue
+                # Use the destination URL so overlaps across separate alerts
+                # don't create multiple records for the same web page.
+                record['id'] = stable_id('webalert-', article['link'])
+                record['forum'] = 'Web search result — prospective U.S. litigation (unverified)'
+                record['scope'] = ('Google Alerts Web RSS discovery. A web result '
+                                   'does not establish a direct solicitation or filed lawsuit.')
+                record['sources'] = [{'label': 'Google Alerts web result',
+                                      'url': article['link']}]
+                results[record['id']] = record
+            successes += 1
+        except (urllib.error.URLError, ValueError, ET.ParseError, TimeoutError) as exc:
+            # Avoid printing the source URL, which embeds identifiers for
+            # the user's private Google Alert.
+            detail = 'HTTP ' + str(exc.code) if isinstance(exc, urllib.error.HTTPError) else type(exc).__name__
+            errors.append(f'Google Alert feed #{index}: {detail}')
+    if not successes:
+        raise RuntimeError('All Google Alerts feeds failed: ' + '; '.join(errors))
     return list(results.values()), errors
 
 
@@ -353,6 +442,7 @@ def firm_websites():
 # Known plaintiff-firm names are recognized in the headline, identified counsel,
 # or direct listing. A wire-service publisher is *not* treated as the firm.
 FIRM_IDENTITIES = (
+    ('Lieff Cabraser', r'lieff\s+cabraser|\blieffcabraser\.com\b'),
     ('Kessler Topaz Meltzer & Check', r'kessler\s+topaz|\bktmc\b'),
     ('Rosen Law Firm', r'\brosen\s+law\s+firm\b|\brosenlegal\b'),
     ('Levi & Korsinsky', r'levi\s*(?:&|and)\s*korsinsky|\bzlk\.com\b'),
@@ -386,7 +476,11 @@ def solicitation_topic(record):
     if record.get('category') == 'Securities' and re.search(r'securit|shareholder|investors?|\bskhy\b', body):
         return 'securities-investigation'
     if re.search(r'price[ -]?fix|antitrust|anti-competitive|collusion', body):
-        return 'dram-antitrust'
+        if re.search(r'nand|flash memory', body):
+            return 'nand-antitrust'
+        if re.search(r'dram|dynamic random.access memory', body):
+            return 'dram-antitrust'
+        return 'memory-antitrust'
     if re.search(r'data breach|privacy breach|personal information leak', body):
         return 'data-breach'
     if re.search(r'patent infringement|copyright infringement|trade secret', body):
@@ -459,8 +553,11 @@ def merge_campaign(records, firm, topic):
     elif topic == 'solidigm-transaction':
         primary['title'] = firm + ' — Solidigm transaction investigation'
         primary['category'] = 'Securities'
-    elif topic == 'dram-antitrust':
-        primary['title'] = firm + ' — SK hynix DRAM antitrust matter'
+    elif topic in ('dram-antitrust', 'nand-antitrust', 'memory-antitrust'):
+        subject = {'dram-antitrust': 'DRAM',
+                   'nand-antitrust': 'NAND memory',
+                   'memory-antitrust': 'memory-chip'}[topic]
+        primary['title'] = firm + ' — SK hynix ' + subject + ' antitrust matter'
         primary['category'] = 'Antitrust'
     elif len(records) > 1:
         primary['title'] = firm + ' — SK hynix ' + topic.replace('-', ' ')
@@ -526,9 +623,17 @@ def main():
         ('cases', lambda: courtlistener(os.environ.get('COURTLISTENER_TOKEN', ''))),
         ('case_news', lambda: rss_feed('case_news')),
         ('solicitations', lambda: rss_feed('solicitations')),
+        ('google_alerts', google_alerts_feed),
         ('law_firms', firm_websites),
     ]
     for kind, fetcher in tasks:
+        if kind == 'google_alerts' and not os.environ.get('GOOGLE_ALERTS_RSS_URLS', '').strip():
+            prev = runs.get(kind, {})
+            runs[kind] = {'lastSuccessAt': prev.get('lastSuccessAt'),
+                          'lastAttemptAt': STAMP, 'outcome': 'not_configured',
+                          'summary': 'Create Web-source Google Alerts and add their RSS URLs to the GOOGLE_ALERTS_RSS_URLS GitHub Actions secret.'}
+            print('google_alerts: not configured (no private RSS feed URLs)')
+            continue
         try:
             matches, errors = fetcher()
             for found in matches:
@@ -549,10 +654,12 @@ def main():
     # Consolidate after every refresh so syndicated copies cannot reappear later.
     consolidated = consolidate_solicitations(list(existing.values()))
     payload['records'] = sorted(consolidated, key=lambda r: (r.get('date') or '', r['id']), reverse=True)[:1500]
-    active = [k for k in ('cases', 'case_news', 'solicitations', 'law_firms') if runs.get(k, {}).get('outcome') in ('success', 'partial')]
+    active = [k for k in ('cases', 'case_news', 'solicitations', 'google_alerts', 'law_firms') if runs.get(k, {}).get('outcome') in ('success', 'partial')]
     note = 'Free-source discovery active: ' + ', '.join(active) if active else 'All monitored sources failed; showing saved records.'
     if 'cases' not in active:
         note += '. Federal CourtListener docket search inactive; add COURTLISTENER_TOKEN.'
+    if runs.get('google_alerts', {}).get('outcome') == 'not_configured':
+        note += ' Google Alerts Web feeds await configuration.'
     note += ' State trial-court filing portals are not automatically searched.'
     payload['monitoring'] = {'deployed': True, 'source': 'zero-cost-public-source-discovery',
                              'lastAttemptAt': STAMP, 'note': note}
