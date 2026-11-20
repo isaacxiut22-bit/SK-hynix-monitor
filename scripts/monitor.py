@@ -476,9 +476,9 @@ def solicitation_topic(record):
     if record.get('category') == 'Securities' and re.search(r'securit|shareholder|investors?|\bskhy\b', body):
         return 'securities-investigation'
     if re.search(r'price[ -]?fix|antitrust|anti-competitive|collusion', body):
-        if re.search(r'nand|flash memory', body):
+        if re.search(r'\bnand\b|flash memory', body):
             return 'nand-antitrust'
-        if re.search(r'dram|dynamic random.access memory', body):
+        if re.search(r'\bdram\b|dynamic random.access memory', body):
             return 'dram-antitrust'
         return 'memory-antitrust'
     if re.search(r'data breach|privacy breach|personal information leak', body):
