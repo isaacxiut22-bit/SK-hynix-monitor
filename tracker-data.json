@@ -117,6 +117,10 @@
         {
           "label": "News/press-release source via Google News",
           "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNVkpiZHZKVnB6YnpQRGpReWczaC1iZ2FPU0JweWRhY3dHam1ITldwb1J3ckFWS1F0OV85ZWN0QmM3dUVDbnUxdld0X0IyRlREdWRuSnpuem1ZVWZhUmsyanJJOGswanFIa0g4Q0xpdWVGMEttRkR3Sk5wRG5UN3NVNFFjS2tQU0pvTDNDYzJPa0s2WW4wNnp5WE9QOHVYR0NEcTdzYVNBMl8xRmJHalFySjU3UVM5eVZ4WFprSzZHclpVeWJZcU85Rk5zWkd2WHAxd0NPcFB4WDVDZm5QZ1ZFZWQyZmNhbFBWNkFuM3JLNjFZTWp1X3E2WGpzZ1M4dHM?oc=5"
+        },
+        {
+          "label": "Google Alerts web result",
+          "url": "https://pr.chestercounty.com/article/NASDAQ-SKHY-Investigation-Alert-SK-hynix-Inc-Investors-are-Encouraged-to-Contact-Kessler-Topaz-Meltzer-andamp-Check-LLP/6afe531d578f51787f285033"
         }
       ],
       "baseline": true,
@@ -126,13 +130,15 @@
         "ktmc-securities-2026-11",
         "news-b4bb64d4f3192b44",
         "news-ebdcee64a6ad18ff",
-        "news-eeb128130ac1165d"
+        "news-eeb128130ac1165d",
+        "webalert-805ace89cdd05fc3"
       ],
       "relatedHeadlines": [
         "NASDAQ: SKHY Investigation Alert: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz Meltzer & Check, LLP",
         "NASDAQ: SKHY Investigation: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz Meltzer & Check, LLP",
         "Notice of Investigation of SKHY: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz Meltzer & Check, LLP",
-        "SK hynix Inc. NASDAQ SKHY Learn More"
+        "SK hynix Inc. NASDAQ SKHY Learn More",
+        "SKHY Investigation Alert: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz ..."
       ]
     },
     {
@@ -248,6 +254,27 @@
         {
           "label": "News/press-release source via Google News",
           "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNQUxKZFhCNDE2UVJ2bGY5cHpfVnUzUHhOQkNJM1pVbUxjcXZpTklhcHpUMnY3QXBSZ19QVkE0eG9uei1ETFp0RzBTY1Q5WlNoTHJMSHBDUkJGVGoydnE2aWdpeUU5Q2hsTEhPaXlONlVqdXdESE9HUk9xZmpRVVhraDk1dHN0WFUxZjJFai1jbXhWdmMwb09kVVhVTkZFTDFBXzBXaXpoRm9SQVZKMWxmTDRRNHlGbDhTa01oM3Z0blBOdlB5TWNyUmVmMzhFVDdkSTFRd1MtOU5pVTROQzJtS3F6Yjlsdw?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "news-7722d3bec706db62",
+      "tracker": "solicitations",
+      "title": "Samsung, SK Hynix CEOs Sued by South Korean Shareholder Group as Police Open Investigation",
+      "entity": "SK hynix or subsidiary (unverified reference)",
+      "date": "2026-08-05",
+      "firstSeen": "2026-11-20",
+      "category": "Securities",
+      "status": "Unverified solicitation lead",
+      "forum": "Public announcement or media report",
+      "firm": "TradingKey",
+      "summary": "Samsung, SK Hynix CEOs Sued by South Korean Shareholder Group as Police Open Investigation TradingKey Check the original publication for a direct client solicitation; a news article does not prove a filing.",
+      "scope": "Google News RSS discovery; not a court docket or verified firm outreach.",
+      "sources": [
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQN0doZ1ZoN0Zpc0dsczE5c0Q5c2dvNWctRG43bHNZbUh1Skh3VWFUcDlSZjh4R1BZdnpIRHdYamhaUjBMdmNaTEpXV05CaWQ3Q3dIYmVCSXVHeE95a085NURXa1J1R2l0OUdqaVBuU20zSlE1UGZtZzUxT1pseDl2dVFUaElXM253ZktYTHZBYWY2a0k0Wm5tcnlMek9XVnBzd056aXdhY2FGQQ?oc=5"
         }
       ],
       "baseline": false
@@ -2649,41 +2676,41 @@
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-20T17:13:27Z",
-      "lastAttemptAt": "2026-11-20T17:13:27Z",
+      "lastSuccessAt": "2026-11-20T18:59:46Z",
+      "lastAttemptAt": "2026-11-20T18:59:46Z",
       "outcome": "success",
       "summary": "80 matched records; 0 source failures. Leads require review."
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-20T17:13:27Z",
-      "lastAttemptAt": "2026-11-20T17:13:27Z",
+      "lastSuccessAt": "2026-11-20T18:59:46Z",
+      "lastAttemptAt": "2026-11-20T18:59:46Z",
       "outcome": "success",
-      "summary": "8 matched records; 0 source failures. Leads require review."
+      "summary": "10 matched records; 0 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-20T17:13:27Z",
-      "lastAttemptAt": "2026-11-20T17:13:27Z",
+      "lastSuccessAt": "2026-11-20T18:59:46Z",
+      "lastAttemptAt": "2026-11-20T18:59:46Z",
       "outcome": "success",
       "summary": "23 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-20T17:13:27Z",
-      "lastAttemptAt": "2026-11-20T17:13:27Z",
+      "lastSuccessAt": "2026-11-20T18:59:46Z",
+      "lastAttemptAt": "2026-11-20T18:59:46Z",
       "outcome": "success",
       "summary": "1 matched records; 0 source failures. Leads require review."
     },
     "google_alerts": {
-      "lastSuccessAt": null,
-      "lastAttemptAt": "2026-11-20T17:13:27Z",
-      "outcome": "not_configured",
-      "summary": "Create Web-source Google Alerts and add their RSS URLs to the GOOGLE_ALERTS_RSS_URLS GitHub Actions secret."
+      "lastSuccessAt": "2026-11-20T18:59:46Z",
+      "lastAttemptAt": "2026-11-20T18:59:46Z",
+      "outcome": "success",
+      "summary": "1 matched records; 0 source failures. Leads require review."
     }
   },
   "storageReady": false,
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-20T17:13:27Z",
-    "note": "Free-source discovery active: cases, case_news, solicitations, law_firms Google Alerts Web feeds await configuration. State trial-court filing portals are not automatically searched."
+    "lastAttemptAt": "2026-11-20T18:59:46Z",
+    "note": "Free-source discovery active: cases, case_news, solicitations, google_alerts, law_firms State trial-court filing portals are not automatically searched."
   }
 }
