@@ -14,7 +14,18 @@ The GitHub Actions workflow (`.github/workflows/monitor-and-deploy.yml`) is sche
 | Google News RSS — filing-report queries | Possible newly reported federal/state complaints or lawsuits | **Not a docket search**; results can be old, inaccurate, duplicated, or unrelated to a new filing. |
 | Google News RSS — plaintiff solicitation queries | Investor notices, investigations, potential class actions | Newswire syndications and false positives possible; verify with firm. |
 | Google Alerts Atom RSS — Web-source alerts | Broader search-index results, including law-firm investigation webpages | **Connected via private `GOOGLE_ALERTS_RSS_URLS` secret.** Results may be delayed, limited or missing; historical pages may never be delivered. RSS is fetched on the existing GitHub schedule. The dashboard reports parsed entries, rejected entries, and accepted solicitation candidates. |
-| Direct public plaintiff-firm pages | Kessler Topaz, Rosen Law, and Hagens Berman case/investigation listings | Only public visible HTML links, once per run, where robots.txt allows; JavaScript lists or disallowed fetches may yield no results. |
+| Direct public plaintiff-firm pages | 21 curated listing/practice pages across 18 plaintiff-side firms, spanning antitrust, purchaser claims, securities and shareholder investigations | Only public visible HTML links, once per run, where robots.txt allows; JavaScript lists, pagination, stand-alone firm pages not linked from a listing, or disallowed fetches may yield no results. Successful page retrieval does **not** establish comprehensive website coverage. The source summary reports attempted vs successfully retrieved pages and firms. |
+
+### Direct plaintiff-firm listings — monitored sources
+
+The monitor checks these **18 specific firms**, not the whole U.S. plaintiff bar. The inclusion criteria are plaintiff-side class action/antitrust/securities practice and an identifiable public cases/investigations page (or a homepage featuring investigations). Prioritize antitrust purchaser-side practice over securities-only monitoring. These are **discovery candidates**, not evidence that the firms are investigating SK hynix.
+
+| Focus | Firms |
+| --- | --- |
+| Antitrust, competition, purchasers or consumer litigation | Lieff Cabraser; Berger Montague; Hausfeld; Cohen Milstein; Joseph Saveri Law Firm; Scott+Scott; DiCello Levitt; Hartley LLP; Hagens Berman |
+| Securities, shareholder and investor investigations | Kessler Topaz; Rosen Law Firm; Levi & Korsinsky; Glancy Prongay Wolke & Rotter; Pomerantz; Kahn Swick & Foti; Faruqi & Faruqi; Labaton Keller Sucharow; Johnson Fistel |
+
+**Important:** Many firms do not list pending investigations on the same page or expose them in static HTML. Each listing is inspected only once per scheduled monitoring run; the script does not crawl the entire domain or use a search-engine index for that source. A firm can have a SK hynix solicitation and show zero matches here. Google Alerts is a separate, broader discovery source, but also not exhaustive.
 
 **Solicitation deduplication:** Known plaintiff-firm campaigns are consolidated conservatively by identified firm, claim subject, and a 45-day announcement window. The source links, original publication titles, and earliest announcement date are preserved under one entry. A campaign remains an unverified lead unless independently reviewed. Unknown firms, distinct claim subjects and sufficiently separated campaigns stay separate. Deduplication runs on *every* refresh to prevent repeat RSS items from recreating duplicate entries.
 

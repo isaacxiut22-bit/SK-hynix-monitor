@@ -61,11 +61,34 @@ RSS_QUERIES = {
 # Public pages only. Each is fetched once, no recursive crawling or login, and
 # only where the site's robots.txt permits this user agent. HTML/JS limitations
 # are reported; direct listings are NOT a complete inventory of a firm's work.
+# Curated public listing pages of U.S. plaintiff-side firms, with attention to
+# antitrust/price-fixing and securities. Public listings are not exhaustive:
+# many firms publish stand-alone investigation pages not linked from these lists.
+# Firm names and URLs are not evidence of a pending SK hynix claim.
 FIRM_PAGES = [
-    ('Kessler Topaz (investigations)', 'https://www.ktmc.com/investigations/'),
-    ('Kessler Topaz (new cases)', 'https://www.ktmc.com/newcases/'),
-    ('Rosen Law Firm (active cases)', 'https://rosenlegal.com/cases/'),
-    ('Hagens Berman (cases)', 'https://www.hbsslaw.com/cases'),
+    # Broad antitrust / purchaser-side / consumer class-action counsel.
+    ('Lieff Cabraser', 'https://www.lieffcabraser.com/antitrust/'),
+    ('Lieff Cabraser', 'https://www.lieffcabraser.com/case-center/'),
+    ('Berger Montague', 'https://bergermontague.com/cases/antitrust/'),
+    ('Hausfeld', 'https://www.hausfeld.com/en-us/what-we-do/antitrust-competition'),
+    ('Cohen Milstein', 'https://www.cohenmilstein.com/cases/?_case_services=155&_case_type=current'),
+    ('Joseph Saveri Law Firm', 'https://www.saverilawfirm.com/our-cases/'),
+    ('Scott+Scott', 'https://scott-scott.com/cases/'),
+    ('DiCello Levitt', 'https://dicellolevitt.com/current-cases/'),
+    ('Hartley LLP', 'https://hartleyllp.com/cases-investigations/'),
+    ('Hagens Berman', 'https://www.hbsslaw.com/cases'),
+    # Investor investigations / securities / shareholder actions.
+    ('Kessler Topaz', 'https://www.ktmc.com/investigations/'),
+    ('Kessler Topaz', 'https://www.ktmc.com/newcases/'),
+    ('Rosen Law Firm', 'https://rosenlegal.com/cases/'),
+    ('Levi & Korsinsky', 'https://zlk.com/investigations/'),
+    ('Glancy Prongay Wolke & Rotter', 'https://www.glancylaw.com/cases-list/'),
+    ('Pomerantz', 'https://pomlaw.com/cases-and-investigations/'),
+    ('Kahn Swick & Foti', 'https://ksfcounsel.com/current-investigations/'),
+    ('Kahn Swick & Foti', 'https://ksfcounsel.com/cases/'),
+    ('Faruqi & Faruqi', 'https://faruqilaw.com/'),
+    ('Labaton Keller Sucharow', 'https://www.labaton.com/our-cases/ongoing'),
+    ('Johnson Fistel', 'https://www.johnsonfistel.com/'),
 ]
 
 ALIASES = re.compile(r'\b(?:sk\s*[- ]?\s*hynix|hynix\s+semiconductor|solidigm|\bSKHY\b)\b', re.I)
@@ -428,20 +451,28 @@ def robots_allowed(url):
 
 
 def firm_websites():
-    results, errors, successes = {}, [], 0
+    """Scan curated firm listings, preserving per-page health and firm coverage."""
+    results, errors, successes, checked_firms = {}, [], 0, set()
     for firm, url in FIRM_PAGES:
         try:
             if not robots_allowed(url):
                 raise RuntimeError('robots.txt disallows automatic fetch')
             matches = direct_firm_records(get(url), firm, url)
             successes += 1
+            checked_firms.add(firm)
             for record in matches:
                 results[record['id']] = record
         except (ValueError, RuntimeError, urllib.error.URLError, TimeoutError) as exc:
             errors.append(f'{firm}: {short(exc, 140)}')
     if not successes:
         raise RuntimeError('No public plaintiff-firm listing could be retrieved: ' + '; '.join(errors))
-    return list(results.values()), errors
+    metrics = {
+        'pages_attempted': len(FIRM_PAGES),
+        'pages_checked': successes,
+        'firms_attempted': len({firm for firm, _ in FIRM_PAGES}),
+        'firms_checked': len(checked_firms),
+    }
+    return list(results.values()), errors, metrics
 
 
 
@@ -642,7 +673,7 @@ def main():
             continue
         try:
             fetched = fetcher()
-            if kind == 'google_alerts':
+            if kind in ('google_alerts', 'law_firms'):
                 matches, errors, feed_metrics = fetched
             else:
                 matches, errors = fetched
@@ -654,13 +685,22 @@ def main():
                         found['status'] = existing[found['id']]['status']
                 existing[found['id']] = found
             summary = f'{len(matches)} matched records; {len(errors)} source failures. Leads require review.'
-            if feed_metrics is not None:
+            if kind == 'google_alerts' and feed_metrics is not None:
                 summary = (
                     f"{feed_metrics['entries_examined']} Google Alerts entries examined across "
                     f"{feed_metrics['feeds_checked']} feed(s); "
                     f"{len(matches)} unique solicitation candidates accepted; "
                     f"{feed_metrics['entries_filtered']} rejected by keyword filter; "
                     f"{len(errors)} feed failures. Leads require review."
+                )
+            elif kind == 'law_firms' and feed_metrics is not None:
+                summary = (
+                    f"{feed_metrics['pages_checked']}/{feed_metrics['pages_attempted']} public "
+                    f"listing pages retrieved across {feed_metrics['firms_checked']}/"
+                    f"{feed_metrics['firms_attempted']} firms; "
+                    f"{len(matches)} SK hynix listing matches; "
+                    f"{len(errors)} page failures. "
+                    "This does not search the firms' entire websites."
                 )
             runs[kind] = {'lastSuccessAt': STAMP, 'lastAttemptAt': STAMP,
                           'outcome': 'partial' if errors else 'success',

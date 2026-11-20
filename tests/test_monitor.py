@@ -263,5 +263,33 @@ class MonitorTests(unittest.TestCase):
         self.assertEqual(len(monitor.consolidate_solicitations([nand, dram])), 2)
 
 
+    def test_curated_direct_firm_sources_cover_antitrust_and_securities(self):
+        firms = {firm for firm, _ in monitor.FIRM_PAGES}
+        urls = [url for _, url in monitor.FIRM_PAGES]
+        self.assertGreaterEqual(len(firms), 15)
+        self.assertGreaterEqual(len(urls), 20)
+        self.assertEqual(len(urls), len(set(urls)))
+        for firm in ('Lieff Cabraser', 'Berger Montague', 'Hausfeld',
+                     'Cohen Milstein', 'Joseph Saveri Law Firm',
+                     'Levi & Korsinsky', 'Kessler Topaz'):
+            self.assertIn(firm, firms)
+        self.assertTrue(all(u.startswith('https://') for u in urls))
+
+    def test_firm_listings_report_success_and_failure_counts(self):
+        page = b'<a href="/investigation/sk-hynix/">SK hynix investigation</a>'
+        bad_url = 'https://example.com/disallowed'
+        sample_pages = [('Firm A', 'https://example.com/active'),
+                        ('Firm B', bad_url)]
+        with patch.object(monitor, 'FIRM_PAGES', sample_pages):
+            with patch.object(monitor, 'robots_allowed', side_effect=lambda u: u != bad_url):
+                with patch.object(monitor, 'get', return_value=page):
+                    results, errors, metrics = monitor.firm_websites()
+        self.assertEqual(len(results), 1)
+        self.assertEqual(len(errors), 1)
+        self.assertEqual(metrics, {
+            'pages_attempted': 2, 'pages_checked': 1,
+            'firms_attempted': 2, 'firms_checked': 1,
+        })
+
 if __name__ == '__main__':
     unittest.main()
