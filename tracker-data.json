@@ -408,6 +408,27 @@
       "baseline": false
     },
     {
+      "id": "filingnews-b68be8d5b5bc2c27",
+      "tracker": "cases",
+      "title": "Samsung, SK Hynix, and Micron Sued as DRAM Prices Surge 700% in Class Action Lawsuit - NoobFeed",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-07-02",
+      "firstSeen": "2026-11-21",
+      "category": "Other Litigation",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "NoobFeed",
+      "summary": "Samsung, SK Hynix, and Micron Sued as DRAM Prices Surge 700% in Class Action Lawsuit NoobFeed This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMDNvQ2tzNUJzaFJVU2dGb2xKc2dFQm9wQWpIWlk5X09rZXdkUVFYb3FQVUxZZU5LLVNKSWNNbHBOVXJSZDdvYTMtVVFfU0MzNVR5eXBGdU9ySW54eS1GUkhDTVlEZl9qQXpZLVFOQS1zYWdFTnZRcDFTU3JRb1laRi0tOA?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
       "id": "filingnews-564c04b3c49d6cca",
       "tracker": "cases",
       "title": "Samsung Electronics, SK Hynix, Micron sued in US over DRAM supply shift to AI memory - electronics.economictimes.indiatimes.com",
@@ -807,6 +828,27 @@
       "baseline": false
     },
     {
+      "id": "filingnews-d645e93905e76219",
+      "tracker": "cases",
+      "title": "The memory crisis heads to court as class-action lawsuit filed against Samsung, SK Hynix, and Micron - PC Gamer",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-06-29",
+      "firstSeen": "2026-11-21",
+      "category": "Other Litigation",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "PC Gamer",
+      "summary": "The memory crisis heads to court as class-action lawsuit filed against Samsung, SK Hynix, and Micron PC Gamer This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOZ1JVa1dteGRNbjA4UzR0UHJrWXdyMWRGdjFIZ01ITWx4WDRFaDZld0NNRXJLRi1mUmdpcnoyeXZ5bFpkcHR3bDFpR2RDdHhmdm10M1RVUW1KeUdMelRKbmVrYVZYM2ppSFRPc1E0cjFIWWZzTjVjeG5hNlc0cmVPU3dQNUhRbGJaMG9laGhWMi13OS1qQllkeC03ZHdjNXpWOG5ESWUzSEZ6ZFhkT3Y3UWgxaFAwbVVSckNkRjVhYkIzY2tVS3FQbkZqOG1weWJBVHF6MGxyM01TWnZnTHVfUjFrRFgxU3g1ak9RUjNvZm1wM3p0NTFOc3NYQTFxUUw3bVpXNFlFVlI2VlNkeTFXTQ?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
       "id": "filingnews-83741c96f22ff325",
       "tracker": "cases",
       "title": "SK Hynix, Samsung and Micron sued over allegations of \"concerted anticompetitive behaviour\" in DRAM market - GamesIndustry.biz",
@@ -823,6 +865,27 @@
         {
           "label": "Media filing report via Google News",
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPbHo1bllIQWw2cklESUJFX3N3M0FlUEowSXNBYlkyaEVNUy1tdTN1bXV0ZWVWV0N5M3lFQjhYbElZdm5YTFdpNlN0WG1qU2xVajl6bl82blNibjhLVW50RUpNd3l4bEVYNVQ4RnYxbW52TGN5VENCZmpha3RIaEtocC1aYkVEbmRUTzdoeTNHSnFmdHFOUUtkaWRxaGExSjNWVE04Q001UDZuZ2l6dFlDOEsyODFBMThsNWs5M29xZDMyRmZKd2FyaVZWbElNdw?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "filingnews-80922b89b655fc24",
+      "tracker": "cases",
+      "title": "Consumers file a class-action lawsuit against Samsung, SK Hynix and Micron in the US as memory prices keep on increasing due to a shortage - The Tech Outlook",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-06-29",
+      "firstSeen": "2026-11-21",
+      "category": "Other Litigation",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "The Tech Outlook",
+      "summary": "Consumers file a class-action lawsuit against Samsung, SK Hynix and Micron in the US as memory prices keep on increasing due to a shortage The Tech Outlook This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxNUURXN2w2UlNPbV94TV9SX3d6TGtXekJLcjJZeXZBbjJleElVdXhDc2lWTWU1NUdtNng3ejc0aWlMNXdsTXBsbnBQVEo0X0hJLTY1cXBLUXZHOEhmNHhVWmZ3X19CSzMwSnF6NkwzcEhKV3NkZE03TzFOc1pDaVQ5VnE0UkJpNmNfMXp6OWl4QV9udkk5UmlKa0s3VG1vVW5yTkZSZktfRmpheWhCcGl4aENTbktJelk1REg3cFhJR1R0WExfeXJpSUZ5N1dBWFRHR2UwZ1dQUy1xN3F1MDNDZkhNaG1zM3Z0aDdaYnVlUWZkZ2lCYXRFM3UxV2NtMkhnRk9BRFh1dnJQZVY0NEYyWTNBX2ZmXzdHQTcyTHU5bw?oc=5"
         }
       ],
       "baseline": false
@@ -970,6 +1033,27 @@
         {
           "label": "Media filing report via Google News",
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOY21kMDNhdFNDcGVLaFQtN2tBcTN0NWlZZDVwZExuaUZQTWt1bGVTaFdzbFpucmhmZUN4M1BYa1NkeGNxdzVjNG5iNWpQYURtYkNlTGp2TVNqU1BwRlJQNmUwcGhiNTFPenFPSVZ2VzVSUzAwemhMNTFiOUJsSjc4T0doVWhDejAwMXFHT1NLRGVYN3kwdWZIZFRGajZHLTlDV2Z0ZHVQTEFrdmItcmc?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "filingnews-18d27f0009051ffb",
+      "tracker": "cases",
+      "title": "Samsung, Micron, and SK Hynix Sued Over RAM Prices And Availability - Insider Gaming",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-06-29",
+      "firstSeen": "2026-11-21",
+      "category": "Other Litigation",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "Insider Gaming",
+      "summary": "Samsung, Micron, and SK Hynix Sued Over RAM Prices And Availability Insider Gaming This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUXp1d01TTmdNU3hiQy1HS1J4MzM0bjVPVTJ6NWJmNl8zZVpEd1ZxOEVMdklvN3U2clk0QjJkRjhzSVJ1UjJDaFd4RG10em9nRWdXbF9rSW1ua0ZmZEVNcXIzVzVscHh0aHdaYXU1TTUyVVhVSW1LZ0ltNEJjZzEtUl9nSE55SXBFbjJYckw2SzlNZnpoVVBWNw?oc=5"
         }
       ],
       "baseline": false
@@ -1286,6 +1370,27 @@
         {
           "label": "CourtListener federal docket",
           "url": "https://www.courtlistener.com/"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "filingnews-0b96b74655ac229e",
+      "tracker": "cases",
+      "title": "SK Hynix patents-owned Mimir IP files complaint against Micron - KED Global",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2024-06-17",
+      "firstSeen": "2026-11-21",
+      "category": "IP",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "KED Global",
+      "summary": "SK Hynix patents-owned Mimir IP files complaint against Micron KED Global This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1kWkxJQ2lsUU0tUnhmQ0NwSUg3MmZQY2tDZTJJRmFra3Bya3VmRVg5emMwYS1sSlZEanpsUnZkbXVfMnduaGFzU2VMRWRNNlhWcWkzUjdkSXZOS0tTd3pQZEdmeEotcl9JSWlwTVpDdlNWZk1rMXY0?oc=5"
         }
       ],
       "baseline": false
@@ -2721,32 +2826,32 @@
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-21T04:44:46Z",
-      "lastAttemptAt": "2026-11-21T04:44:46Z",
+      "lastSuccessAt": "2026-11-21T04:46:04Z",
+      "lastAttemptAt": "2026-11-21T04:46:04Z",
       "outcome": "success",
       "summary": "80 matched records; 0 source failures. Leads require review."
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-21T04:44:46Z",
-      "lastAttemptAt": "2026-11-21T04:44:46Z",
+      "lastSuccessAt": "2026-11-21T04:46:04Z",
+      "lastAttemptAt": "2026-11-21T04:46:04Z",
       "outcome": "success",
-      "summary": "9 matched records; 0 source failures. Leads require review."
+      "summary": "7 matched records; 0 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-21T04:44:46Z",
-      "lastAttemptAt": "2026-11-21T04:44:46Z",
+      "lastSuccessAt": "2026-11-21T04:46:04Z",
+      "lastAttemptAt": "2026-11-21T04:46:04Z",
       "outcome": "success",
-      "summary": "23 matched records; 0 source failures. Leads require review."
+      "summary": "30 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-21T04:44:46Z",
-      "lastAttemptAt": "2026-11-21T04:44:46Z",
+      "lastSuccessAt": "2026-11-21T04:46:04Z",
+      "lastAttemptAt": "2026-11-21T04:46:04Z",
       "outcome": "success",
       "summary": "21/21 public listing pages retrieved across 18/18 firms; 2 SK hynix listing matches; 0 page failures. This does not search the firms' entire websites."
     },
     "google_alerts": {
-      "lastSuccessAt": "2026-11-21T04:44:46Z",
-      "lastAttemptAt": "2026-11-21T04:44:46Z",
+      "lastSuccessAt": "2026-11-21T04:46:04Z",
+      "lastAttemptAt": "2026-11-21T04:46:04Z",
       "outcome": "success",
       "summary": "29 Google Alerts entries examined across 7 feed(s); 0 unique solicitation candidates accepted; 29 rejected by keyword filter; 0 feed failures. Leads require review."
     }
@@ -2755,7 +2860,7 @@
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-21T04:44:46Z",
+    "lastAttemptAt": "2026-11-21T04:46:04Z",
     "note": "Free-source discovery active: cases, case_news, solicitations, google_alerts, law_firms State trial-court filing portals are not automatically searched."
   }
 }
