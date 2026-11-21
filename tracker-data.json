@@ -1,6 +1,27 @@
 {
   "records": [
     {
+      "id": "webalert-eed53c1bfd261de9",
+      "tracker": "solicitations",
+      "title": "SK hynix Inc.",
+      "entity": "SK hynix or subsidiary (unverified reference)",
+      "date": "2026-11-20",
+      "firstSeen": "2026-11-21",
+      "category": "Other Litigation",
+      "status": "Unverified solicitation lead",
+      "forum": "Web search result — prospective U.S. litigation (unverified)",
+      "firm": "Google Alerts web result",
+      "summary": "SK Hynix is the subject of a ruling by a federal judge on November 14, 2026, who declined to dismiss a class action lawsuit against the Company along ... Check the original publication for a direct client solicitation; a news article does not prove a filing.",
+      "scope": "Google Alerts Web RSS discovery. A web result does not establish a direct solicitation or filed lawsuit.",
+      "sources": [
+        {
+          "label": "Google Alerts web result",
+          "url": "https://schallfirm.com/cases/sk-hynix-inc/"
+        }
+      ],
+      "baseline": false
+    },
+    {
       "id": "news-7e876044a843afea",
       "tracker": "solicitations",
       "title": "SKHY Investors Have Opportunity to Join SK hynix Inc. Fraud Investigation with SBS Law",
@@ -2826,41 +2847,41 @@
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-21T04:47:17Z",
-      "lastAttemptAt": "2026-11-21T04:47:17Z",
+      "lastSuccessAt": "2026-11-21T17:03:47Z",
+      "lastAttemptAt": "2026-11-21T17:03:47Z",
       "outcome": "success",
       "summary": "80 matched records; 0 source failures. Leads require review."
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-21T04:47:17Z",
-      "lastAttemptAt": "2026-11-21T04:47:17Z",
+      "lastSuccessAt": "2026-11-21T17:03:47Z",
+      "lastAttemptAt": "2026-11-21T17:03:47Z",
       "outcome": "success",
       "summary": "11 matched records; 0 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-21T04:47:17Z",
-      "lastAttemptAt": "2026-11-21T04:47:17Z",
+      "lastSuccessAt": "2026-11-21T17:03:47Z",
+      "lastAttemptAt": "2026-11-21T17:03:47Z",
       "outcome": "success",
       "summary": "23 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-21T04:47:17Z",
-      "lastAttemptAt": "2026-11-21T04:47:17Z",
+      "lastSuccessAt": "2026-11-21T17:03:47Z",
+      "lastAttemptAt": "2026-11-21T17:03:47Z",
       "outcome": "success",
       "summary": "21/21 public listing pages retrieved across 18/18 firms; 2 SK hynix listing matches; 0 page failures. This does not search the firms' entire websites."
     },
     "google_alerts": {
-      "lastSuccessAt": "2026-11-21T04:47:17Z",
-      "lastAttemptAt": "2026-11-21T04:47:17Z",
+      "lastSuccessAt": "2026-11-21T17:03:47Z",
+      "lastAttemptAt": "2026-11-21T17:03:47Z",
       "outcome": "success",
-      "summary": "29 Google Alerts entries examined across 7 feed(s); 0 unique solicitation candidates accepted; 29 rejected by keyword filter; 0 feed failures. Leads require review."
+      "summary": "26 Google Alerts entries examined across 7 feed(s); 1 unique solicitation candidates accepted; 25 rejected by keyword filter; 0 feed failures. Leads require review."
     }
   },
   "storageReady": false,
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-21T04:47:17Z",
+    "lastAttemptAt": "2026-11-21T17:03:47Z",
     "note": "Free-source discovery active: cases, case_news, solicitations, google_alerts, law_firms State trial-court filing portals are not automatically searched."
   }
 }
