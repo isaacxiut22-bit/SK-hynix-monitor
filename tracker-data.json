@@ -150,11 +150,44 @@
       ]
     },
     {
+      "id": "rosen-securities-2026-11",
+      "tracker": "solicitations",
+      "title": "Rosen Law Firm — SK hynix securities investigation",
+      "entity": "SK hynix Inc.",
+      "date": "2026-11-17",
+      "firstSeen": "2026-11-19",
+      "category": "Securities",
+      "status": "Prospective action",
+      "forum": "Prospective U.S. securities litigation",
+      "firm": "Rosen Law Firm",
+      "summary": "Firm announcement investigating potential securities claims and inviting investors to join a prospective class action. The firm states it is preparing an action; a filed securities complaint has not been independently verified here.",
+      "scope": "Shareholders; alleged misleading business information. Class period not confirmed. Related notices and firm links consolidated as one potential campaign; verify that each source concerns the same matter.",
+      "sources": [
+        {
+          "label": "Firm release · ACCESS Newswire",
+          "url": "https://www.accessnewswire.com/newsroom/en/business-and-professional-services/rosen-leading-investor-counsel-encourages-sk-hynix-inc.-investor-1253652"
+        },
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQN3NVd3RsTkljUDRPOGNCa19tT3pnaFFKM2ZSZHNCcVZCX2ZuT3NSakVHV25QcDB4NjEyNzA0NlpsUmNhOWNBSER3bV9qejM5VFc1dGZUTkFBVDJtSEFrN0FTazdoLTFjU19qV1Y1TmlSXzhkWWFQN0FBOUdSSUplbWVhV0ZSVFllMnNKSW5RaE5IZGM0MHd2a2l3OXRJaW1JU3pnWHBfMEJOM2pGMnNhQmFPR3oyeTdrUXNzQ1hOcjJnNzd2Rk1vZ2RYaTU5a3RNQmw3Ym45Ti01WFJ4NkQ3SW9iZWZGQ2p1eDI3blJpNHNJS01nb2hBckVIcFg?oc=5"
+        }
+      ],
+      "baseline": true,
+      "campaignTopic": "securities-investigation",
+      "mergedRecordIds": [
+        "news-463d44d479103c12",
+        "rosen-securities-2026-11"
+      ],
+      "relatedHeadlines": [
+        "Rosen Law Firm Encourages SK hynix Inc. Investors to Inquire About Securities Class Action Investigation - SKHY"
+      ]
+    },
+    {
       "id": "ktmc-securities-2026-11",
       "tracker": "solicitations",
       "title": "Kessler Topaz Meltzer & Check — SK hynix securities investigation",
       "entity": "SK hynix Inc.",
-      "date": "2026-11-18",
+      "date": "2026-11-15",
       "firstSeen": "2026-11-19",
       "category": "Securities",
       "status": "Investigation",
@@ -186,6 +219,14 @@
         {
           "label": "Google Alerts web result",
           "url": "https://pr.chestercounty.com/article/NASDAQ-SKHY-Investigation-Alert-SK-hynix-Inc-Investors-are-Encouraged-to-Contact-Kessler-Topaz-Meltzer-andamp-Check-LLP/6afe531d578f51787f285033"
+        },
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPT0lfU1JWYldNMV9NMi0wXy1SMlFKcW9QeXJBSzY3ZWZSZ2lYVlBraDlqUFo1Skd4N0lLZl9aUjB5NnZWTzRDYk1ZYml4M1N2RmR3Tk90QUg1QXNUVWpORmd4QTJGdmFZSkMza0JrYWlQYU1OdzJWRmZMbk8yTTJxMnNoWmdtU0syYkhpME9mS2o3c2R5WXFaZ3lsajZjY2l2YjF4NFJkcmxsTHR3S2RlTHVUSE1XSzYtR2dPNW5maFdEdU9DcDRTMGdob19ZcGc2MTQ5TUlWc0o?oc=5"
+        },
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPRURQZnlPX29HNG5KZnZaLXpnWVlmcHNMRmIxbUE0bE1PNk5RaDNqMWJUVV9RcnlhQm5uenBnSUhKSmpMaXlmbWRlb3lhXzV0SEsyY1ZDX0M1M0ZIaDA1SXhXOEVGLUt5dHVMOHdJeU92X2hXU0NPbW5WbEpTWGljVTNZcklLNVBLQmRvcVVrX3hUSTkwX0dhTHJyMUhoU2Z5LTFQU1pTNXVPOERRT3VVUnlSaWRmQzJfcm9YOWo4QmFmQnlqUm9kV2oxeVRmYnNReUhrWXYxYTQ?oc=5"
         }
       ],
       "baseline": true,
@@ -193,6 +234,8 @@
       "mergedRecordIds": [
         "firm-03905eca8858bd2a",
         "ktmc-securities-2026-11",
+        "news-33d8ddfe07dc0524",
+        "news-9a6111127075384e",
         "news-b4bb64d4f3192b44",
         "news-ebdcee64a6ad18ff",
         "news-eeb128130ac1165d",
@@ -202,41 +245,10 @@
         "NASDAQ: SKHY Investigation Alert: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz Meltzer & Check, LLP",
         "NASDAQ: SKHY Investigation: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz Meltzer & Check, LLP",
         "Notice of Investigation of SKHY: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz Meltzer & Check, LLP",
+        "SK hynix Inc. (NASDAQ: SKHY) Securities Fraud Investigation",
         "SK hynix Inc. NASDAQ SKHY Learn More",
-        "SKHY Investigation Alert: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz ..."
-      ]
-    },
-    {
-      "id": "rosen-securities-2026-11",
-      "tracker": "solicitations",
-      "title": "Rosen Law Firm — SK hynix securities investigation",
-      "entity": "SK hynix Inc.",
-      "date": "2026-11-17",
-      "firstSeen": "2026-11-19",
-      "category": "Securities",
-      "status": "Prospective action",
-      "forum": "Prospective U.S. securities litigation",
-      "firm": "Rosen Law Firm",
-      "summary": "Firm announcement investigating potential securities claims and inviting investors to join a prospective class action. The firm states it is preparing an action; a filed securities complaint has not been independently verified here.",
-      "scope": "Shareholders; alleged misleading business information. Class period not confirmed. Related notices and firm links consolidated as one potential campaign; verify that each source concerns the same matter.",
-      "sources": [
-        {
-          "label": "Firm release · ACCESS Newswire",
-          "url": "https://www.accessnewswire.com/newsroom/en/business-and-professional-services/rosen-leading-investor-counsel-encourages-sk-hynix-inc.-investor-1253652"
-        },
-        {
-          "label": "News/press-release source via Google News",
-          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQN3NVd3RsTkljUDRPOGNCa19tT3pnaFFKM2ZSZHNCcVZCX2ZuT3NSakVHV25QcDB4NjEyNzA0NlpsUmNhOWNBSER3bV9qejM5VFc1dGZUTkFBVDJtSEFrN0FTazdoLTFjU19qV1Y1TmlSXzhkWWFQN0FBOUdSSUplbWVhV0ZSVFllMnNKSW5RaE5IZGM0MHd2a2l3OXRJaW1JU3pnWHBfMEJOM2pGMnNhQmFPR3oyeTdrUXNzQ1hOcjJnNzd2Rk1vZ2RYaTU5a3RNQmw3Ym45Ti01WFJ4NkQ3SW9iZWZGQ2p1eDI3blJpNHNJS01nb2hBckVIcFg?oc=5"
-        }
-      ],
-      "baseline": true,
-      "campaignTopic": "securities-investigation",
-      "mergedRecordIds": [
-        "news-463d44d479103c12",
-        "rosen-securities-2026-11"
-      ],
-      "relatedHeadlines": [
-        "Rosen Law Firm Encourages SK hynix Inc. Investors to Inquire About Securities Class Action Investigation - SKHY"
+        "SKHY Investigation Alert: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz ...",
+        "SKHY Investigation: SK hynix Inc. Investors are Encouraged to Contact Kessler Topaz Meltzer & Check, LLP"
       ]
     },
     {
@@ -2868,32 +2880,32 @@
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-22T17:03:44Z",
-      "lastAttemptAt": "2026-11-22T17:03:44Z",
+      "lastSuccessAt": "2026-11-22T21:59:54Z",
+      "lastAttemptAt": "2026-11-22T21:59:54Z",
       "outcome": "success",
       "summary": "80 matched records; 0 source failures. Leads require review."
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-22T17:03:44Z",
-      "lastAttemptAt": "2026-11-22T17:03:44Z",
+      "lastSuccessAt": "2026-11-22T21:59:54Z",
+      "lastAttemptAt": "2026-11-22T21:59:54Z",
       "outcome": "success",
-      "summary": "7 matched records; 0 source failures. Leads require review."
+      "summary": "10 matched records; 0 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-22T17:03:44Z",
-      "lastAttemptAt": "2026-11-22T17:03:44Z",
+      "lastSuccessAt": "2026-11-22T21:59:54Z",
+      "lastAttemptAt": "2026-11-22T21:59:54Z",
       "outcome": "success",
       "summary": "22 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-22T17:03:44Z",
-      "lastAttemptAt": "2026-11-22T17:03:44Z",
+      "lastSuccessAt": "2026-11-22T21:59:54Z",
+      "lastAttemptAt": "2026-11-22T21:59:54Z",
       "outcome": "success",
       "summary": "21/21 public listing pages retrieved across 18/18 firms; 2 SK hynix listing matches; 0 page failures. This does not search the firms' entire websites."
     },
     "google_alerts": {
-      "lastSuccessAt": "2026-11-22T17:03:44Z",
-      "lastAttemptAt": "2026-11-22T17:03:44Z",
+      "lastSuccessAt": "2026-11-22T21:59:54Z",
+      "lastAttemptAt": "2026-11-22T21:59:54Z",
       "outcome": "success",
       "summary": "28 Google Alerts entries examined across 7 feed(s); 0 unique solicitation candidates accepted; 28 rejected by keyword filter; 0 feed failures. Leads require review."
     }
@@ -2902,7 +2914,7 @@
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-22T17:03:44Z",
+    "lastAttemptAt": "2026-11-22T21:59:54Z",
     "note": "Free-source discovery active: cases, case_news, solicitations, google_alerts, law_firms State trial-court filing portals are not automatically searched."
   }
 }
