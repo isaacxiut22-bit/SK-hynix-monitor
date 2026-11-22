@@ -2868,41 +2868,41 @@
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-22T04:15:43Z",
-      "lastAttemptAt": "2026-11-22T04:15:43Z",
-      "outcome": "partial",
-      "summary": "20 matched records; 3 source failures. Leads require review."
+      "lastSuccessAt": "2026-11-22T17:03:44Z",
+      "lastAttemptAt": "2026-11-22T17:03:44Z",
+      "outcome": "success",
+      "summary": "80 matched records; 0 source failures. Leads require review."
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-22T04:15:43Z",
-      "lastAttemptAt": "2026-11-22T04:15:43Z",
+      "lastSuccessAt": "2026-11-22T17:03:44Z",
+      "lastAttemptAt": "2026-11-22T17:03:44Z",
       "outcome": "success",
       "summary": "7 matched records; 0 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-22T04:15:43Z",
-      "lastAttemptAt": "2026-11-22T04:15:43Z",
+      "lastSuccessAt": "2026-11-22T17:03:44Z",
+      "lastAttemptAt": "2026-11-22T17:03:44Z",
       "outcome": "success",
-      "summary": "23 matched records; 0 source failures. Leads require review."
+      "summary": "22 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-22T04:15:43Z",
-      "lastAttemptAt": "2026-11-22T04:15:43Z",
+      "lastSuccessAt": "2026-11-22T17:03:44Z",
+      "lastAttemptAt": "2026-11-22T17:03:44Z",
       "outcome": "success",
       "summary": "21/21 public listing pages retrieved across 18/18 firms; 2 SK hynix listing matches; 0 page failures. This does not search the firms' entire websites."
     },
     "google_alerts": {
-      "lastSuccessAt": "2026-11-22T04:15:43Z",
-      "lastAttemptAt": "2026-11-22T04:15:43Z",
+      "lastSuccessAt": "2026-11-22T17:03:44Z",
+      "lastAttemptAt": "2026-11-22T17:03:44Z",
       "outcome": "success",
-      "summary": "23 Google Alerts entries examined across 7 feed(s); 2 unique solicitation candidates accepted; 21 rejected by keyword filter; 0 feed failures. Leads require review."
+      "summary": "28 Google Alerts entries examined across 7 feed(s); 0 unique solicitation candidates accepted; 28 rejected by keyword filter; 0 feed failures. Leads require review."
     }
   },
   "storageReady": false,
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-22T04:15:43Z",
+    "lastAttemptAt": "2026-11-22T17:03:44Z",
     "note": "Free-source discovery active: cases, case_news, solicitations, google_alerts, law_firms State trial-court filing portals are not automatically searched."
   }
 }
