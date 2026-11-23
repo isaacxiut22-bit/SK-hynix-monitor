@@ -1,6 +1,27 @@
 {
   "records": [
     {
+      "id": "webalert-d23b205c701147c3",
+      "tracker": "solicitations",
+      "title": "The Giant GPU and RAM Scam https://www.tomsguide.com/computing/is-ramageddon-a-lie-a ...",
+      "entity": "SK hynix or subsidiary (unverified reference)",
+      "date": "2026-11-21",
+      "firstSeen": "2026-11-23",
+      "category": "Antitrust",
+      "status": "Unverified solicitation lead",
+      "forum": "Web search result — prospective U.S. litigation (unverified)",
+      "firm": "Google Alerts web result",
+      "summary": "Samsung, Micron, and SK Hynix face antitrust lawsuit ... AI Data-Center Demand & the Samsung, SK Hynix & Micron DRAM Price-Fixing Open Class Action ... Check the original publication for a direct client solicitation; a news article does not prove a filing.",
+      "scope": "Google Alerts Web RSS discovery. A web result does not establish a direct solicitation or filed lawsuit.",
+      "sources": [
+        {
+          "label": "Google Alerts web result",
+          "url": "https://www.facebook.com/groups/VoteGreens/posts/3390353991152432/"
+        }
+      ],
+      "baseline": false
+    },
+    {
       "id": "webalert-b3858ec668e69719",
       "tracker": "solicitations",
       "title": "SoftBank's Son explored $1 trillion buyout of SK Hynix , the Information reports",
@@ -227,6 +248,10 @@
         {
           "label": "News/press-release source via Google News",
           "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPRURQZnlPX29HNG5KZnZaLXpnWVlmcHNMRmIxbUE0bE1PNk5RaDNqMWJUVV9RcnlhQm5uenBnSUhKSmpMaXlmbWRlb3lhXzV0SEsyY1ZDX0M1M0ZIaDA1SXhXOEVGLUt5dHVMOHdJeU92X2hXU0NPbW5WbEpTWGljVTNZcklLNVBLQmRvcVVrX3hUSTkwX0dhTHJyMUhoU2Z5LTFQU1pTNXVPOERRT3VVUnlSaWRmQzJfcm9YOWo4QmFmQnlqUm9kV2oxeVRmYnNReUhrWXYxYTQ?oc=5"
+        },
+        {
+          "label": "News/press-release source via Google News",
+          "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNdkpQZEtGbFZxWmdaSFVURm1kS0J5VWwzVDdVWnpWWkVhN0NTcEVJZ0poOVQ3bFBmUkdWMldtSTlrajB0QWpaRFY4MG1LVmpDVFY4elpQZEtQcmwzZUxteWx0UHRzMkQtNXdYelllN0o4MXEwbXkybVVWV09sOFUtLUhFcGduT082ME9weHk3dTFfM0VXd2NTNWQydTNxbnM5aExxV1NJN2VwM09BZExOb2otTHMyRmY4cU9JNjdFUkxkeUF4NERyOUQ1RWNiMk4xcE5OQnNZYTJOaExNN2R2bjZVNE5rRFhKZ2laV2VSblpRNVNuWVJBalRRQmFESVFzMHAtT0hfX0JmWDNOdXc?oc=5"
         }
       ],
       "baseline": true,
@@ -709,6 +734,27 @@
         {
           "label": "Media filing report via Google News",
           "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNclVXdmQ0U1dKNVJld1Z0a1I4Z3R4UG9vOG5RNmxKVF81M2V6NWt0enoyMXh4VmUxLUdKRkY4MjFDNUNzTGlLY2VDNXR2b1REaGJDbGNjZmhPM3FKUl9SUV9ERHcxQ0RGa0E0VFZRYXRZb2ItaWoxcHZGVXNKcFllMWZEMkJ0ZnV4b0hYQmlGLUtVemR6LUNSMFZYUGdGNmx0WHN3MGlIRl83cE84VS12YXdWM3IwX3RENTgzdmZCUVhZUQ?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "filingnews-c77913b69da2c24c",
+      "tracker": "cases",
+      "title": "Samsung, SK hynix, and Micron sued in the US for colluding to inflate RAM prices - tech-ish.com",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-06-30",
+      "firstSeen": "2026-11-23",
+      "category": "Other Litigation",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "tech-ish.com",
+      "summary": "Samsung, SK hynix, and Micron sued in the US for colluding to inflate RAM prices tech-ish.com This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdkpzVW5zcHdvVC1ibWZ3WEZ1R0otLUlqVlREN3VpM3c0ZXljcmY0NGZEbFFDVS0xbWYtVWFwSXlYb3RiUGlTWWVhVFFTVTg1UTFJNGh1ZEhCNzA1eVNKR1ZsYmZxOWhEM3dmTUYyMnVZdTJGcXRSNEZXYkpkY2cyaTc3UnFXanU2LUVJ?oc=5"
         }
       ],
       "baseline": false
@@ -2880,41 +2926,41 @@
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-23T04:31:03Z",
-      "lastAttemptAt": "2026-11-23T04:31:03Z",
-      "outcome": "success",
-      "summary": "80 matched records; 0 source failures. Leads require review."
+      "lastSuccessAt": "2026-11-23T17:22:41Z",
+      "lastAttemptAt": "2026-11-23T17:22:41Z",
+      "outcome": "partial",
+      "summary": "1 matched records; 2 source failures. Leads require review."
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-23T04:31:03Z",
-      "lastAttemptAt": "2026-11-23T04:31:03Z",
-      "outcome": "partial",
-      "summary": "8 matched records; 2 source failures. Leads require review."
+      "lastSuccessAt": "2026-11-23T17:22:41Z",
+      "lastAttemptAt": "2026-11-23T17:22:41Z",
+      "outcome": "success",
+      "summary": "10 matched records; 0 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-23T04:31:03Z",
-      "lastAttemptAt": "2026-11-23T04:31:03Z",
+      "lastSuccessAt": "2026-11-23T17:22:41Z",
+      "lastAttemptAt": "2026-11-23T17:22:41Z",
       "outcome": "success",
-      "summary": "22 matched records; 0 source failures. Leads require review."
+      "summary": "21 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-23T04:31:03Z",
-      "lastAttemptAt": "2026-11-23T04:31:03Z",
+      "lastSuccessAt": "2026-11-23T17:22:41Z",
+      "lastAttemptAt": "2026-11-23T17:22:41Z",
       "outcome": "success",
       "summary": "21/21 public listing pages retrieved across 18/18 firms; 2 SK hynix listing matches; 0 page failures. This does not search the firms' entire websites."
     },
     "google_alerts": {
-      "lastSuccessAt": "2026-11-23T04:31:03Z",
-      "lastAttemptAt": "2026-11-23T04:31:03Z",
+      "lastSuccessAt": "2026-11-23T17:22:41Z",
+      "lastAttemptAt": "2026-11-23T17:22:41Z",
       "outcome": "success",
-      "summary": "29 Google Alerts entries examined across 7 feed(s); 0 unique solicitation candidates accepted; 29 rejected by keyword filter; 0 feed failures. Leads require review."
+      "summary": "38 Google Alerts entries examined across 7 feed(s); 1 unique solicitation candidates accepted; 37 rejected by keyword filter; 0 feed failures. Leads require review."
     }
   },
   "storageReady": false,
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-23T04:31:03Z",
+    "lastAttemptAt": "2026-11-23T17:22:41Z",
     "note": "Free-source discovery active: cases, case_news, solicitations, google_alerts, law_firms State trial-court filing portals are not automatically searched."
   }
 }
