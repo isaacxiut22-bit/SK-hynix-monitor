@@ -2947,41 +2947,41 @@
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-24T04:22:15Z",
-      "lastAttemptAt": "2026-11-24T04:22:15Z",
-      "outcome": "success",
-      "summary": "80 matched records; 0 source failures. Leads require review."
+      "lastSuccessAt": "2026-11-24T17:20:07Z",
+      "lastAttemptAt": "2026-11-24T17:20:07Z",
+      "outcome": "partial",
+      "summary": "1 matched records; 2 source failures. Leads require review."
     },
     "solicitations": {
       "lastSuccessAt": "2026-11-24T04:22:15Z",
-      "lastAttemptAt": "2026-11-24T04:22:15Z",
-      "outcome": "success",
-      "summary": "12 matched records; 0 source failures. Leads require review."
+      "lastAttemptAt": "2026-11-24T17:20:07Z",
+      "outcome": "failed",
+      "summary": "All solicitations RSS queries failed: \"SK hynix\" securities class action investigation law firm: HTTP Error 503: Service Unavailable; \"SK hynix\" plaintiff firm investors contact: HTTP Error 503: Service Unavailable; \"SK hynix\" antitrust price fixing lawsuit la…"
     },
     "case_news": {
       "lastSuccessAt": "2026-11-24T04:22:15Z",
-      "lastAttemptAt": "2026-11-24T04:22:15Z",
-      "outcome": "success",
-      "summary": "21 matched records; 0 source failures. Leads require review."
+      "lastAttemptAt": "2026-11-24T17:20:07Z",
+      "outcome": "failed",
+      "summary": "All case_news RSS queries failed: \"SK hynix\" \"filed\" \"lawsuit\": HTTP Error 503: Service Unavailable; \"SK hynix\" \"sued\" \"court\": HTTP Error 503: Service Unavailable; \"SK hynix America\" \"complaint\": HTTP Error 429: Too Many Requests; \"SK hynix\" \"state court\" law…"
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-24T04:22:15Z",
-      "lastAttemptAt": "2026-11-24T04:22:15Z",
+      "lastSuccessAt": "2026-11-24T17:20:07Z",
+      "lastAttemptAt": "2026-11-24T17:20:07Z",
       "outcome": "success",
       "summary": "21/21 public listing pages retrieved across 18/18 firms; 2 SK hynix listing matches; 0 page failures. This does not search the firms' entire websites."
     },
     "google_alerts": {
-      "lastSuccessAt": "2026-11-24T04:22:15Z",
-      "lastAttemptAt": "2026-11-24T04:22:15Z",
+      "lastSuccessAt": "2026-11-24T17:20:07Z",
+      "lastAttemptAt": "2026-11-24T17:20:07Z",
       "outcome": "success",
-      "summary": "36 Google Alerts entries examined across 7 feed(s); 1 unique solicitation candidates accepted; 35 rejected by keyword filter; 0 feed failures. Leads require review."
+      "summary": "22 Google Alerts entries examined across 7 feed(s); 0 unique solicitation candidates accepted; 22 rejected by keyword filter; 0 feed failures. Leads require review."
     }
   },
   "storageReady": false,
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-24T04:22:15Z",
-    "note": "Free-source discovery active: cases, case_news, solicitations, google_alerts, law_firms State trial-court filing portals are not automatically searched."
+    "lastAttemptAt": "2026-11-24T17:20:07Z",
+    "note": "Free-source discovery active: cases, google_alerts, law_firms State trial-court filing portals are not automatically searched."
   }
 }
