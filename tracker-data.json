@@ -281,6 +281,7 @@
         "firm-03905eca8858bd2a",
         "ktmc-securities-2026-11",
         "news-33d8ddfe07dc0524",
+        "news-78e86e3fbcdb2cc1",
         "news-9a6111127075384e",
         "news-b4bb64d4f3192b44",
         "news-ebdcee64a6ad18ff",
@@ -2947,32 +2948,32 @@
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-24T17:20:07Z",
-      "lastAttemptAt": "2026-11-24T17:20:07Z",
-      "outcome": "partial",
-      "summary": "1 matched records; 2 source failures. Leads require review."
+      "lastSuccessAt": "2026-11-24T22:15:35Z",
+      "lastAttemptAt": "2026-11-24T22:15:35Z",
+      "outcome": "success",
+      "summary": "80 matched records; 0 source failures. Leads require review."
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-24T04:22:15Z",
-      "lastAttemptAt": "2026-11-24T17:20:07Z",
-      "outcome": "failed",
-      "summary": "All solicitations RSS queries failed: \"SK hynix\" securities class action investigation law firm: HTTP Error 503: Service Unavailable; \"SK hynix\" plaintiff firm investors contact: HTTP Error 503: Service Unavailable; \"SK hynix\" antitrust price fixing lawsuit la…"
+      "lastSuccessAt": "2026-11-24T22:15:35Z",
+      "lastAttemptAt": "2026-11-24T22:15:35Z",
+      "outcome": "success",
+      "summary": "11 matched records; 0 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-24T04:22:15Z",
-      "lastAttemptAt": "2026-11-24T17:20:07Z",
-      "outcome": "failed",
-      "summary": "All case_news RSS queries failed: \"SK hynix\" \"filed\" \"lawsuit\": HTTP Error 503: Service Unavailable; \"SK hynix\" \"sued\" \"court\": HTTP Error 503: Service Unavailable; \"SK hynix America\" \"complaint\": HTTP Error 429: Too Many Requests; \"SK hynix\" \"state court\" law…"
+      "lastSuccessAt": "2026-11-24T22:15:35Z",
+      "lastAttemptAt": "2026-11-24T22:15:35Z",
+      "outcome": "success",
+      "summary": "31 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-24T17:20:07Z",
-      "lastAttemptAt": "2026-11-24T17:20:07Z",
+      "lastSuccessAt": "2026-11-24T22:15:35Z",
+      "lastAttemptAt": "2026-11-24T22:15:35Z",
       "outcome": "success",
       "summary": "21/21 public listing pages retrieved across 18/18 firms; 2 SK hynix listing matches; 0 page failures. This does not search the firms' entire websites."
     },
     "google_alerts": {
-      "lastSuccessAt": "2026-11-24T17:20:07Z",
-      "lastAttemptAt": "2026-11-24T17:20:07Z",
+      "lastSuccessAt": "2026-11-24T22:15:35Z",
+      "lastAttemptAt": "2026-11-24T22:15:35Z",
       "outcome": "success",
       "summary": "22 Google Alerts entries examined across 7 feed(s); 0 unique solicitation candidates accepted; 22 rejected by keyword filter; 0 feed failures. Leads require review."
     }
@@ -2981,7 +2982,7 @@
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-24T17:20:07Z",
-    "note": "Free-source discovery active: cases, google_alerts, law_firms State trial-court filing portals are not automatically searched."
+    "lastAttemptAt": "2026-11-24T22:15:35Z",
+    "note": "Free-source discovery active: cases, case_news, solicitations, google_alerts, law_firms State trial-court filing portals are not automatically searched."
   }
 }
