@@ -85,6 +85,27 @@
       "baseline": false
     },
     {
+      "id": "filingnews-a8d1194be99e7254",
+      "tracker": "cases",
+      "title": "West Lafayette reaches settlement with residents who sued over SK Hynix project - The Indiana Lawyer",
+      "entity": "SK hynix or subsidiary (media reference; verify role)",
+      "date": "2026-11-20",
+      "firstSeen": "2026-11-24",
+      "category": "Other Litigation",
+      "status": "Unverified filing report",
+      "forum": "Court and filing jurisdiction unverified",
+      "firm": "The Indiana Lawyer",
+      "summary": "West Lafayette reaches settlement with residents who sued over SK Hynix project The Indiana Lawyer This is a media-source lead; verify court, docket number, party role and original filing.",
+      "scope": "May concern federal or state court; NOT identified from a court docket.",
+      "sources": [
+        {
+          "label": "Media filing report via Google News",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSHk5U1hmemxrS2VhMFZpdWFZejdUUmpsbm53T1VQYlp0aHVxZWo4aEc2TGhwLUJNbHRHOEo2NmVoRHAtVkZ4bDZlaXI2WEZMa2Y1R0k0eTlNcGNjNjZtVExhajFnZXR1ZU80U2RhemlYRWVDOHZzTHJ3ZkhlV0dJTFpXTm9PRWRqcmdrb1p0eVkzUVREX1ZtODd1NDRzd3kyRWpnTFlFcVlncGoyMzZsZmpTVGgzLWlsNFEtVmJB?oc=5"
+        }
+      ],
+      "baseline": false
+    },
+    {
       "id": "news-7a825cece392d9ac",
       "tracker": "solicitations",
       "title": "Lawsuit investigation launched for SK hynix sha...",
@@ -523,7 +544,7 @@
       "sources": [
         {
           "label": "Media filing report via Google News",
-          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNdU9VRTdmNGY2RG5aQy15LVdpLTh3NEE4Y0locV9uSVIzdXRrUTNsd3c2V0oyODduNWZqNlQ3ems3OTNkUU5DSFFQLUp6QTN5Ujc4cjRCQ3FlVFdZY2NtWTlsVW1Dc01kbVMzSDlZWUVSaVVra25oOE5FeDF4ZWViQ0d3NmlJVmkwTUhxcHpUOThxenJ3ejhidTZJVVRSSjlfOFVLUndZMmxjN3lYR2hWOEtVVFdXZU9pSWxjdDdLOWphZGJndHVRdTBoRzRhdmdQSF9mV0dMcWFzcklxSnE5MmhJWWVGa0ltMkptN3p5Wl80a1JHY2fSAfsBQVVfeXFMTUlJa2ZoZkgtTzY4Sl93anMya1FyWnVqM0RPU1NoRDFGWExRbzV6eHhSdXhqeEloYjRIWFFXVW1oRGV1QmY2X1d6QVpRVjdJQ2tINFhCVUR2N2dab01ERVFfS0NjQmlJZERMWW84R0hlakRBbzhJZDN1djgtVjVRWUIwTXlIblI0V2xSU1JJREpib2N3aVNiUDlvdkpWNjQzR0lGdldlM1BhZ2NKRDlGQXdmN25uUG5TekNWNHBiVFVWNERvTVZ3UDczQzFqQTNQMEpWcVZuYWdXUFRleGd2RElScjgwejNVMDVTb0w0bk9QcTdyZjRoamNid2s?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQVGh2MWRoNzZNU3lzeXUxbnVXa0hRQ1plVF8zMVlhc2J5NHJiOVVaOUFTRktaNUswR3F3UlpjSWMzM0lOdXdTRzUzLWs5ZUotN3R4c19Mc1BZRUZBMEFFQmEwUFIwSWZIOU5vQ2s5Tl9NNEFaSTh2ZzlKaG5xWkNwQkRuRzM2d0VGT1JwdWtXUjZFbGhxeHQ2SWFyWW9CMW5jeUFlbk95ZEd5MlRybUdxQ1F1ejRUTGlveVpvVVN1NmVDa1F3UFlYbE9WSHFUYzJrTm5naGVubjRKWW9XOTVTWU4yOG91TXB0NkxnWVBSVmEtdVYtS2Jj0gH8AUFVX3lxTE9mem1uWWFncmpPcllnM2VWTThHSDRPMW1KZ1NjeGFETXpJaFhuUTBWQi0wczBUdWk1SE1pbXB0M3hOS2JpOVJNMmE4YzM2Z2xOd05iczYxekkxc3ZIeDVPSEhuQWU4QXoxeVBYMzNiVmJzeGxjTnZlWDctTmpYanNLOTVzSHZoWkRDSnJsa3BxcndBMTFSaHIzdXFFRjFkUl9IcjVrdTlXcElPUHdfaXk2QzZjUkdONjdzUzZFQjEteXJzY2luVmxWN21qRWstWmJndnh0NG4yNFpwWk93QThNNkIzb21GWDhmdEhhUTN4dkI5QXZlWEpXTEFTQg?oc=5"
         }
       ],
       "baseline": false
@@ -2926,32 +2947,32 @@
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-23T22:10:40Z",
-      "lastAttemptAt": "2026-11-23T22:10:40Z",
+      "lastSuccessAt": "2026-11-24T01:37:12Z",
+      "lastAttemptAt": "2026-11-24T01:37:12Z",
       "outcome": "success",
       "summary": "80 matched records; 0 source failures. Leads require review."
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-23T22:10:40Z",
-      "lastAttemptAt": "2026-11-23T22:10:40Z",
+      "lastSuccessAt": "2026-11-24T01:37:12Z",
+      "lastAttemptAt": "2026-11-24T01:37:12Z",
       "outcome": "success",
       "summary": "10 matched records; 0 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-23T22:10:40Z",
-      "lastAttemptAt": "2026-11-23T22:10:40Z",
+      "lastSuccessAt": "2026-11-24T01:37:12Z",
+      "lastAttemptAt": "2026-11-24T01:37:12Z",
       "outcome": "success",
-      "summary": "28 matched records; 0 source failures. Leads require review."
+      "summary": "32 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-23T22:10:40Z",
-      "lastAttemptAt": "2026-11-23T22:10:40Z",
+      "lastSuccessAt": "2026-11-24T01:37:12Z",
+      "lastAttemptAt": "2026-11-24T01:37:12Z",
       "outcome": "success",
       "summary": "21/21 public listing pages retrieved across 18/18 firms; 2 SK hynix listing matches; 0 page failures. This does not search the firms' entire websites."
     },
     "google_alerts": {
-      "lastSuccessAt": "2026-11-23T22:10:40Z",
-      "lastAttemptAt": "2026-11-23T22:10:40Z",
+      "lastSuccessAt": "2026-11-24T01:37:12Z",
+      "lastAttemptAt": "2026-11-24T01:37:12Z",
       "outcome": "success",
       "summary": "38 Google Alerts entries examined across 7 feed(s); 1 unique solicitation candidates accepted; 37 rejected by keyword filter; 0 feed failures. Leads require review."
     }
@@ -2960,7 +2981,7 @@
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-23T22:10:40Z",
+    "lastAttemptAt": "2026-11-24T01:37:12Z",
     "note": "Free-source discovery active: cases, case_news, solicitations, google_alerts, law_firms State trial-court filing portals are not automatically searched."
   }
 }
