@@ -2949,31 +2949,31 @@
   "runs": {
     "cases": {
       "lastSuccessAt": "2026-11-24T22:15:35Z",
-      "lastAttemptAt": "2026-11-24T22:15:35Z",
-      "outcome": "success",
-      "summary": "80 matched records; 0 source failures. Leads require review."
+      "lastAttemptAt": "2026-11-25T01:42:47Z",
+      "outcome": "failed",
+      "summary": "All CourtListener searches failed: party:(hynix) page 1: The read operation timed out; party:(\"Hynix Semiconductor\") page 1: The read operation timed out; party:(solidigm) page 1: The read operation timed out"
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-24T22:15:35Z",
-      "lastAttemptAt": "2026-11-24T22:15:35Z",
+      "lastSuccessAt": "2026-11-25T01:42:47Z",
+      "lastAttemptAt": "2026-11-25T01:42:47Z",
       "outcome": "success",
-      "summary": "11 matched records; 0 source failures. Leads require review."
+      "summary": "13 matched records; 0 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-24T22:15:35Z",
-      "lastAttemptAt": "2026-11-24T22:15:35Z",
+      "lastSuccessAt": "2026-11-25T01:42:47Z",
+      "lastAttemptAt": "2026-11-25T01:42:47Z",
       "outcome": "success",
-      "summary": "31 matched records; 0 source failures. Leads require review."
+      "summary": "32 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-24T22:15:35Z",
-      "lastAttemptAt": "2026-11-24T22:15:35Z",
+      "lastSuccessAt": "2026-11-25T01:42:47Z",
+      "lastAttemptAt": "2026-11-25T01:42:47Z",
       "outcome": "success",
       "summary": "21/21 public listing pages retrieved across 18/18 firms; 2 SK hynix listing matches; 0 page failures. This does not search the firms' entire websites."
     },
     "google_alerts": {
-      "lastSuccessAt": "2026-11-24T22:15:35Z",
-      "lastAttemptAt": "2026-11-24T22:15:35Z",
+      "lastSuccessAt": "2026-11-25T01:42:47Z",
+      "lastAttemptAt": "2026-11-25T01:42:47Z",
       "outcome": "success",
       "summary": "22 Google Alerts entries examined across 7 feed(s); 0 unique solicitation candidates accepted; 22 rejected by keyword filter; 0 feed failures. Leads require review."
     }
@@ -2982,7 +2982,7 @@
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-24T22:15:35Z",
-    "note": "Free-source discovery active: cases, case_news, solicitations, google_alerts, law_firms State trial-court filing portals are not automatically searched."
+    "lastAttemptAt": "2026-11-25T01:42:47Z",
+    "note": "Free-source discovery active: case_news, solicitations, google_alerts, law_firms. Federal CourtListener docket search inactive; add COURTLISTENER_TOKEN. State trial-court filing portals are not automatically searched."
   }
 }
