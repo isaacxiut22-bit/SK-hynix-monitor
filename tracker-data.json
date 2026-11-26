@@ -1,6 +1,27 @@
 {
   "records": [
     {
+      "id": "webalert-504f59cdd0e38d71",
+      "tracker": "solicitations",
+      "title": "Investigation Notification of SKHY: SK hynix Inc | Details",
+      "entity": "SK hynix or subsidiary (unverified reference)",
+      "date": "2026-11-25",
+      "firstSeen": "2026-11-26",
+      "category": "Securities",
+      "status": "Unverified solicitation lead",
+      "forum": "Web search result — prospective U.S. litigation (unverified)",
+      "firm": "Google Alerts web result",
+      "summary": "... law firm, is investigating potential violations of the federal securities laws by SK hynix Inc. (“ SK hynix ”) (NASDAQ: SKHY) on behalf of investors ... Check the original publication for a direct client solicitation; a news article does not prove a filing.",
+      "scope": "Google Alerts Web RSS discovery. A web result does not establish a direct solicitation or filed lawsuit.",
+      "sources": [
+        {
+          "label": "Google Alerts web result",
+          "url": "https://www.newscom.com/ja/newswire-feed?p_p_id=teasersearchresults_WAR_searchportlet_INSTANCE_newswire_instance_1&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_pos=9&p_p_col_count=14&_teasersearchresults_WAR_searchportlet_INSTANCE_newswire_instance_1_pageNumber=1&_teasersearchresults_WAR_searchportlet_INSTANCE_newswire_instance_1_struts.portlet.action=%2Fview%2FshowDetail&_teasersearchresults_WAR_searchportlet_INSTANCE_newswire_instance_1_tagId=pznews903289"
+        }
+      ],
+      "baseline": false
+    },
+    {
       "id": "news-a5b9011f9ea78b3e",
       "tracker": "solicitations",
       "title": "Investor Alert: Robbins LLP Informs Investors of the SK Hynix Inc. Class Action Lawsuit",
@@ -254,16 +275,28 @@
         {
           "label": "News/press-release source via Google News",
           "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQN3NVd3RsTkljUDRPOGNCa19tT3pnaFFKM2ZSZHNCcVZCX2ZuT3NSakVHV25QcDB4NjEyNzA0NlpsUmNhOWNBSER3bV9qejM5VFc1dGZUTkFBVDJtSEFrN0FTazdoLTFjU19qV1Y1TmlSXzhkWWFQN0FBOUdSSUplbWVhV0ZSVFllMnNKSW5RaE5IZGM0MHd2a2l3OXRJaW1JU3pnWHBfMEJOM2pGMnNhQmFPR3oyeTdrUXNzQ1hOcjJnNzd2Rk1vZ2RYaTU5a3RNQmw3Ym45Ti01WFJ4NkQ3SW9iZWZGQ2p1eDI3blJpNHNJS01nb2hBckVIcFg?oc=5"
+        },
+        {
+          "label": "Google Alerts web result",
+          "url": "https://pr.portlandtribune.com/article/SK-hynix-Inc-Investor-News-If-You-Have-Suffered-Losses-in-SK-hynix-Inc-NASDAQ-SKHY-You-Are-Encouraged-to-Contact-the-Rosen-Law-Firm-About-Your-Rights/6b078c71bde2404dafe22a39"
+        },
+        {
+          "label": "Google Alerts web result",
+          "url": "https://pr.timesofsandiego.com/article/SK-hynix-Inc-Investor-News-If-You-Have-Suffered-Losses-in-SK-hynix-Inc-NASDAQ-SKHY-You-Are-Encouraged-to-Contact-the-Rosen-Law-Firm-About-Your-Rights/6b078c71bde2404dafe22a39"
         }
       ],
       "baseline": true,
       "campaignTopic": "securities-investigation",
       "mergedRecordIds": [
         "news-463d44d479103c12",
-        "rosen-securities-2026-11"
+        "rosen-securities-2026-11",
+        "webalert-d55908db76b556fe",
+        "webalert-f1a34249624dda11"
       ],
       "relatedHeadlines": [
-        "Rosen Law Firm Encourages SK hynix Inc. Investors to Inquire About Securities Class Action Investigation - SKHY"
+        "Rosen Law Firm Encourages SK hynix Inc. Investors to Inquire About Securities Class Action Investigation - SKHY",
+        "SK hynix Inc. Investor News: If You Have Suffered Losses in SK hynix Inc. (NASDAQ: SKHY ...",
+        "SKHY), You Are Encouraged to Contact the Rosen Law Firm About Your Rights"
       ]
     },
     {
@@ -2990,41 +3023,41 @@
   ],
   "runs": {
     "cases": {
-      "lastSuccessAt": "2026-11-26T04:25:18Z",
-      "lastAttemptAt": "2026-11-26T04:25:18Z",
+      "lastSuccessAt": "2026-11-26T17:25:30Z",
+      "lastAttemptAt": "2026-11-26T17:25:30Z",
       "outcome": "success",
       "summary": "80 matched records; 0 source failures. Leads require review."
     },
     "solicitations": {
-      "lastSuccessAt": "2026-11-26T04:25:18Z",
-      "lastAttemptAt": "2026-11-26T04:25:18Z",
+      "lastSuccessAt": "2026-11-26T17:25:30Z",
+      "lastAttemptAt": "2026-11-26T17:25:30Z",
       "outcome": "success",
-      "summary": "12 matched records; 0 source failures. Leads require review."
+      "summary": "16 matched records; 0 source failures. Leads require review."
     },
     "case_news": {
-      "lastSuccessAt": "2026-11-26T04:25:18Z",
-      "lastAttemptAt": "2026-11-26T04:25:18Z",
+      "lastSuccessAt": "2026-11-26T17:25:30Z",
+      "lastAttemptAt": "2026-11-26T17:25:30Z",
       "outcome": "success",
-      "summary": "21 matched records; 0 source failures. Leads require review."
+      "summary": "27 matched records; 0 source failures. Leads require review."
     },
     "law_firms": {
-      "lastSuccessAt": "2026-11-26T04:25:18Z",
-      "lastAttemptAt": "2026-11-26T04:25:18Z",
+      "lastSuccessAt": "2026-11-26T17:25:30Z",
+      "lastAttemptAt": "2026-11-26T17:25:30Z",
       "outcome": "success",
       "summary": "21/21 public listing pages retrieved across 18/18 firms; 2 SK hynix listing matches; 0 page failures. This does not search the firms' entire websites."
     },
     "google_alerts": {
-      "lastSuccessAt": "2026-11-26T04:25:18Z",
-      "lastAttemptAt": "2026-11-26T04:25:18Z",
+      "lastSuccessAt": "2026-11-26T17:25:30Z",
+      "lastAttemptAt": "2026-11-26T17:25:30Z",
       "outcome": "success",
-      "summary": "32 Google Alerts entries examined across 7 feed(s); 1 unique solicitation candidates accepted; 30 rejected by keyword filter; 0 feed failures. Leads require review."
+      "summary": "29 Google Alerts entries examined across 7 feed(s); 3 unique solicitation candidates accepted; 25 rejected by keyword filter; 0 feed failures. Leads require review."
     }
   },
   "storageReady": false,
   "monitoring": {
     "deployed": true,
     "source": "zero-cost-public-source-discovery",
-    "lastAttemptAt": "2026-11-26T04:25:18Z",
+    "lastAttemptAt": "2026-11-26T17:25:30Z",
     "note": "Free-source discovery active: cases, case_news, solicitations, google_alerts, law_firms State trial-court filing portals are not automatically searched."
   }
 }
